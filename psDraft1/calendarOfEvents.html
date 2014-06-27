@@ -1,0 +1,17 @@
+<div class="containerNarrow">
+	<div class="hideThis">
+		<div class="alert">
+			<p>This Calendar shows the PeopleSoft Events. If you arelooking for the training calendar please click on the link below:</p>
+			<p><a href="http://betaadmin.utep.edu/Default.aspx?tabid=73875" class="btn">Training calendar</a></p>
+		</div>
+		<span class="hideThisBtn"></span>
+	</div>
+</div>
+
+<script>
+$( "body" ).addClass( "calendarPage" );
+$("#_Portals__default_").attr( "href", "#" );
+$(".hideThisBtn").click(function() {
+	$(".hideThis").slideToggle("slow");
+});
+</script>
