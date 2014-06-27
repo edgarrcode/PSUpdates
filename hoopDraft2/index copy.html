@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- DNN Head Tags -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="http://admin.utep.edu/Portals/3692/assets/jquery.dynatable.js"></script>
+
+        <link rel="stylesheet" href="css/customStyles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="utepLogo">
+                    <img src="images/UTEPHandbookofOperatingProcedures.png" alt="UTEP Handbook of Operating Procedures" title="UTEP Handbook of Operating Procedures">
+                </div><!-- /logo -->
+                <div class="psUTShareLogosWrapper mobileNo">
+                </div><!-- /psUTShareLogosWrapper -->
+            </div><!-- container -->
+        </div><!-- /header -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Policies <b class="caret"></b></a>
+                            <ul>
+                                <li><a href="#"><div class="caption">Section I:</div> Introduction and University Administration</a></li>
+                                <li><a href="#"><div class="caption">Section II:</div> Student Affairs</a></li>
+                                <li><a href="#"><div class="caption">Section III:</div> Academic Affairs</a></li>
+                                <li><a href="#"><div class="caption">Section IV:</div> Research and Sponsored Projects</a></li>
+                                <li><a href="sectionTemplate.html"><div class="caption">Section V:</div> Human Resources</a></li>
+                                <li><a href="#"><div class="caption">Section VI:</div> Equal Opportunity</a></li>
+                                <li><a href="#"><div class="caption">Section VII:</div> Financial Services</a></li>
+                                <li><a href="#"><div class="caption">Section VIII:</div> Facilities Services, Safety, Info and Tech</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- /nav -->
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
+
+        <div class="pageTitle flexslider">
+              <ul class="slides">
+                <li>
+                    <div class="containerNarrow">
+                        <h1>Welcome to the Handbook of Operating Procedures</h1>
+                        <p>The information you find here represents the official policies of The University of Texas at El Paso. In the event of any conflict between the Handbook of Operating Procedures and the Business Process Guidelines, the Handbook of Operating Procedures governs, as it is the official compilation of University policies.</p>
+                        <p><img src="images/utepLogoFooter.png" width="42" style="margin:0 auto;"></p>
+                    </div><!-- /containerNarrow -->
+                </li>
+                <li class="left">
+                    <div class="container">
+                        <div class="oneHalf breakColMobile">
+                            <h2>UTEP Smoke and Tobacco Free Policy</h2>
+                            <p>The University of Texas at El Paso appreciates your cooperation as we are now a smoke and tobacco-free campus. The policy is part of the university’s promotion of respect toward our environment and community.</p>
+                            <p><a href="#" class="btn primaryBtn">See the Environmental Health and Safety policy</a>
+                        </div><!-- /oneHalf -->
+                        <div class="oneHalf gridLast breakColMobile">
+                          <img class="pictureFrame mobileNo mobileNo" src="img/TobaccoFree.jpg" style="max-width:60%;">
+                        </div><!-- /oneHalf -->
+                    </div><!-- /container -->
+                </li>
+              </ul>
+        </div><!-- /pageTitle -->
+
+        <div class="mainContent">
+
+            <div class="container">
+                <h2>Use this tool to find the policies you are looking for.</h2>
+                <p>You can search using keywords, filter by section, and sort by title, date or section.</p>
+
+                <div class="googleCustomSearchDiv">
+                    <script>
+                      (function() {
+                        var cx = '006418422637527632469:6d-wcdolyn0';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                            '//www.google.com/cse/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div><!-- /googleCustomSearchDiv -->
+
+                <div class="toolbar">
+                    <div class="sortByWrapper">
+                        <span>Sort by section:</span>
+                        <select id="search-section" name="section">
+                        <option></option>
+                        <option>Section I: Introduction and University Administration</option>
+                        <option>Section II: Student Affairs</option>
+                        <option>Section III: Academic Affairs</option>
+                        <option>Section IV: Research and Sponsored Projects</option>
+                        <option>Section V: Human Resources</option>
+                        <option>Section VI: Equal Opportunity</option>
+                        <option>Section VII: Financial Services</option>
+                        <option>Section VIII: Facilities Services, Safety, Info and Tech</option>
+                        </select>
+                    </div><!-- /sortByWrapper -->
+
+                </div><!-- /toolbar -->
+                <table id="HOPTable">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Section</th>
+                            <th>Last Update Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Section I: Introduction and University Administration -->
+                        <tr>
+                            <td style="width: 70%;"><a href="http://utep.edu">Chapter 1: History and Mission</a></td>
+                            <td style="width: 15%;">Section I: Introduction and University Administration</td>
+                            <td style="width: 15%;">2012-11-09</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Governance of the University</a></td>
+                            <td>Section I: Introduction and University Administration</td>
+                            <td>2013-12-06</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Administration</a></td>
+                            <td>Section I: Introduction and University Administration</td>
+                            <td>2013-11-03</td>
+                        </tr>
+                        <!-- Section II: Student Affairs -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Student Conduct and Discipline</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Speech, Expression, and Assembly</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-09-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Use of University Facilities</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-08-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 4: Student Organizations</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-07-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 5: Student Publications Policies</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-06-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 6: Educational Records</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-05-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 7: University Student Identification Card</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-04-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 8: Centralized Placement Policy</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-03-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 9: Student Participation and Monitoring of Food Service Contractors</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-02-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 10: Policy on Requirement for Vaccination Against Bacterial Meningitis for Entering Students</a></td>
+                            <td>Section II: Student Affairs</td>
+                            <td>2013-01-03</td>
+                        </tr>
+                        <!-- Section III: Academic Affairs -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Constitution of the Faculty Government of UTEP</a></td>
+                            <td>Section III: Academic Affairs</td>
+                            <td>2012-12-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Bylaws of the Faculty Government of UTEP</a></td>
+                            <td>Section III: Academic Affairs</td>
+                            <td>2012-11-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Colleges, Departments, and Academic Units</a></td>
+                            <td>Section III: Academic Affairs</td>
+                            <td>2012-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Graduate School: Faculty and Organization</a></td>
+                            <td>Section III: Academic Affairs</td>
+                            <td>2012-09-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 4: Academic Policies and Faculty Personnel Matters</a></td>
+                            <td>Section III: Academic Affairs</td>
+                            <td>2012-08-03</td>
+                        </tr>
+                        <!-- Section IV: Research and Sponsored Projects -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Grants, Contracts, and Gifts</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-07-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Disclosure of Significant Financial Interest and Mgmt and Rpt of Fin Conflict of Int in R</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-06-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Policy for Review of Human Subject Research</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-05-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 4: Intellectual Property</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-04-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 5: Organized Research Units</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-03-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 6: Research Misconduct Policy</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-02-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 7: Employment Under a Contract or Grant</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2012-01-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 8: Policy for the Care and Use of Animals in Research and Teaching</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2011-12-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 9: Policy for Compliance with U.S. Export Control Regulations</a></td>
+                            <td>Section IV: Research and Sponsored Projects</td>
+                            <td>2011-11-03</td>
+                        </tr>
+                        <!-- Section V: Human Resources -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Employee Classification</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Classification of Staff Positions</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-09-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Employment Policy</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-08-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 4: Outside Activity and/or Employment, Board Service, and Dual Employment</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-07-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 5: Nepotism</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-06-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 6: Discipline and Dismissal of Staff Employees</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-05-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 7: Policy and Procedure for Grievance</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-04-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 8: Protection from Retaliation from Alleged Wrongdoing</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-03-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 9: Drug and Alcohol Policies</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-02-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 10: Reduction in Force Policy</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2011-01-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 11: Teaching Duties &amp; Related Compensation for FT Administrators of Non-Faculty Employees</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-12-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 12: Criminal Background Checks</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-11-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 13: Accounting for Work Time</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 14: Vacation Leave</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-09-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 15: Sick Leave</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-08-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 16: Sick Leave Pool</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-07-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 17: Family and Medical Leave</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-06-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 18: Leave of Absence Without Pay</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-05-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 19: Time Off for Blood, Organ, or Bone Marrow Donation</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-04-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 20: Time Off to Vote</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-03-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 21: Holidays</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-02-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 22: Military Leave</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2010-01-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 23: Jury Duty and Subpoenas for Court Appearance</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-12-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 24: Paid Leave Accountability</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-11-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 25: Employer-Provided Vehicles Including Courtesy Donor Cars</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 26: Educational Opportunities for Employees</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-09-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 27: Staff Organizations</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-08-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 28: Employee Discount Program</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-07-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 29: Conflicts of Interest, Conflicts of Commitment, and Outside Activities</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-06-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 30: Bereavement Leave Policy</a></td>
+                            <td>Section V: Human Resources</td>
+                            <td>2009-05-03</td>
+                        </tr>
+                        <!-- Section VI: Equal Opportunity -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Equal Opportunity/Affirmative Action/Non-Discrimination Policy</a></td>
+                            <td>Section VI: Equal Opportunity</td>
+                            <td>2009-04-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Accommodations for Individuals with Disabilities Policy</a></td>
+                            <td>Section VI: Equal Opportunity</td>
+                            <td>2009-03-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Sexual Harassment and Sexual Misconduct</a></td>
+                            <td>Section VI: Equal Opportunity</td>
+                            <td>2009-02-03</td>
+                        </tr>
+                        <!-- Section VII: Financial Services -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Audit and Consulting Services</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2009-01-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Fraudulent or Dishonest Activities</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-12-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: University-Owned Property and Equipment</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-11-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 4: Transfer of Capital and Controlled Equipment</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 5: Account Review Policy</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-09-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 6: Travel Regulations</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-08-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 7: Student Financial Aid Code of Conduct</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-07-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 8: Identity Theft Prevention, Detection and Mitigation Policy (Red Flag Rules)</a></td>
+                            <td>Section VII: Financial Services</td>
+                            <td>2008-06-03</td>
+                        </tr>
+                        <!-- Section VIII: Facilities Services, Safety, Info and Tech -->
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 1: Environmental Health and Safety</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2008-05-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 2: Institutional Building Advisory Committee</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2008-04-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 3: Institutional Insurance(s)</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2008-03-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 4: Information Resources Usage Policy</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2008-02-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 5: Fleet Management Plan</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2008-01-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 6: Naming of Buildings and Other Facilities</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2007-12-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 7: Inclement Weather Policy</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2007-11-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 8: Electronic Access Control Policy</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2007-10-03</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://utep.edu">Chapter 9: Banners</a></td>
+                            <td>Section VIII: Facilities Services, Safety, Info and Tech</td>
+                            <td>2007-09-03</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div><!-- /MainContent -->
+        </div><!-- /container -->
+
+        <div id="footer1" class="mobileNo">
+            <div class="container">
+                <div class="utepFooterLogo">
+                    <img src="img/utepLogoFooter.png" alt="UTEP" Title="UTEP">
+                </div><!-- /utepFooterLogo -->
+                <div class="vpbaLinksWrapper">
+                    <h2>Vice President for Business Affairs Departments</h2>
+                    <div class="vpbaLinksCol">
+                        <h3><span>Auxiliary </span>Services:</h3>
+                        <ul>
+                            <li style="text-align: left;"><a href="https://admin.utep.edu/Default.aspx?tabid=50621">Parking &amp; Transportation</a></li>
+                            <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?langId=-1&storeId=15728&demoKey=d&catalogId=10001">University Bookstore</a></li>
+                            <li><a href="http://www.utepspecialevents.com/">Office of Special Events</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/utc">University Ticket Center</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/minergold">Miner Gold Card Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/sodexho">University Food Services</a></li>
+                            <li><a href="http://www.utep.edu/paydirtprinting">Printing Services</a></li>
+                            <li><a href="http://www.utep.edu/mailservices">Mail Services</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol">
+                        <h3><span>Facilities </span>Management:</h3>
+                        <ul>
+                            <li><a href="http://admin.utep.edu/facilities/">Facilities Services</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/facilities">Planning &amp; Construction</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/spires">Space Information Resources (SPIRES)</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol">
+                        <h3><span>Financial </span>Services:</h3>
+                        <ul>
+                            <li><a href="http://finsvcs.utep.edu/main">Accounting &amp; Business Services</a></li>
+                            <li><a href="http://finsvcs.utep.edu/Main/Budget/Main.aspx">Budget Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/pgs">Purchasing &amp; General Services</a></li>
+                            <li><a href="http://sbs.utep.edu">Student Business Services </a> </li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol gridLast">
+                        <h3><span>Purchasing &amp; </span>General Services:</h3>
+                        <ul>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1636">Central Receiving</a></li>
+                            <li><a href="http://admin.utep.edu/LinkClick.aspx?link=http%3a%2f%2fadmin.utep.edu%2fDefault.aspx%3ftabid%3d67818&tabid=1419&mid=3645">HUB Program</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1616">Purchasing Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1677">Records Management</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    
+                    <div class="clear"></div>
+                    <div class="sendWebsiteFeedback">
+                        <p><a href="#">Submit Website Feedback</a></p>
+                    </div><!-- /sendWebsiteFeedback -->
+                </div><!-- /vpbaLinksWrapper -->
+                <div class="clear"></div>
+            </div><!-- /container -->
+        </div><!-- /footer1 -->
+
+        <div id="footer2">
+            <div class="container">
+                <div class="requiredLinks">
+                        <ul>
+                            <li><a href="#">State Reports</a></li>
+                            <li><a href="#">UT System</a></li>
+                            <li><a href="#">Customer Service Statement</a></li>
+                            <li><a href="#">Site Feedback</a></li>
+                            <li><a href="#">Required Links</a></li>
+                            <li><a href="#">CLERY Crime Statistics</a></li>
+                            <li><a href="#">Report Fraud</a></li>
+                        </ul>
+                </div><!-- /requiredLinks -->
+                <div class="utepContactInfo">
+                    <ul>
+                        <li>The University of Texas at El Paso.</li>
+                        <li class="clear">500 West University Avenue,</li>
+                        <li>El Paso, Texas 79968</li>
+                        <li class="clear">(915) 747-5000</li>
+                    </ul>
+                </div><!-- /utepContactInfo -->
+            </div><!-- /container -->
+        </div><!-- /footer2 -->
+        <script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                prevText: " ",
+                nextText: " "
+            });
+          });
+        </script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/TimeCircles.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
