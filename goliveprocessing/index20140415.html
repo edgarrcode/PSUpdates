@@ -1,0 +1,2168 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="skin.css">
+    </head>
+    <body style="" class="">
+        <div class="header">
+            <div class="container">
+                <div class="utepLogo">
+                    <img src="images/UTEPPeopleSoft.png" alt="UTEP PeopleSoft" title="UTEP PeopleSoft">
+                </div><!-- /logo -->
+                <div class="psUTShareLogosWrapper mobileNo">
+                <img src="images/PeopleSoftLogo.png" alt="PeopleSoft" title="PeopleSoft" class="pslogo" width="230">
+                <img src="images/utShareLogo.png" alt="UTShare" title="UTShare" class="utShareLogo" width="165">
+                </div><!-- /psUTShareLogosWrapper -->
+            </div><!-- container -->
+        </div><!-- /header -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <ul class="nav">    
+                        <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/peoplesoft">Home</a></li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=72901">About</a>
+                            <ul>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=68263">Project Team</a>        </li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73839">PeopleSoft Browser Support</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=73831">Crosswalk Newsletter</a></li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=72558">Training</a>
+                            <ul>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73838">Classes</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73837">Calendar</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73836">Documents</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73835">UPK</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73834">Help</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=72902">Resources</a>
+                            <ul>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=68266">FAQs</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73841">Cutover Deadlines</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=68280">Calendar of Events</a></li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=68264">Contact</a></li>
+                    </ul>
+                    <div class="customNav" runat="server" id="customNav">
+                    </div><!-- /customNav -->
+
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                    <div class="googleSearchWrapper">
+                        <form id="cse-search-box" action="http://www.utep.edu/searchresults.htm" target="_blank">
+                            <label for="googlesearch">&nbsp;<input type="hidden" name="cx" value="014954356897977601153:qnso4vt6v3o">
+                                <input type="hidden" name="cof" value="FORID:11">
+                                <input type="hidden" name="ie" value="UTF-8">
+                                <input id="googlesearch" type="text" name="q" size="15">
+                                <input type="submit" name="sa" value="Go">
+                            </label><br>
+                        <input name="siteurl" type="hidden" value="www.utep.edu/"><input name="ref" type="hidden" value=""><input name="ss" type="hidden" value=""></form>
+                         <noscript>Google Search Box.</noscript>
+                    </div><!-- /googleSearchWrapper -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
+
+        <div class="pageTitle fadeIn" runat="server" id="pageTitle">
+            <h1>Go-Live Processing</h1>
+        </div><!-- /pageTitle -->
+
+
+        <div class="mainContent mainContent1 ContentPane" runat="server" id="ContentPane">
+            <div class="container">
+                <p class="intro">Interim approval routing processes will be used to collect and route data for approvals and processing. Select a transaction from the drop-down menu below to see the approval process.</p>
+
+                <div class="goLiveOptionsWrapper">
+                    <select id="goliveDropDown">
+                        <option value="">Choose...</option>
+                        <option value="NewPositionRequestsStaff">New Position Requests - Staff</option>
+                        <option value="PositionUpdatesStaff">Position Updates - Staff</option>
+                        <option value="NewPositionRequestsFacultyTTT">New Position Requests - Faculty (T/TT)</option>
+                        <option value="NewPositionRequestsLecturer">New Position Requests - Lecturer</option>
+                        <option value="PositionUpdatesLecturer">Position Updates - Lecturer</option>
+                        <option value="NewPositionRequestsUpdatesStudents">New Position Requests/Updates - Students</option>
+                        <option value="PositionFundingChangesthroughPeopleSoftsPositionManagementCenter">Position Funding Changes (through PeopleSoft's Position Management Center)</option>
+                        <option value="JobPostingsStaff">Job Postings - Staff</option>
+                        <option value="NewHiresthroughPeopleSoftRecruitmentStaff">New Hires (through PeopleSoft Recruitment) - Staff</option>
+                        <option value="NewHiresDirectHireStaff">New Hires (Direct Hire) - Staff</option>
+                        <option value="NewHiresDirectHireLecturer">New Hires (Direct Hire) - Lecturer</option>
+                        <option value="NewHiresDirectHireStudents">New Hires (Direct Hire) - Students</option>
+                        <option value="AdHocSalaryChangesStudents">Ad Hoc Salary Changes - Students</option>
+                        <option value="AdditionalPaySupplementsCollege">Additional Pay/Supplements - College</option>
+                        <option value="AdditionalPaySupplementsDivision">Additional Pay/Supplements - Division</option>
+                        <option value="VoluntarySeparationsRetirements">Voluntary Separations/Retirements</option>
+                        <option value="Timesheets">Timesheets</option>
+                        <option value="LeaveRequests">Leave Requests</option>
+                        <option value="SickLeaveDonations">Sick Leave Donations</option>
+                        <option value="TravelAuthorizations">Travel Authorizations</option>
+                        <option value="CashAdvances">Cash Advances</option>
+                        <option value="TravelExpenseReimbursements">Travel Expense Reimbursements</option>
+                        <option value="BudgetTransfers">Budget Transfers</option>
+                        <option value="BudgetTransfersGrants">Budget Transfers - Grants</option>
+                        <option value="EmployeeReimbursements">Employee Reimbursements</option>
+                        <option value="VendorPayments">Vendor Payments</option>
+                        <option value="NewVendorProcessing">New Vendor Processing</option>
+                        <option value="PurchaseRequisitions">Purchase Requisitions</option>
+                    </select>
+                </div><!-- /goLiveOptionsWrapper -->
+                <div id="NewPositionRequestsStaff" class="drop-down-show-hide">
+                    <h2>New Position Requests - Staff</h2>
+                    <p><strong>Description:</strong><br>Request a new staff position. New staff positions may be requested for departmental reorganizations, special projects, new grants or contracts, workload increases, position combinations, etc. This process will be used for positions approved through HRAC.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>HRAC Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department submits HRAC form to VP.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>VP approves new position request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRAC Committee provides recommendation.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>President's Office reviews  request. President's Office sends an email notification of the approved request to the Compensation Manager.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Compensation Manager sends an email notification to the Department of the approved request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Compensation Manager emails HRTC a copy of all   approval documents (HRAC form and President's approval).</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC emails notification of entered request to Budget Office & Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                </tr>
+                            </tr>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewPositionRequestsStaff -->
+                <div id="PositionUpdatesStaff" class="drop-down-show-hide">
+                    <h2>Position Updates - Staff</h2>
+                    <p><strong>Description:</strong><br>Make an update to a staff position. Staff position updates may be requested for reclassifications, inactivating positions, changing working titles, transferring positions, reorganizations, changing full time equivalent (FTE) status, & changing Reports-To information. This process will be used for positions updates approved through HRAC.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Formas</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>HRAC Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                            <table class="processSteps">
+                                <tbody>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Department submits HRAC form to VP.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>VP approves position update request.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>HRAC Committee provides recommendation.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>President's Office reviews request. President's Office sends an email notification of the approved request to the Compensation Manager.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Compensation Manager sends an email notification to the Department of the approved request.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Compensation Manger emails HRTC a copy of all  approval documents (HRAC form and President's approval).</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft. </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>HRTC emails notification of entered request to Budget Office & Department.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /PositionUpdatesStaff -->
+                <div id="NewPositionRequestsFacultyTTT" class="drop-down-show-hide">
+                    <h2>New Position Requests - Faculty (T/TT)</h2>
+                    <p><strong>Description:</strong><br>Request a new faculty position, including position requests outside of the budget cycle. New  positions may be requested for new grants or contracts, workload increases, position combinations, new discipline additions outside of cycle, high-profile faculty, replacements, etc.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper/Electronic Form Process</td>
+                                        <td>Position Requests and Modifications Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Dean submits request form for new faculty position to the Provost Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Provost Office submits new faculty position request to the President's Office for approval.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>President's Office reviews position request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>President's Office notifies Dean of approval. Dean notifies Department & Compensation Manager of approval.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Compensation Manager sends an email notification to the Department of the approved request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department works with EO to recruit for position. Applicant selected. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates request for new faculty position through Position Requests and Modifications form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department Approver approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals. </td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards emails notification of approvals to Budget Office & Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewPositionRequestsFacultyTTT -->
+                <div id="NewPositionRequestsLecturer" class="drop-down-show-hide">
+                    <h2>New Position Requests - Lecturer</h2>
+                    <p><strong>Description:</strong><br>Request a new lecturer position. New lecturer positions may be requested for new grants or contracts, workload increases, position combinations, additional course offerings, etc. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Position Requests and Modifications Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates request for a new lecturer position through Position Requests and Modifications form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department Approver approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals. </td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards emails notification of approvals to Budget Office, HRTC, & Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewPositionRequestsLecturer -->
+                <div id="PositionUpdatesLecturer" class="drop-down-show-hide">
+                    <h2>Position Updates - Lecturer</h2>
+                    <p><strong>Description:</strong><br>Make an update to a lecture position. Lecturer position updates may be requested due to changing working titles, transferring positions, new grants or contracts, workload increases, changing full time equivalent (FTE) status, additional course offerings, changing Reports-To information, etc. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Position Requests and Modifications Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department  initiates request for lecturer position update through Position Requests and Modifications form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department Approver approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals. </td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards emails notification of approvals to Budget Office, HRTC, & Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /PositionUpdatesLecturer -->
+                <div id="NewPositionRequestsUpdatesStudents" class="drop-down-show-hide">
+                    <h2>New Position Requests/Updates - Students</h2>
+                    <p><strong>Description:</strong><br>Request or update a student position. New student positions may be requested for departmental reorganizations, special projects, new grants or contracts, workload increases, position combinations, etc. New student position updates may be requested due to reclassifications, inactivating positions, changing working titles, transferring positions, reorganizations, changing full time equivalent (FTE) status, changing Reports-To information, etc.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Position Requests and Modifications Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates new/update position request through Position Requests and Modifications form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department Approver approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals. </td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards emails notification of approvals to Budget Office, HRTC, & Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewPositionRequestsUpdatesStudents -->
+                <div id="PositionFundingChangesthroughPeopleSoftsPositionManagementCenter" class="drop-down-show-hide">
+                    <h2>Position Funding Changes (through PeopleSoft's Position Management Center)</h2>
+                    <p><strong>Description:</strong><br>Request a position funding change. Position funding changes can be made to change the account associated with a position, change the funding percent from multiple accounts, etc.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Position Funding Changes Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department submits the Position Funding Changes form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves funding change request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>If position is grant- funded, ORSP approves request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Budget Office approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Budget Office receives an email notification of approvals.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office enters the encumbrance, confirms funding, and if applicable, indicates if it is a budgeted permanent position.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /PositionFundingChangesthroughPeopleSoftsPositionManagementCenter -->
+                <div id="JobPostingsStaff" class="drop-down-show-hide">
+                    <h2>Job Postings - Staff</h2>
+                    <p><strong>Description:</strong><br>Request a staff job posting. A job posting may be requested to recruit for a position.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper/Electronic Form Process</td>
+                                        <td>HRAC Form/Request to Recruit Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department submit HRAC form to VP for approval.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>VP approves the job posting request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRAC Committee provides recommendation.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>President's Office reviews  request. President's Office sends an email notification of the approved request to the Compensation Manager.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Compensation Manager sends an email notification to the Department of the posting approval.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates Request to Recruit form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HR Recruiting Team approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HR Recruiting Team receives an email notification of approvals.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HR Recruiting Team processes the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR Recruiting Team forwards email notification of approvals to Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /JobPostingsStaff -->
+                <div id="NewHiresthroughPeopleSoftRecruitmentStaff" class="drop-down-show-hide">
+                    <h2>New Hires (through PeopleSoft Recruitment) - Staff</h2>
+                    <p><strong>Description:</strong><br>Request a staff new hire. A staff new hire may be requested to extend an offer to an applicant. This is for applicants who have applied through PeopleSoft Recruitment website. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>New Hire/Rehire Request Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates the New Hire form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>If position is grant-funded, ORSP approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Budget Office approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR Recruiting Team sends job offer documentation (offer letter, CBC, etc.) to Employee. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee accepts offer.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HR Recruiting Team approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits new hire paperwork to HR.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR sends paperwork to HRTC for processing.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC processes the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards email notification of approvals to Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewHiresthroughPeopleSoftRecruitmentStaff -->
+                <div id="NewHiresDirectHireStaff" class="drop-down-show-hide">
+                    <h2>New Hires (Direct Hire) - Staff</h2>
+                    <p><strong>Description:</strong><br>Request a staff new hire. A staff new hire may be requested to extend an offer to an individual who did not go through the recruitment process.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>HRAC Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department submit HRAC form to VP for approval.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>VP approves new hire request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRAC Committee provides recommendation.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>President's Office reviews  request. President's Office sends an email notification of the approved request to the Compensation Manager.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Compensation Manager sends an email notification to the Department of the position approval.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR Recruiting Team sends job offer documentation (offer letter, CBC, etc.) to Employee. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee accepts offer.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits new hire paperwork to HR.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR sends paperwork to HRTC for processing.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC processes the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards email notification of approvals to Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewHiresDirectHireStaff -->
+                <div id="NewHiresDirectHireLecturer" class="drop-down-show-hide">
+                    <h2>New Hires (Direct Hire) - Lecturer</h2>
+                    <p><strong>Description:</strong><br>Request a lecturer new hire. A lecturer new hire may be requested to extend an offer to an individual who did not go through the recruitment process.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>New Hire/Rehire Request Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates the New Hire form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>If position is grant- funded, ORSP approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Budget Office approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department sends job offer documentation (offer letter, CBC, etc.) to Employee. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee accepts offer.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HR Recruiting Team approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits new hire paperwork to HR.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR sends paperwork to HRTC for processing.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC processes the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards email notification of approvals to Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewHiresDirectHireLecturer -->
+                <div id="NewHiresDirectHireStudents" class="drop-down-show-hide">
+                    <h2>New Hires (Direct Hire) - Students</h2>
+                    <p><strong>Description:</strong><br>Request a student new hire. A student new hire may be requested to an individual who did not go through the recruitment process.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>New Hire/Rehire Request Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department initiates the New Hire form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>If position is grant- funded, ORSP approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department sends job offer documentation (offer letter, CBC, etc.) to Employee. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee accepts offer.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HR Recruiting Team approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>HRTC receives an email notification of approvals.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits new hire paperwork to HR.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HR sends paperwork to HRTC for processing.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC processes the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC forwards email notification of approvals to Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewHiresDirectHireStudents -->
+                <div id="AdHocSalaryChangesStudents" class="drop-down-show-hide">
+                    <h2>Ad Hoc Salary Changes - Students</h2>
+                    <p><strong>Description:</strong><br>Request an ad hoc salary change for student employees, Ad-hoc salary changes may be requested due to an increase in an employees duties and responsibilities.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Request for Salary Increase Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department submits Request for Salary Increase form to Account Owner. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Account Owner approves request for salary increase. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>VP approves request.  VP sends a signed hardcopy of the approved request to the Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department emails a signed copy of the form to the HRTC & Compensation  Manager.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC sends email notification of the processed request to the  Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /AdHocSalaryChangesStudents -->
+                <div id="AdditionalPaySupplementsCollege" class="drop-down-show-hide">
+                    <h2>Additional Pay/Supplements - College</h2>
+                    <p><strong>Description:</strong><br>Request additional pay/supplements for an employee in a college. Additional pay/supplements can be requested for employees deemed to require compensation in additional to their regular pay. An additional pay/supplement request may be due to overloads, bonuses, awards, temporary additional duties, etc.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Email/Supplemental Approval Request Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>CAO submits email request to Dean. If position is grant-funded, SAR form request is submitted to the Dean.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Dean approves request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>If position is grant-funded, ORSP approves request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>If it is a staff position, Compensation Manager approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Provost Office approves request. Provost Office sends an email notification of the approved request to the College. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Once all approvals are submitted, the CAO sends the Payroll Office an email notification of the approved request, with supporting documentation.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Payroll Office enters request in PeopleSoft and sends notification of processed request to the Budget Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Payroll Office sends email notification of the processed request to the  Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office confirms funding, makes any necessary changes to the Department Budget Table, and processes the request in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /AdditionalPaySupplementsCollege -->
+                <div id="AdditionalPaySupplementsDivision" class="drop-down-show-hide">
+                    <h2>Additional Pay/Supplements - Division</h2>
+                    <p><strong>Description:</strong><br>Request additional pay/supplements for an employee in a division. Additional pay/supplements can be requested for employees deemed to require compensation in additional to their regular pay. An additional pay/supplement request may be due to bonuses, awards, temporary additional duties, etc.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Email  </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>VP sends email request for additional pay/supplements to President's Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>President's Office approves request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Presidents Office notifies VP of approved request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>VP sends an email notification to the Department of the approved request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>If position is grant-funded, ORSP approves request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>If it is a staff position, Compensation Manager approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Once all approvals are submitted, the Department sends the Payroll Office an email notification of the approved request, with supporting documentation.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Payroll Office enters request in PeopleSoft and sends notification of processed request to the Budget Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Payroll Office sends email notification of the processed request to the  Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office confirms funding, makes any necessary changes to the Department Budget Table, and processes the request in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /AdditionalPaySupplementsDivision -->
+                <div id="VoluntarySeparationsRetirements" class="drop-down-show-hide">
+                    <h2>Voluntary Separations/Retirements</h2>
+                    <p><strong>Description:</strong><br>Request a voluntary separation/retirement. A voluntary separation/retirement can be requested when an employee provides notice of resignation or retirement.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Clearance Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department submits Clearance Form to Department Head.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department Head approves request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department emails the approved form to HRTC.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>HRTC enters the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>HRTC sends email notification of the processed request to the  Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /VoluntarySeparationsRetirements -->
+                <div id="Timesheets" class="drop-down-show-hide">
+                    <h2>Timesheets</h2>
+                    <p><strong>Description:</strong><br>Submit a timesheet. A timesheet can be submitted for all employees that are required to submit a record of hours worked (hourly employees). Faculty, Classified, and A&P employees are required to submit timesheets on an exceptions basis only. Exceptions include: overtime, comp time, etc.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Timesheet Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits Timesheet form to Manager.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Manager approves timesheet.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Account Owner approves timesheet.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department (Timekeeper) enters the  timesheet in PeopleSoft. Timesheet is final approved.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /Timesheets -->
+                <div id="LeaveRequests" class="drop-down-show-hide">
+                    <h2>Leave Requests</h2>
+                    <p><strong>Description:</strong><br>Submit a leave request. A leave request can be submitted for employees who are eligible for leave. Leave types include: vacation, sick, bereavement, jury duty, and educational activities. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Leave Request Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits Leave Request form to Manager.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Manager approves the leave request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department (Timekeeper) enters the leave request in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /LeaveRequests -->
+                <div id="SickLeaveDonations" class="drop-down-show-hide">
+                    <h2>Sick Leave Donations</h2>
+                    <p><strong>Description:</strong><br>Request a sick leave donation. Employees can request to donate hours to the sick leave pool. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Sick Leave Donations Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Employee submits Sick Leave Donation form to Benefits Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Benefits Office reviews and approves sick leave donation request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Benefits Office enters the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Benefits Office sends email notification of processed request to Employee.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /SickLeaveDonations -->
+                <div id="TravelAuthorizations" class="drop-down-show-hide">
+                    <h2>Travel Authorizations</h2>
+                    <p><strong>Description:</strong><br>Request a travel authorization. A travel authorization is required to authorize travel for an employee who will be traveling on university-related business for more than half a day, regardless of whether or not there is a cost to the University.  </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Travel Voucher Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department submits a request for a travel authorization through the Travel Voucher form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department receives an email notification of approvals for processing in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department enters the travel authorization in PeopleSoft. Authorization is final approved.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>If cash advance requested, PeopleSoft system confirms funding is available for travel authorization.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Travel Office notifies Department of any funding errors.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /TravelAuthorizations -->
+                <div id="CashAdvances" class="drop-down-show-hide">
+                    <h2>Cash Advances</h2>
+                    <p><strong>Description:</strong><br>Request a cash advance.  A travel advance may be requested for an employee who requires cash when traveling on university-related business.  A cash advance may not exceed 90% of per diem (meals and lodging).  Refer to Travel Advance policy regarding limitations for receipt of a cash advance. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Travel Voucher Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>If cash advanced requested when submitting a travel authorization, Electronic Form Process  emails the traveler the link to the Authorization to Payroll Deduct form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Traveler and Department receive reminder notification to submit form if form is not submitted after 1 business day.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Traveler submits the Authorization to Payroll Deduct form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Travel Office receives an email notification of approvals & supporting documentation (travel authorization PDF & authorization to deduct form information) 10 days prior to date of travel.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Travel Office processes the cash advance in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /CashAdvances -->
+                <div id="TravelExpenseReimbursements" class="drop-down-show-hide">
+                    <h2>Travel Expense Reimbursements</h2>
+                    <p><strong>Description:</strong><br>Request a travel expense reimbursement. Request a travel expense reimbursement for employees who have incurred a university-related business travel expense on authorized travel.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Travel Voucher Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>One day after traveler returns from a trip, Electronic Form Process sends Department an email request to initiate travel expense reimbursement.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department receives reminder notification if request is not submitted 5 business days after the  first email request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department uploads scanned copies of receipts and submits the request for a travel expense reimbursement.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Traveler approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the  request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department & Accounts Payable Office receive an email notification of approvals & documentation (travel authorization PDF & reimbursement) for processing in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department enters the reimbursement in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Accounts Payable Office runs a report to review pending expense reimbursements. The Accounts Payable Office processes the reimbursement in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /TravelExpenseReimbursements -->
+                <div id="BudgetTransfers" class="drop-down-show-hide">
+                    <h2>Budget Transfers</h2>
+                    <p><strong>Description:</strong><br>Request a budget transfer between non-grant accounts. Budget transfers can be used to transfer funds between accounts or to make budget adjustments.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Budget Transfer Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department submits a Budget Transfer form.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Budget Office approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department & Budget Office receive an email notification of approvals for processing in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department enters the budget transfer in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office runs a query for pending transfers. </td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Budget Office confirms funding, and processes the budget transfer in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /BudgetTransfers -->
+                <div id="BudgetTransfersGrants" class="drop-down-show-hide">
+                    <h2>Budget Transfers - Grants</h2>
+                    <p><strong>Description:</strong><br>Request a budget transfer between grant accounts. Budget transfers can be used to transfer funds between grants accounts, transfers within budget items in the same grant account or for budget adjustments.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Budget Transfer Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department submits a Grants Budget Transfer form. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Contracts & Grants approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Contracts & Grants receive an email notification of approvals for processing in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Contracts & Grants Office processes the budget transfer in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Contracts & Grants Office forwards email notification of approvals to the Department.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /BudgetTransfersGrants -->
+                <div id="EmployeeReimbursements" class="drop-down-show-hide">
+                    <h2>Employee Reimbursements</h2>
+                    <p><strong>Description:</strong><br>Request a payment for a non-PO voucher or an employee expense reimbursement. Payments can be requested for individuals that have  incurred a university-related business expense. This process will also be used when requesting a travel expense reimbursement without an associated travel authorization.</p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Employee Reimbursements Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department submits an employee reimbursement request and uploads supporting documentation (copies of receipts).</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Employee approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request. </td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department & Accounts Payable Office receive an email notification of approvals for processing in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department enters the reimbursement in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Accounts Payable Office runs a report to review pending expense reimbursements. The Accounts Payable Office processes the reimbursement in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /EmployeeReimbursements -->
+                <div id="VendorPayments" class="drop-down-show-hide">
+                    <h2>Vendor Payments</h2>
+                    <p><strong>Description:</strong><br>Request a payment for a non-PO voucher. Payments can be requested for vendors that have  incurred a university-related business expense. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electronic Form Process</td>
+                                        <td>Vendor Payments Form</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department submits a vendor payment request and uploads supporting documentation (receipts, invoice, etc.)</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Account Owner approves the request.</td>
+                                </tr>
+                                <tr>
+                                    <td class="green"><span class="icon"></span>Department & Accounts Payable Office  receive an email notification of approvals for processing in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Department enters the request in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Accounts Payable Office verifies paperwork and approves in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /VendorPayments -->
+                <div id="NewVendorProcessing" class="drop-down-show-hide">
+                    <h2>New Vendor Processing</h2>
+                    <p><strong>Description:</strong><br>Request a new vendor. Request a new vendor for vendors or suppliers that cannot be found in Miner Mall. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                        <th>Name Of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper</td>
+                                        <td>Supplier Information Form (SIF)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /oneThird -->
+                    <div class="twoThirds gridLast">
+                        <div class="tableWrapper">
+                            <h3>Process Steps</h3>
+                            <div class="LegendInfoToggle">Legend<span>i</span></div>
+                            <div class="LegendInfo">
+                                <table class="processSteps">
+                                    <tr>
+                                        <td class="blue"><span class="icon"></span>Paper Process: Refers to notices and approvals that are collected outside of PeopleSoft and electronic forms.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="green"><span class="icon"></span>Electronic Form Process: Approval processes initiated through a form. Notifications requesting approval are sent through auto-generated emails.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orange"><span class="icon"></span>PeopleSoft Process: Transactions that are initiated directly in PeopleSoft.</td>
+                                    </tr>
+                                </table>
+                            </div><!-- /LegendInfo -->
+                        <table class="processSteps">
+                            <tbody>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department sends vendor the Supplier Information Form (SIF).</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Vendor returns the form to the Department.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Department emails the form to the Purchasing Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Purchasing Office enters the new vendor in PeopleSoft.</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue"><span class="icon"></span>Purchasing Office emails a copy of the form to the Accounts Payable Office.</td>
+                                </tr>
+                                <tr>
+                                    <td class="orange"><span class="icon"></span>Accounts Payable Office enters additional vendor information, and finalizes the request in PeopleSoft.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /NewVendorProcessing -->
+                <div id="PurchaseRequisitions" class="drop-down-show-hide">
+                    <h2>Purchase Requisitions</h2>
+                    <p><strong>Description:</strong><br>Request a purchase requisition. A purchase requisition can be used to initiate a bid, or to purchase goods/services. This process will continue to occur through Miner Mall. </p>
+                    <hr>
+                    <div class="oneThird">
+                        <div class="tableWrapper">
+                            <h3>Forms</h3>
+                            <table class="typeAndNameOfForms">
+                                <thead>
+                                    <tr>
+                                        <th>Type of Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Miner Mall</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /oneThird -->
+                        <div class="twoThirds gridLast">
+                        </div><!-- /tableWrapper -->
+                        <table class="processSteps">
+                            <thead>
+                                <tr>
+                                    <th>Process Steps</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div><!-- /tableWrapper -->
+                    </div><!-- /twoThirds -->
+                </div><!-- /PurchaseRequisitions -->
+            </div><!-- /container -->
+        </div>
+        <!-- /ContentPane -->
+
+        <div class="mainContent" runat="server" id="mainContent2">
+        </div><!-- /MainContent2 -->
+
+        <div class="mainContent" runat="server" id="mainContent3">
+        </div><!-- /MainContent3 -->
+
+
+        <div id="footer1" class="mobileNo">
+            <div class="container">
+                <div class="utepFooterLogo">
+                    <img src="images/utepLogoFooter.png" alt="UTEP" Title="UTEP">
+                </div><!-- /utepFooterLogo -->
+                <div class="vpbaLinksWrapper">
+                    <h2>Vice President for Business Affairs Departments</h2>
+                    <div class="vpbaLinksCol">
+                        <h3><span>Auxiliary </span>Services:</h3>
+                        <ul>
+                            <li style="text-align: left;"><a href="https://admin.utep.edu/Default.aspx?tabid=50621">Parking &amp; Transportation</a></li>
+                            <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?langId=-1&storeId=15728&demoKey=d&catalogId=10001">University Bookstore</a></li>
+                            <li><a href="http://www.utepspecialevents.com/">Office of Special Events</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/utc">University Ticket Center</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/minergold">Miner Gold Card Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/sodexho">University Food Services</a></li>
+                            <li><a href="http://www.utep.edu/paydirtprinting">Printing Services</a></li>
+                            <li><a href="http://www.utep.edu/mailservices">Mail Services</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol">
+                        <h3><span>Facilities </span>Management:</h3>
+                        <ul>
+                            <li><a href="http://admin.utep.edu/facilities/">Facilities Services</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/facilities">Planning &amp; Construction</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/spires">Space Information Resources (SPIRES)</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol">
+                        <h3><span>Financial </span>Services:</h3>
+                        <ul>
+                            <li><a href="http://finsvcs.utep.edu/main">Accounting &amp; Business Services</a></li>
+                            <li><a href="http://finsvcs.utep.edu/Main/Budget/Main.aspx">Budget Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/pgs">Purchasing &amp; General Services</a></li>
+                            <li><a href="http://sbs.utep.edu">Student Business Services </a> </li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol gridLast">
+                        <h3><span>Purchasing &amp; </span>General Services:</h3>
+                        <ul>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1636">Central Receiving</a></li>
+                            <li><a href="http://admin.utep.edu/LinkClick.aspx?link=http%3a%2f%2fadmin.utep.edu%2fDefault.aspx%3ftabid%3d67818&tabid=1419&mid=3645">HUB Program</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1616">Purchasing Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1677">Records Management</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    
+                    <div class="clear"></div>
+                    <div class="sendWebsiteFeedback">
+                        <p><a href="mailto: eerodriguez@utep.edu?subject=VPBA Site Feedback">Submit Website Feedback</a></p>
+                    </div><!-- /sendWebsiteFeedback -->
+                </div><!-- /vpbaLinksWrapper -->
+                <div class="clear"></div>
+            </div><!-- /container -->
+        </div><!-- /footer1 -->
+
+        <div id="footer2">
+            <div class="container">
+                <div class="requiredLinks">
+                        <ul>
+                            <li><a href="#">State Reports</a></li>
+                            <li><a href="#">UT System</a></li>
+                            <li><a href="#">Customer Service Statement</a></li>
+                            <li><a href="#">Site Feedback</a></li>
+                            <li><a href="#">Required Links</a></li>
+                            <li><a href="#">CLERY Crime Statistics</a></li>
+                            <li><a href="#">Report Fraud</a></li>
+                        </ul>
+                </div><!-- /requiredLinks -->
+                <div class="utepContactInfo">
+                    <ul>
+                        <li>The University of Texas at El Paso.</li>
+                        <li class="clear">500 West University Avenue,</li>
+                        <li>El Paso, Texas 79968</li>
+                        <li class="clear">(915) 747-5000</li>
+                    </ul>
+                </div><!-- /utepContactInfo -->
+            </div><!-- /container -->
+        </div><!-- /footer2 -->
+
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/TimeCircles.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+            $('.drop-down-show-hide').hide();
+
+            $('#goliveDropDown').change(function () {
+                $(this).find("option").each(function () {
+                    $('#' + this.value).slideUp();
+                });
+                $('#' + this.value).slideDown();
+            });
+            $('.LegendInfoToggle').hover(function() {
+                $('.LegendInfo').slideToggle('easeInOutBounce');
+            });
+            jQuery("#_Portals__default_").attr( "href", "#" );
+
+        </script>
+
+    </body>
+</html>

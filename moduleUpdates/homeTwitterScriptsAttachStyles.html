@@ -1,0 +1,14 @@
+<script>
+// CheckIfTwitterLoaded and add Styles, and change Text
+jQuery(function checkIfTwitterLoaded(){
+    var elIframeHead = jQuery( "#twitter-widget-0" ).contents().find( "head" );
+    var elIframeLinks = jQuery( "#twitter-widget-0" ).contents().find( "a" );
+    var elTitle = jQuery ( "#twitter-widget-0" ).contents().find("h1.summary a")
+    if ( elIframeLinks.is('.customisable-highlight') ){
+        jQuery(elIframeHead).append( "<link rel='stylesheet' href='http://admin.utep.edu/Portals/1878/customStyles/customStyles.css'>" );
+        jQuery(elTitle).text('@UTEPPeopleSoft News');
+    } else {
+        setTimeout(checkIfTwitterLoaded, 500);
+    }
+});
+</script>
