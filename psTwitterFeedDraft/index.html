@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/skin.css">
+        <link rel="stylesheet" href="css/customStyles.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    </head>
+    <body style="" class="">
+        <div class="header">
+            <div class="container">
+                <div class="utepLogo">
+                    <img src="images/UTEPPeopleSoft.png" alt="UTEP PeopleSoft" title="UTEP PeopleSoft">
+                </div><!-- /logo -->
+                <div class="psUTShareLogosWrapper mobileNo">
+                <img src="images/PeopleSoftLogo.png" alt="PeopleSoft" title="PeopleSoft" class="pslogo" width="230">
+                <img src="images/utShareLogo.png" alt="UTShare" title="UTShare" class="utShareLogo" width="165">
+                </div><!-- /psUTShareLogosWrapper -->
+            </div><!-- container -->
+        </div><!-- /header -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <ul class="nav">    
+                        <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/peoplesoft">Home</a></li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=72901">About</a>
+                            <ul>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=68263">Project Team</a>        </li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73839">PeopleSoft Browser Support</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=73831">Crosswalk Newsletter</a></li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=72558">Training</a>
+                            <ul>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73838">Classes</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73837">Calendar</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73836">Documents</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73835">UPK</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73834">Help</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=72902">Resources</a>
+                            <ul>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=68266">FAQs</a></li>
+                                <li><a href="http://admin.utep.edu/Default.aspx?tabid=73841">Cutover Deadlines</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=68280">Calendar of Events</a></li>
+                        <li><a href="http://admin.utep.edu/Default.aspx?tabid=68264">Contact</a></li>
+                    </ul>
+                    <div class="customNav" runat="server" id="customNav">
+                    </div><!-- /customNav -->
+
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                    <div class="googleSearchWrapper">
+                        <form id="cse-search-box" action="http://www.utep.edu/searchresults.htm" target="_blank">
+                            <label for="googlesearch">&nbsp;<input type="hidden" name="cx" value="014954356897977601153:qnso4vt6v3o">
+                                <input type="hidden" name="cof" value="FORID:11">
+                                <input type="hidden" name="ie" value="UTF-8">
+                                <input id="googlesearch" type="text" name="q" size="15">
+                                <input type="submit" name="sa" value="Go">
+                            </label><br>
+                        <input name="siteurl" type="hidden" value="www.utep.edu/"><input name="ref" type="hidden" value=""><input name="ss" type="hidden" value=""></form>
+                         <noscript>Google Search Box.</noscript>
+                    </div><!-- /googleSearchWrapper -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
+
+        <div class="pageTitle flexslider fadeIn" runat="server" id="pageTitle">
+            <ul class="slides"> <li class="welcomeSlide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 1; opacity: 0;"> <div class="container breakColsMobile"> <div class="oneHalf mobileNo center"> <table class="fixedHeight"> <tbody> <tr> <td class="center"> <img src="http://admin.utep.edu/Portals/1878/images/UTEP-PeopleSoft-Support.jpg" alt="PeopleSoft Support" title="PeopleSoft Support" class="pictureFrame" width="444"> </td> </tr> </tbody> </table> </div> <!-- /oneHalf --> <div class="oneHalf mandalaBackground breakColMobile gridLast"> <table> <tbody> <tr> <td> <h2>PeopleSoft Support</h2> <p class="left">If you have a PeopleSoft-related inquiry or issue, call the Help Desk at extension 4357 (off-campus: 747-5257) or email helpdesk@utep.edu.</p> <p><a href="http://admin.utep.edu/Default.aspx?tabid=73860#support" class="btn primaryBtn">Learn More</a></p> </td> </tr> </tbody> </table> </div> <!-- /oneHalf breakColMobile --> </div> <!-- /containerNarrow --> </li> <li class="orangeSlide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 1; opacity: 0;"> <div class="container breakColsMobile"> <div class="oneHalf mobileNo breakColMobile"> <table class="fixedHeight"> <tbody> <tr> <td class="center"> <img src="http://admin.utep.edu/Portals/1878/images/UTEP-PeopleSoft-Drop-In-Help-Sessions.jpg" alt="PeopleSoft Support" title="PeopleSoft Support" class="pictureFrame" width="444"> </td> </tr> </tbody> </table> </div> <!-- /oneHalf --> <div class="oneHalf mandalaBackground breakColMobile gridLast"> <table> <tbody> <tr> <td> <div class="transBlackBg"> <h2>Drop-In Help Sessions</h2> <p class="left">Beginning <strong>May 5</strong>, drop in the PeopleSoft Lab (Prospect Hall, Room 300) to process your transactions. Every day there will be sessions dedicated to specific HR and Finance transactions. Schedule coming soon. </p> </div> </td> </tr> </tbody> </table> </div> <!-- /oneHalf --> </div> <!-- /containerNarrow --> </li> <li class="welcomeSlide flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 2; opacity: 1;"> <div class="container breakColsMobile"> <div class="oneHalf mobileNo center"> <table class="fixedHeight"> <tbody> <tr> <td class="center"> <img src="http://admin.utep.edu/Portals/1878/images/UTEP-Employee-SelfService.jpg" alt="PeopleSoft Support" title="PeopleSoft Support" class="pictureFrame" width="444"> </td> </tr> </tbody> </table> </div> <!-- /oneHalf --> <div class="oneHalf mandalaBackground breakColMobile gridLast"> <table> <tbody> <tr> <td> <h2>Employee Self Service (ESS)</h2> <p class="left">ESS refers to the PeopleSoft pages where employees can view/update personal data, set up multiple direct deposit accounts, view paystub information, etc. Attend an ESS Open House Session to verify your data.</p> <p><a href="http://admin.utep.edu/Default.aspx?tabid=68280" class="btn primaryBtn">Visit the Calendar of Events</a></p> </td> </tr> </tbody> </table> </div> <!-- /oneHalf breakColMobile --> </div> <!-- /containerNarrow --> </li> <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"> <div class="container"> <table class="fixedHeight"> <tbody> <tr> <td class="center"> <h1>PeopleSoft will help bring UTEP and the UT System into the 21st Century of data management.</h1> <p><a href="http://admin.utep.edu/Default.aspx?tabid=72901" class="btn primaryBtn btnAnimate" style="top: 0px; opacity: 1;">Learn More About the Project</a></p> </td> </tr> </tbody> </table> </div> <!-- /containerNarrow --> </li></ul>
+        </div><!-- /pageTitle -->
+
+
+        <div class="mainContent mainContent1 ContentPane" runat="server" id="ContentPane">
+            <div class="container">
+                <div class="oneHalf center">
+                    <p><a href="https://my.shared.utsystem.edu" target="_blank"><img width="375" alt="Launch PeopleSoft" title="Launch PeopleSoft" src="http://admin.utep.edu/Portals/1878/images/LaunchPeopleSoft.png"></a></p>
+                    <p><a href="https://my.shared.utsystem.edu" target="_blank">Click here to launch PeopleSoft</a></p>
+                </div><!-- /oneHalf -->
+
+                <div class="oneHalf gridLast">
+                    <div class="psTwitterFeed">
+                        <a class="twitter-timeline" href="https://twitter.com/UTEPPeopleSoft" data-widget-id="456527077676568576" data-theme="light"  height="500" lang="EN" data-chrome="nofooter transparent" data-tweet-limit="3">@UTEPPeopleSoft News</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div><!-- /psTwitterFeed -->
+                </div><!-- /oneHalf gridLast -->
+            </div><!-- /container -->
+
+
+
+        </div>
+        <!-- /ContentPane -->
+
+        <div class="mainContent" runat="server" id="mainContent2">
+<hr style="margin: 50px 0px;" />
+<div class="containerNarrow">
+<div class="oneHalf hl"><a class="crosswalk sprite" href="http://admin.utep.edu/Default.aspx?tabid=73831"></a>
+<h3>Crosswalk Newsletter</h3>
+<p>Your guide to understanding the transition to PeopleSoft.</p>
+<p><a href="http://admin.utep.edu/Default.aspx?tabid=73831">Go To Crosswalk Newsletter</a></p>
+</div>
+<!-- /oneHalf -->
+<div class="oneHalf hl gridLast"><a class="PSTraining sprite" href="http://admin.utep.edu/Default.aspx?tabid=72558"></a>
+<h3>Training</h3>
+<p>A variety of tools will be available, including online tutorials, classroom training, and easy-to-access documentation.</p>
+<p><a href="http://admin.utep.edu/Default.aspx?tabid=72558">Go To Training</a></p>
+</div>
+<!-- /oneHalf gridLast -->
+<div class="oneHalf hl"><a class="resources sprite" href="http://admin.utep.edu/Default.aspx?tabid=72902"></a>
+<h3>Resources</h3>
+<p>Presentations, interim approval process forms, the Define to PeopleSoft conversion tool, the chartfield structure, and other project team resources.</p>
+<p><a href="http://admin.utep.edu/Default.aspx?tabid=72902">Go To Resources</a></p>
+</div>
+<!-- /oneHalf -->
+<div class="oneHalf hl gridLast"><a class="cutover sprite" href="http://admin.utep.edu/Default.aspx?tabid=73841"></a>
+<h3>Cutover Deadlines</h3>
+<p>Define/HRMS/Miner Mall transactions that need to be halted to prepare data for transfer into PeopleSoft.</p>
+<p><a href="http://admin.utep.edu/Default.aspx?tabid=73841">Go To Cutover Deadlines</a></p>
+</div>
+<!-- /oneHalf gridLast --></div>
+<!-- /containerNarrow -->
+        </div><!-- /MainContent2 -->
+
+        <div class="mainContent" runat="server" id="mainContent3">
+<div class="pickBg">
+<div class="solidBackgroundContentWrapper">
+            <div class="psTwitterFeed">
+<a class="twitter-timeline" href="https://twitter.com/edgarrsays" data-widget-id="456176472852414464" data-theme="dark"  height="500" lang="EN" data-chrome="nofooter transparent" data-tweet-limit="4">>Tweets by @edgarrsays</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div><!-- /psTwitterFeed -->
+</div><!-- /solidBackgroundContentWrapper -->
+</div><!-- /pickBg -->
+        </div><!-- /MainContent3 -->
+
+
+        <div id="footer1" class="mobileNo">
+            <div class="container">
+                <div class="utepFooterLogo">
+                    <img src="images/utepLogoFooter.png" alt="UTEP" Title="UTEP">
+                </div><!-- /utepFooterLogo -->
+                <div class="vpbaLinksWrapper">
+                    <h2>Vice President for Business Affairs Departments</h2>
+                    <div class="vpbaLinksCol">
+                        <h3><span>Auxiliary </span>Services:</h3>
+                        <ul>
+                            <li style="text-align: left;"><a href="https://admin.utep.edu/Default.aspx?tabid=50621">Parking &amp; Transportation</a></li>
+                            <li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?langId=-1&storeId=15728&demoKey=d&catalogId=10001">University Bookstore</a></li>
+                            <li><a href="http://www.utepspecialevents.com/">Office of Special Events</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/utc">University Ticket Center</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/minergold">Miner Gold Card Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/sodexho">University Food Services</a></li>
+                            <li><a href="http://www.utep.edu/paydirtprinting">Printing Services</a></li>
+                            <li><a href="http://www.utep.edu/mailservices">Mail Services</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol">
+                        <h3><span>Facilities </span>Management:</h3>
+                        <ul>
+                            <li><a href="http://admin.utep.edu/facilities/">Facilities Services</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/facilities">Planning &amp; Construction</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/spires">Space Information Resources (SPIRES)</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol">
+                        <h3><span>Financial </span>Services:</h3>
+                        <ul>
+                            <li><a href="http://finsvcs.utep.edu/main">Accounting &amp; Business Services</a></li>
+                            <li><a href="http://finsvcs.utep.edu/Main/Budget/Main.aspx">Budget Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?alias=admin.utep.edu/pgs">Purchasing &amp; General Services</a></li>
+                            <li><a href="http://sbs.utep.edu">Student Business Services </a> </li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    <div class="vpbaLinksCol gridLast">
+                        <h3><span>Purchasing &amp; </span>General Services:</h3>
+                        <ul>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1636">Central Receiving</a></li>
+                            <li><a href="http://admin.utep.edu/LinkClick.aspx?link=http%3a%2f%2fadmin.utep.edu%2fDefault.aspx%3ftabid%3d67818&tabid=1419&mid=3645">HUB Program</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1616">Purchasing Office</a></li>
+                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=1677">Records Management</a></li>
+                        </ul>
+                    </div><!-- /vpbaLinksCol -->
+                    
+                    <div class="clear"></div>
+                    <div class="sendWebsiteFeedback">
+                        <p><a href="mailto: eerodriguez@utep.edu?subject=VPBA Site Feedback">Submit Website Feedback</a></p>
+                    </div><!-- /sendWebsiteFeedback -->
+                </div><!-- /vpbaLinksWrapper -->
+                <div class="clear"></div>
+            </div><!-- /container -->
+        </div><!-- /footer1 -->
+
+        <div id="footer2">
+            <div class="container">
+                <div class="requiredLinks">
+                        <ul>
+                            <li><a href="#">State Reports</a></li>
+                            <li><a href="#">UT System</a></li>
+                            <li><a href="#">Customer Service Statement</a></li>
+                            <li><a href="#">Site Feedback</a></li>
+                            <li><a href="#">Required Links</a></li>
+                            <li><a href="#">CLERY Crime Statistics</a></li>
+                            <li><a href="#">Report Fraud</a></li>
+                        </ul>
+                </div><!-- /requiredLinks -->
+                <div class="utepContactInfo">
+                    <ul>
+                        <li>The University of Texas at El Paso.</li>
+                        <li class="clear">500 West University Avenue,</li>
+                        <li>El Paso, Texas 79968</li>
+                        <li class="clear">(915) 747-5000</li>
+                    </ul>
+                </div><!-- /utepContactInfo -->
+            </div><!-- /container -->
+        </div><!-- /footer2 -->
+
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/TimeCircles.js"></script>
+        <script src="js/main.js"></script>
+<script>
+// CheckIfTwitterLoaded and add Styles
+$(function checkIfTwitterLoaded(){
+    var elIframeHead = $( "#twitter-widget-0" ).contents().find( "head" );
+    var elIframeLinks = $( "#twitter-widget-0" ).contents().find( "a" );
+    if ( elIframeLinks.is('.customisable-highlight') ){
+        $(elIframeHead).append( "<link rel='stylesheet' href='http://utepcsss-imac-2.local:5757/css/customStyles.css'>" );
+    } else {
+        setTimeout(checkIfTwitterLoaded, 500);
+    }
+});
+</script>
+        <script type="text/javascript">
+            if (window.innerWidth >= 768) {
+                $(window).load(function() {
+                    $('.flexslider').flexslider({
+                        prevText: " ",
+                        nextText: " ",
+                        pauseOnHover: true
+                    });
+                });
+                // Remove preload class from body
+                $(function cleanBody(){
+                    var firstSlide = $('.flexslider li:first-child');
+                    if ( firstSlide.is('.flex-active-slide') ){
+                        $('.flexslider').removeClass('preload');
+                    } else {
+                        setTimeout(cleanBody, 500);
+                    }
+                });
+            }
+            if (window.innerWidth <= 767) {
+                $('ul.slides').remove();
+            }
+        </script>
+
+    </body>
+</html>

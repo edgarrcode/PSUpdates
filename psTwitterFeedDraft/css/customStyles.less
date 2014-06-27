@@ -1,0 +1,511 @@
+@white: #fff;
+@blue: #036;
+@blueMed: #004890;
+@orange: #ff6600;
+@orangeHover: #e15a00;
+@grayDark: #555;
+@grayDarkest: #232323;
+@grayMed: #666;
+@gray: #ddd;
+@grayLight: #eee;
+@grayLightest: #f2f2f2;
+@linkBlue: #008cba;
+@linkBlueHover: #03556e;
+/*Mixins*/
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+}
+.downloadPolicyBtn {
+  background-color: #e6e6e6;
+  border: 1px solid @gray;
+  padding: 10px 0;
+}
+.transition {
+  transition: all ease-in 150ms;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.italicSerif {
+  display: block;
+  font-family: Adobe Caslon Pro times, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+/*HideSolpartMenu*/
+#dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
+  display: none;
+}
+.blueGradient {
+background: #036; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0062c5 0%, #004890 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0062c5), color-stop(100%,#004890)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0062c5 0%,#004890 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', endColorstr='#004890',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*
+ * jQuery Dynatable plugin 0.3.1
+ *
+ * Copyright (c) 2014 Steve Schwartz (JangoSteve)
+ *
+ * Dual licensed under the AGPL and Proprietary licenses:
+ *   http://www.dynatable.com/license/
+ *
+ * Date: Tue Jan 02 2014
+ */
+th a {
+  color: @white;
+}
+th a:hover {
+  color: @white;
+  text-decoration: underline;
+}
+
+.dynatable-search {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.dynatable-per-page {
+  float: left;
+}
+
+.dynatable-pagination-links {
+  float: right;
+  margin-top: 0;
+}
+.dynatable-pagination-links li:first-child {
+  font-weight: bold;
+}
+.dynatable-record-count {
+  clear: left;
+  display: block;
+  float: left;
+  padding: 5px 0;
+}
+
+.dynatable-pagination-links span,
+.dynatable-pagination-links li {
+  display: inline-block;
+}
+
+.dynatable-page-link,
+.dynatable-page-break {
+  display: block;
+  padding: 5px 7px;
+}
+
+.dynatable-page-link {
+  cursor: pointer;
+}
+
+.dynatable-active-page,
+.dynatable-disabled-page {
+  cursor: text;
+}
+.dynatable-active-page:hover,
+.dynatable-disabled-page:hover {
+  text-decoration: none;
+}
+.dynatable-per-page-label {
+  font-weight: bold;
+}
+#dynatable-record-count-HOPTable {
+  font-size: 12px;
+  font-style: italic;
+}
+.dynatable-active-page {
+  background-color: @gray;
+  border-radius: 5px;
+  color: @white;
+}
+.dynatable-active-page:hover {
+  color: @white;
+}
+.dynatable-disabled-page,
+.dynatable-disabled-page:hover {
+  background: none;
+  color: #999;
+}
+/*Edgarr Syles*/
+#HOPTable{
+  border: 1px solid @white;
+  box-shadow: 0 0 1px rgba(0,0,0,.4);
+  margin-bottom: 10px;
+	width: 100%;
+	th a {
+  		color: @white;
+      display: block;
+  	}
+	th {
+		background-color: @blue;
+	}
+	th h2 {
+		display: inline;
+	}
+	tr.even {
+		background-color: #f1f1f1;
+	}
+	td {
+		text-align: left;
+	}
+  td.chapter {
+    text-align: center;
+  }
+}
+.sortByWrapper {
+  text-align: right;
+  span {
+    color: @white;
+  }
+}
+/*Custom Styles*/
+.toolbar {
+  background-color: @blue;
+  padding: 20px;
+  overflow: auto;
+  h3 {
+    color: @white;
+    margin: 0;
+  }
+  .clearResults {
+    border-radius: 3px;
+    float: right;
+    padding: 4px;
+  }
+}
+
+/*Google Search Styles*/
+body {
+.gsc-control-cse{background-color:@grayDark;}
+#___gcse_0 {box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);margin: 0 auto 20px;}
+#___gcse_0 td{border: medium none;}
+.gsib_b{padding: 4px 0 0;}
+.gsc-control-cse {background-color: @blue; border-color: @blue;}
+}
+
+#___gcse_0 .gsc-adBlock {display: none!important;}
+#dnn_ctr169076_ContentPane {max-width: 1170px; margin: 0 auto;}
+
+
+/*SectionPages*/
+.sectionPage {
+  .pageTitle {
+    text-align: left;
+  }
+}
+.backToHomeBtn {
+  .icon {
+    .sprite;
+    background-position: -26px -1620px;
+    border: 2px solid;
+    border-radius:50%;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    width: 40px; height: 40px;
+  }
+  a {
+    display: inline-block;
+    color: @grayMed;
+    line-height: 40px;
+  }
+}
+
+/*Slider*/
+.pageTitle.flexslider.preload {
+  background: url(../images/loading.gif) no-repeat 50% 50% #f8f8f8;
+  min-height: 315px;
+}
+.welcomeSlide {
+  background-color: @blueMed;
+  color: @white;
+  overflow: auto;
+  h2 {
+    color: @white;
+  }
+  .container {
+    overflow: auto;
+  }
+}
+.orangeSlide {
+  background-color: @orange;
+  color: @white;
+  h2 {
+    color: @white;
+    margin-top: 0;
+  }
+  .transBlackBg {
+    background-color: rgba(0,0,0,.25);
+    border-radius: 4px;
+    padding: 10px;
+  }
+}
+.slideVideoWrapper {
+  margin: 36px auto 0;
+  width: 75%;
+  iframe {
+    border: none;
+    box-shadow: 0px 0px 4px #000;
+  }
+}
+@media(max-width: 991px){
+  .pageTitle.flexslider .container {}
+  .welcomeSlide img {
+    max-width: 320px;
+  }
+}
+@media(min-width: 768px)and(max-width: 991px) {
+  .pageTitle .container {
+    width: 660px;
+  }
+  .pageTitle.flexslider {
+    h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .pageTitle.flexslider.preload {
+    .center;
+    color: @white;
+    background: @blueMed;
+    min-height: 0;
+    .mandalaBackground {
+      padding: 20px 0;
+    }
+    h2 {
+      color: @white;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 0;
+      text-shadow: 0 1px 0px rgba(0,0,0,1);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+/*HomeHighlights*/
+.highlightsWrapper .hl {
+  box-shadow: 0px 0px 1px #ddd;
+  position: relative;
+  a {
+    .transition;
+    border: 1px solid @gray;
+    color: @blue;
+    display: block;
+    overflow: auto;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: #f8f8f8;
+  }
+  table {
+    min-height: 70px;
+    width: 100%;
+    margin: 28px auto 0;
+  }
+  td {
+    .blueGradient;
+    text-align: center;
+    height: 70px;
+    h2 {
+      font-size: 18px;
+      color: @white;
+      margin: 0;
+    }
+  }
+}
+.mandala {
+  background: url(../images/mandalas.png) no-repeat -17px -17px;
+  display: block;
+  height: 46px; width: 46px;
+  position: absolute; top: -23px; left: 50%; margin-left: -23px;
+  color: @white; font-size: 12px;
+  line-height: 46px;
+}
+@media(min-width: 768px)and(max-width: 991px) {
+  .oneFourth.hl {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .oneFourth.hl.even {
+    margin-right: 0;
+  }
+}
+@media(max-width: 767px) {
+  .highlightsWrapper .hl {
+    margin-top: 54px;
+  }
+}
+/*Pages Banners*/
+.pageTitle {
+  text-align: left;
+  .headingHL, .caption {
+    display: inline;
+    color: @white;
+    padding: 3px;
+  }
+}
+.pageTitle {
+  padding: 0;
+  overflow: hidden;
+  .pictureFrame {
+    margin-top: 20px;
+    width: auto;
+    max-height: 250px;
+  }
+  table {
+    height: 320px;
+    width: 100%;
+    table-layout: fixed;
+    td {
+      text-align: center;
+      padding: 0;
+  }
+}
+.mandalaBackground {
+  background: url(../images/mandalaBackground.png) no-repeat center center;
+  position: relative; top: 0; bottom: 0;
+  }
+}
+.section1 .pageTitle {
+  background: url(../images/UTEPIntroUnivAdminB.jpg) no-repeat center top fixed @blueMed;
+  background-size: 100% auto;
+}
+.section2 .pageTitle {
+  background: url(../images/UTEPstudentAffairsB.jpg) no-repeat right top fixed @blueMed;
+  background-size: 100% auto;
+}
+.section3 .pageTitle {
+  background: url(../images/UTEPacademicAffairsB.jpg) no-repeat center top fixed @blueMed;
+  background-size: 100% auto;
+}
+.section4 .pageTitle {
+  background: url(../images/utepResearchB.jpg) no-repeat center 0 fixed @blueMed;
+  background-size: 100% auto;
+}
+.section5 .pageTitle {
+  background: url(../images/UTEPhumanResourcesB.jpg) no-repeat center -20px fixed @blueMed;
+  background-size: 100% auto;
+}
+.section6 .pageTitle {
+  background: url(../images/UTEPequalOpportunityB.jpg) no-repeat center -20px fixed @blueMed;
+  background-size: 100% auto;
+}
+.section7 .pageTitle {
+  background: url(../images/UTEPFinancialServicesB.jpg) no-repeat center -100px fixed @blueMed;
+  background-size: 100% auto;
+}
+.section8 .pageTitle {
+  background: url(../images/UTEPfacilitiesServicesB.jpg) no-repeat center -100px fixed @blueMed;
+  background-size: 100% auto;
+}
+@media(max-width: 1200px) {
+  .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, {
+    .pageTitle{
+      background-position: center top;
+      background-size: 1200px auto;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .mandalaBackground table {
+    height: 100px;
+  }
+  .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, {
+    .pageTitle{
+      background-image: none;
+      .mandalaBackground {
+        background-size: 50% auto;
+      }
+      h1 {
+        font-size: 16px;
+      }
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*SinglePageTemplate*/
+.rightSidebarLayout {
+  .pageTitle {
+    background-color: @blueMed;
+  }
+  .mandalaBackground {
+    background-position: center right;
+    table {
+      height: 200px;
+      td {
+        .left;
+      }
+    }
+
+  }
+}
+/*Home GoLiveDate*/
+.goLiveDateWrapper {
+	.center;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+}	
+.goLiveDateWrapper .glDate {
+	margin-top: 16px;
+	border-radius: 3px 3px 0px 0px;
+	background-color: rgb(248, 248, 248);
+	font-weight: 100;
+	font-size: 44px;
+	padding: 20px 0px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.goLiveDateWrapper .glTitle {
+	background: none repeat scroll 0% 0% rgb(255, 102, 0);
+	border-radius: 0px 0px 3px 3px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	font-weight: 400;
+}
+.ua-ie-8 .heroLayout .marginFix {
+	margin-top: 240px;
+}
+
+/*TwitterFeed*/
+#twitter-widget-0 {
+
+}
+.timeline .stream {
+}
+
+.h-entry.tweet {
+	border-bottom-color: #555 !important;
+}
+.customisable-highlight {
+	color: #fff !important;
+}

@@ -1,0 +1,544 @@
+/*Mixins*/
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+}
+.downloadPolicyBtn {
+  background-color: #e6e6e6;
+  border: 1px solid #dddddd;
+  padding: 10px 0;
+}
+.transition {
+  transition: all ease-in 150ms;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.italicSerif {
+  display: block;
+  font-family: Adobe Caslon Pro times, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+/*HideSolpartMenu*/
+#dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
+  display: none;
+}
+.blueGradient {
+  background: #036;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0062c5), color-stop(100%, #004890));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #0062c5 0%, #004890 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0062c5', endColorstr='#004890', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+/*
+ * jQuery Dynatable plugin 0.3.1
+ *
+ * Copyright (c) 2014 Steve Schwartz (JangoSteve)
+ *
+ * Dual licensed under the AGPL and Proprietary licenses:
+ *   http://www.dynatable.com/license/
+ *
+ * Date: Tue Jan 02 2014
+ */
+th a {
+  color: #ffffff;
+}
+th a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.dynatable-search {
+  float: right;
+  margin-bottom: 10px;
+}
+.dynatable-per-page {
+  float: left;
+}
+.dynatable-pagination-links {
+  float: right;
+  margin-top: 0;
+}
+.dynatable-pagination-links li:first-child {
+  font-weight: bold;
+}
+.dynatable-record-count {
+  clear: left;
+  display: block;
+  float: left;
+  padding: 5px 0;
+}
+.dynatable-pagination-links span,
+.dynatable-pagination-links li {
+  display: inline-block;
+}
+.dynatable-page-link,
+.dynatable-page-break {
+  display: block;
+  padding: 5px 7px;
+}
+.dynatable-page-link {
+  cursor: pointer;
+}
+.dynatable-active-page,
+.dynatable-disabled-page {
+  cursor: text;
+}
+.dynatable-active-page:hover,
+.dynatable-disabled-page:hover {
+  text-decoration: none;
+}
+.dynatable-per-page-label {
+  font-weight: bold;
+}
+#dynatable-record-count-HOPTable {
+  font-size: 12px;
+  font-style: italic;
+}
+.dynatable-active-page {
+  background-color: #dddddd;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.dynatable-active-page:hover {
+  color: #ffffff;
+}
+.dynatable-disabled-page,
+.dynatable-disabled-page:hover {
+  background: none;
+  color: #999;
+}
+/*Edgarr Syles*/
+#HOPTable {
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  width: 100%;
+}
+#HOPTable th a {
+  color: #ffffff;
+  display: block;
+}
+#HOPTable th {
+  background-color: #003366;
+}
+#HOPTable th h2 {
+  display: inline;
+}
+#HOPTable tr.even {
+  background-color: #f1f1f1;
+}
+#HOPTable td {
+  text-align: left;
+}
+#HOPTable td.chapter {
+  text-align: center;
+}
+.sortByWrapper {
+  text-align: right;
+}
+.sortByWrapper span {
+  color: #ffffff;
+}
+/*Custom Styles*/
+.toolbar {
+  background-color: #003366;
+  padding: 20px;
+  overflow: auto;
+}
+.toolbar h3 {
+  color: #ffffff;
+  margin: 0;
+}
+.toolbar .clearResults {
+  border-radius: 3px;
+  float: right;
+  padding: 4px;
+}
+/*Google Search Styles*/
+body .gsc-control-cse {
+  background-color: #555555;
+}
+body #___gcse_0 {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 20px;
+}
+body #___gcse_0 td {
+  border: medium none;
+}
+body .gsib_b {
+  padding: 4px 0 0;
+}
+body .gsc-control-cse {
+  background-color: #003366;
+  border-color: #003366;
+}
+#___gcse_0 .gsc-adBlock {
+  display: none!important;
+}
+#dnn_ctr169076_ContentPane {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/*SectionPages*/
+.sectionPage .pageTitle {
+  text-align: left;
+}
+.backToHomeBtn .icon {
+  background: url(../images/sprite.png) no-repeat;
+  background-position: -26px -1620px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.backToHomeBtn a {
+  display: inline-block;
+  color: #666666;
+  line-height: 40px;
+}
+/*Slider*/
+.pageTitle.flexslider.preload {
+  background: url(../images/loading.gif) no-repeat 50% 50% #f8f8f8;
+  min-height: 315px;
+}
+.welcomeSlide {
+  background-color: #004890;
+  color: #ffffff;
+  overflow: auto;
+}
+.welcomeSlide h2 {
+  color: #ffffff;
+}
+.welcomeSlide .container {
+  overflow: auto;
+}
+.orangeSlide {
+  background-color: #ff6600;
+  color: #ffffff;
+}
+.orangeSlide h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+.orangeSlide .transBlackBg {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 10px;
+}
+.slideVideoWrapper {
+  margin: 36px auto 0;
+  width: 75%;
+}
+.slideVideoWrapper iframe {
+  border: none;
+  box-shadow: 0px 0px 4px #000;
+}
+@media (max-width: 991px) {
+  .welcomeSlide img {
+    max-width: 320px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pageTitle .container {
+    width: 660px;
+  }
+  .pageTitle.flexslider h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .pageTitle.flexslider p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .pageTitle.flexslider.preload {
+    text-align: center;
+    color: #ffffff;
+    background: #004890;
+    min-height: 0;
+  }
+  .pageTitle.flexslider.preload .mandalaBackground {
+    padding: 20px 0;
+  }
+  .pageTitle.flexslider.preload h2 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-shadow: 0 1px 0px #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pageTitle.flexslider.preload p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*HomeHighlights*/
+.highlightsWrapper .hl {
+  box-shadow: 0px 0px 1px #ddd;
+  position: relative;
+}
+.highlightsWrapper .hl a {
+  transition: all ease-in 150ms;
+  border: 1px solid #dddddd;
+  color: #003366;
+  display: block;
+  overflow: auto;
+  text-decoration: none;
+}
+.highlightsWrapper .hl a:hover {
+  background-color: #f8f8f8;
+}
+.highlightsWrapper .hl table {
+  min-height: 70px;
+  width: 100%;
+  margin: 28px auto 0;
+}
+.highlightsWrapper .hl td {
+  background: #036;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0062c5), color-stop(100%, #004890));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #0062c5 0%, #004890 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0062c5', endColorstr='#004890', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
+  height: 70px;
+}
+.highlightsWrapper .hl td h2 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+}
+.mandala {
+  background: url(../images/mandalas.png) no-repeat -17px -17px;
+  display: block;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  margin-left: -23px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 46px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .oneFourth.hl {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .oneFourth.hl.even {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .highlightsWrapper .hl {
+    margin-top: 54px;
+  }
+}
+/*Pages Banners*/
+.pageTitle {
+  text-align: left;
+}
+.pageTitle .headingHL,
+.pageTitle .caption {
+  display: inline;
+  color: #ffffff;
+  padding: 3px;
+}
+.pageTitle {
+  padding: 0;
+  overflow: hidden;
+}
+.pageTitle .pictureFrame {
+  margin-top: 20px;
+  width: auto;
+  max-height: 250px;
+}
+.pageTitle table {
+  height: 320px;
+  width: 100%;
+  table-layout: fixed;
+}
+.pageTitle table td {
+  text-align: center;
+  padding: 0;
+}
+.pageTitle .mandalaBackground {
+  background: url(../images/mandalaBackground.png) no-repeat center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+.section1 .pageTitle {
+  background: url(../images/UTEPIntroUnivAdminB.jpg) no-repeat center top fixed #004890;
+  background-size: 100% auto;
+}
+.section2 .pageTitle {
+  background: url(../images/UTEPstudentAffairsB.jpg) no-repeat right top fixed #004890;
+  background-size: 100% auto;
+}
+.section3 .pageTitle {
+  background: url(../images/UTEPacademicAffairsB.jpg) no-repeat center top fixed #004890;
+  background-size: 100% auto;
+}
+.section4 .pageTitle {
+  background: url(../images/utepResearchB.jpg) no-repeat center 0 fixed #004890;
+  background-size: 100% auto;
+}
+.section5 .pageTitle {
+  background: url(../images/UTEPhumanResourcesB.jpg) no-repeat center -20px fixed #004890;
+  background-size: 100% auto;
+}
+.section6 .pageTitle {
+  background: url(../images/UTEPequalOpportunityB.jpg) no-repeat center -20px fixed #004890;
+  background-size: 100% auto;
+}
+.section7 .pageTitle {
+  background: url(../images/UTEPFinancialServicesB.jpg) no-repeat center -100px fixed #004890;
+  background-size: 100% auto;
+}
+.section8 .pageTitle {
+  background: url(../images/UTEPfacilitiesServicesB.jpg) no-repeat center -100px fixed #004890;
+  background-size: 100% auto;
+}
+@media (max-width: 1200px) {
+  .section1 .pageTitle,
+  .section2 .pageTitle,
+  .section3 .pageTitle,
+  .section4 .pageTitle,
+  .section5 .pageTitle,
+  .section6 .pageTitle,
+  .section7 .pageTitle,
+  .section8 .pageTitle {
+    background-position: center top;
+    background-size: 1200px auto;
+  }
+}
+@media (max-width: 767px) {
+  .mandalaBackground table {
+    height: 100px;
+  }
+  .section1 .pageTitle,
+  .section2 .pageTitle,
+  .section3 .pageTitle,
+  .section4 .pageTitle,
+  .section5 .pageTitle,
+  .section6 .pageTitle,
+  .section7 .pageTitle,
+  .section8 .pageTitle {
+    background-image: none;
+  }
+  .section1 .pageTitle .mandalaBackground,
+  .section2 .pageTitle .mandalaBackground,
+  .section3 .pageTitle .mandalaBackground,
+  .section4 .pageTitle .mandalaBackground,
+  .section5 .pageTitle .mandalaBackground,
+  .section6 .pageTitle .mandalaBackground,
+  .section7 .pageTitle .mandalaBackground,
+  .section8 .pageTitle .mandalaBackground {
+    background-size: 50% auto;
+  }
+  .section1 .pageTitle h1,
+  .section2 .pageTitle h1,
+  .section3 .pageTitle h1,
+  .section4 .pageTitle h1,
+  .section5 .pageTitle h1,
+  .section6 .pageTitle h1,
+  .section7 .pageTitle h1,
+  .section8 .pageTitle h1 {
+    font-size: 16px;
+  }
+  .section1 .pageTitle .container,
+  .section2 .pageTitle .container,
+  .section3 .pageTitle .container,
+  .section4 .pageTitle .container,
+  .section5 .pageTitle .container,
+  .section6 .pageTitle .container,
+  .section7 .pageTitle .container,
+  .section8 .pageTitle .container {
+    width: 100%;
+  }
+}
+/*SinglePageTemplate*/
+.rightSidebarLayout .pageTitle {
+  background-color: #004890;
+}
+.rightSidebarLayout .mandalaBackground {
+  background-position: center right;
+}
+.rightSidebarLayout .mandalaBackground table {
+  height: 200px;
+}
+.rightSidebarLayout .mandalaBackground table td {
+  text-align: left;
+}
+/*Home GoLiveDate*/
+.goLiveDateWrapper {
+  text-align: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.goLiveDateWrapper .glDate {
+  margin-top: 16px;
+  border-radius: 3px 3px 0px 0px;
+  background-color: #f8f8f8;
+  font-weight: 100;
+  font-size: 44px;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.goLiveDateWrapper .glTitle {
+  background: none repeat scroll 0% 0% #ff6600;
+  border-radius: 0px 0px 3px 3px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: 400;
+}
+.ua-ie-8 .heroLayout .marginFix {
+  margin-top: 240px;
+}
+/*TwitterFeed*/
+.h-entry.tweet {
+  border-bottom-color: #555 !important;
+}
+.customisable-highlight {
+  color: #fff !important;
+}
