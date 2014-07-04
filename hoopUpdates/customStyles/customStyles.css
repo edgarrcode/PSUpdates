@@ -1,0 +1,225 @@
+/*Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+
+h5 {
+	font-size: 1em;
+}
+
+/* --------- DNN Admin Controls ----------- */
+/*ControlPanel*/
+.ControlPanel {
+	background: #F8F8F8;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
+}
+.ControlPanel table:first-child {
+    background: none repeat scroll 0 0 rgba(47, 47, 47, 0.98);
+    color: #fff;
+}
+.ControlPanel td {
+	border: none;
+}
+.ControlPanel input[type="radio"] {
+	margin-left: 20px;
+	margin-right: 4px;
+}
+.ModuleTitle_SubMenu {
+	background-color: #f8f8f8;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* PageFunctions and CommonTasks controls */
+.ControlPanel table table tr:nth-child(2) {
+	border-bottom: 1px solid #ddd;
+}
+.ControlPanel table table tr:nth-child(2) td {
+    padding-top: 0;
+}
+.ControlPanel table table tr:nth-child(1) td, .ControlPanel table table tr:nth-child(3) td {
+	padding: 15px 10px 0;
+}
+/*Add Module Content*/
+.ControlPanel table table table {
+    background: none !important;
+    border: medium none;
+    box-shadow: none;
+}
+.ControlPanel table table table .SubHead {
+    color: #003366;
+}
+.ControlPanel table table table tr:nth-child(2) {
+    border: 0 none;
+}
+.ControlPanel table table {
+    margin: 0 auto;
+}
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+	border: 0;
+}
+
+.ModuleTitle_MenuBar {
+	cursor: pointer;
+	height: 16px;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuItem {
+	border-right: 0;
+	cursor: pointer;
+	font-style: normal;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuIcon {
+	border: 0;
+	cursor: pointer;
+	background-color: #EEEEEE;
+	text-align: center;
+	width: 15px;
+	height: 21px;
+}
+
+.ModuleTitle_SubMenu {
+	z-index: 1000;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+.ModuleTitle_MenuBreak {
+	background-color: #EEEEEE;
+	height: 1px;
+}
+
+.ModuleTitle_MenuItemSel {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+
+.ModuleTitle_MenuArrow {
+	border-left: 0;
+	font-family: webdings;
+	font-size: 10pt;
+	cursor: pointer;
+}
+
+.ModuleTitle_RootMenuArrow {
+	cursor: pointer;
+}
+/*MenuItemsBorders*/
+.ModuleTitle_MenuItemSel {
+	border-width: 1px 0 1px 1px;
+}
+.ModuleTitle_MenuIcon, .ModuleTitle_MenuIcon.ModuleTitle_MenuItemSel {
+	border-color: #ddd;
+	border-style: solid none;
+	border-width: 1px 0;
+}
+.ModuleTitle_MenuItemSel.ModuleTitle_MenuArrow {
+	border: 1px 1px 1px 0;
+}
+/*ContentPanes*/
+img[src="/Images/action.gif"] {
+	max-width: none;
+}
+
+
+
+.pageTitle .caption {
+	font-size: 16px;
+	text-transform: uppercase;
+	border-bottom: 1px solid;
+	padding-bottom: 4px;
+}
+.pageTitle h1 {
+	font-size: 28px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-top: 12px;
+	line-height: 1.2;
+}
+.pageTitle table {
+	color: #fff;
+}
+
+/*Home Intro*/
+.intro h2::before,
+.intro h2::after {
+	content: ' ';
+	width: 20%;
+	display: block;
+	border-top: 2px solid;
+}
+.intro h2::before {
+	margin: 20px auto;
+}
+.intro h2::after {
+	margin: 30px auto;
+}
+
+.intro h2 {
+	margin: 0 auto;
+	width: 70%;
+}
+
+/* ----- Sections*/
+.section7 .pageTitle {
+	background-position: center 0;
+}
+/*table*/
+.tableTitle {
+	width: 73%;
+}
+.tableChapter {
+	width: 11%;
+}
+#HOPTable {
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+/*IE FIX*/
+#HOPTable {
+	border-color: #ddd\9;
+}
+#HOPTable th {
+	*color : #fff;
+
+}
+@media(max-width:991px){
+	.tableTitle {
+		width: 66%;
+	}
+	.tableChapter {
+		width: 14%;
+	}
+}
+@media(max-width:767px){
+	#HOPTable {
+		font-size: 13px;
+	}
+	#HOPTable th,
+	#HOPTable td {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.tableTitle {
+		width: 44%;
+	}
+	.tableChapter {
+		width: 29%;
+	}
+	.tableUpdate {
+		width: 33%
+	}
+}
+
+/* ----- SinglePage*/
+.rightSidebarLayout .mandalaBackground table td {
+	color: #fff;
+}
+
+/*Main Content*/
+.mainContent {
+	padding-bottom: 20px;
+}
