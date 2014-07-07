@@ -1,3 +1,15 @@
+/*IE FIX*/
+/*IE7-8 FIX*/
+.flex-direction-nav a {
+  background: url(../images/sprite.png) no-repeat #333 \9;
+}
+#HOPTable {
+	border-color: #ddd\9;
+}
+#HOPTable th {
+	*color : #fff;
+
+}
 /*Google Font*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
 
@@ -143,7 +155,8 @@ img[src="/Images/action.gif"] {
 .pageTitle table {
 	color: #fff;
 }
-
+/*Slides*/
+/*And*/
 /*Home Intro*/
 .intro h2::before,
 .intro h2::after {
@@ -164,9 +177,39 @@ img[src="/Images/action.gif"] {
 	width: 70%;
 }
 
+/*Main Content*/
+.mainContent {
+	padding-bottom: 20px;
+}
+
+@media(max-width:767px) {
+	.intro h2 {
+		font-size: 18px;
+		margin: 0 auto;
+		width: 80%
+	}
+	.mandalaBackground table {
+		height: 320px;
+	}
+	.welcomeSlide img {
+		max-width: 80%;
+	}
+	.orangeSlide h2 {
+		font-size: 14px;
+	}
+	.orangeSlide .transBlackBg {
+		font-size: 12px;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+}
 /* ----- Sections*/
 .section7 .pageTitle {
 	background-position: center 0;
+}
+/*Google Search*/
+.gs-title {
+	text-align: left;
 }
 /*table*/
 .tableTitle {
@@ -178,13 +221,9 @@ img[src="/Images/action.gif"] {
 #HOPTable {
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
-/*IE FIX*/
-#HOPTable {
-	border-color: #ddd\9;
-}
-#HOPTable th {
-	*color : #fff;
-
+@media(max-width:767px){
+.section1 .pageTitle .mandalaBackground table, .section2 .pageTitle .mandalaBackground table, .section3 .pageTitle .mandalaBackground table, .section4 .pageTitle .mandalaBackground table, .section5 .pageTitle .mandalaBackground table, .section6 .pageTitle .mandalaBackground table, .section7 .pageTitle .mandalaBackground table, .section8 .pageTitle .mandalaBackground table {
+	height: 100px;
 }
 @media(max-width:991px){
 	.tableTitle {
@@ -219,7 +258,3 @@ img[src="/Images/action.gif"] {
 	color: #fff;
 }
 
-/*Main Content*/
-.mainContent {
-	padding-bottom: 20px;
-}
