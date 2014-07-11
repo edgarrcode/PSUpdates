@@ -10,6 +10,9 @@
 	*color : #fff;
 
 }
+body .gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding-top: 0;
+}
 /*Google Font*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
 
@@ -137,7 +140,9 @@ img[src="/Images/action.gif"] {
 	max-width: none;
 }
 
-
+.header {
+	z-index: 2;
+}
 
 .pageTitle .caption {
 	font-size: 16px;
@@ -222,8 +227,9 @@ img[src="/Images/action.gif"] {
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 @media(max-width:767px){
-.section1 .pageTitle .mandalaBackground table, .section2 .pageTitle .mandalaBackground table, .section3 .pageTitle .mandalaBackground table, .section4 .pageTitle .mandalaBackground table, .section5 .pageTitle .mandalaBackground table, .section6 .pageTitle .mandalaBackground table, .section7 .pageTitle .mandalaBackground table, .section8 .pageTitle .mandalaBackground table {
-	height: 100px;
+	.section1 .pageTitle .mandalaBackground table, .section2 .pageTitle .mandalaBackground table, .section3 .pageTitle .mandalaBackground table, .section4 .pageTitle .mandalaBackground table, .section5 .pageTitle .mandalaBackground table, .section6 .pageTitle .mandalaBackground table, .section7 .pageTitle .mandalaBackground table, .section8 .pageTitle .mandalaBackground table {
+		height: 100px;
+	}
 }
 @media(max-width:991px){
 	.tableTitle {
@@ -258,3 +264,40 @@ img[src="/Images/action.gif"] {
 	color: #fff;
 }
 
+/*SearchInNavBar*/
+.googleCustomSearchWrapper {
+	float: right;
+	width: 40%;
+}
+.googleSearchLabel {
+	color: #fff;
+	float: left;
+	text-align: right;
+	width: 30%;
+}
+.googleSearchLabel p {
+	margin: 7px 0;
+}
+.googleCustomSearch {
+	float: right;
+	height: 36px;
+	overflow: hidden;
+	width: 70%;
+}
+/*SearchInNavBar Overrides*/
+body #___gcse_0 {
+	box-shadow: none;
+	margin-bottom: 0;
+}
+body .gsc-control-cse {
+	padding: 0;
+}
+body form.gsc-search-box {
+	margin-bottom: 0;
+}
+body table.gsc-search-box {
+	margin-bottom: 0;
+}
+body .googleCustomSearchWrapper td {
+	padding: 3px;
+}

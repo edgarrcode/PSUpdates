@@ -1,0 +1,83 @@
+.pageTitle .caption {
+	font-size: 16px;
+	text-transform: uppercase;
+	border-bottom: 1px solid;
+	padding-bottom: 4px;
+}
+.pageTitle h1 {
+	font-size: 28px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-top: 12px;
+	line-height: 1.2;
+}
+.pageTitle table {
+	color: #fff;
+}
+
+/*Home Intro*/
+.intro h2::before,
+.intro h2::after {
+	content: ' ';
+	width: 20%;
+	display: block;
+	border-top: 2px solid;
+}
+.intro h2::before {
+	margin: 20px auto;
+}
+.intro h2::after {
+	margin: 30px auto;
+}
+
+.intro h2 {
+	margin: 0 auto;
+	width: 70%;
+}
+/*SinglePage*/
+.rightSidebarLayout .mandalaBackground table td {
+	color: #fff;
+}
+
+/*Main Content*/
+.mainContent {
+	padding-bottom: 20px;
+}
+
+/*SearchInNavBar*/
+.googleCustomSearchWrapper {
+	float: right;
+	width: 40%;
+}
+.googleSearchLabel {
+	color: #fff;
+	float: left;
+	text-align: right;
+	width: 30%;
+}
+.googleSearchLabel p {
+	margin: 7px 0;
+}
+.googleCustomSearch {
+	float: right;
+	height: 36px;
+	overflow: hidden;
+	width: 70%;
+}
+/*SearchInNavBar Overrides*/
+body #___gcse_0 {
+	box-shadow: none;
+	margin-bottom: 0;
+}
+body .gsc-control-cse {
+	padding: 0;
+}
+body form.gsc-search-box {
+	margin-bottom: 0;
+}
+body table.gsc-search-box {
+	margin-bottom: 0;
+}
+body .googleCustomSearchWrapper td {
+	padding: 3px;
+}
