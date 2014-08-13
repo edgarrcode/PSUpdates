@@ -1,0 +1,124 @@
+@white: #fff;
+@blue: #036;
+@blueMed: #004890;
+@orange: #ff6600;
+@orangeHover: #e15a00;
+@grayDark: #555;
+@grayDarkest: #232323;
+@grayMed: #666;
+@gray: #ddd;
+@grayLight: #eee;
+@grayLightest: #f2f2f2;
+@linkBlue: #008cba;
+@linkBlueHover: #03556e;
+ol {
+  list-style-position: inside;
+  text-indent: 0;
+  li {
+    margin-bottom: 10px;
+  }
+}
+/*Mixins*/
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+}
+.downloadPolicyBtn {
+  background-color: #e6e6e6;
+  border: 1px solid @gray;
+  padding: 10px 0;
+}
+.transition {
+  transition: all ease-in 150ms;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.italicSerif {
+  display: block;
+  font-family: Adobe Caslon Pro times, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+/*HideSolpartMenu*/
+#dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
+  display: none;
+}
+.blueGradient {
+background: #036; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0062c5 0%, #004890 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0062c5), color-stop(100%,#004890)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0062c5 0%,#004890 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', endColorstr='#004890',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*HomeHighlights*/
+.hl {
+  background-color: @white;
+  box-shadow: 0px 0px 1px #ddd;
+  position: relative;
+  .card {
+    border: 1px solid @gray;
+    color: @blue;
+    display: block;
+    overflow: auto;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    text-decoration: none;
+    min-height: 400px;
+  }
+  .hlIcon {
+    text-align: center;
+  }
+  a.card {
+    cursor: pointer;
+  }
+  a:hover,
+  .card:hover {
+    box-shadow: 0px 0px 10px #bbb;
+  }
+  ul {
+    text-align: left;
+    a:hover {
+      box-shadow: none;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  h5 {
+    color: @blueMed;
+  }
+  .bottomLink {
+    position: absolute;
+    left: 0; bottom: 0; right: 0;
+  }
+}
+
+@media(min-width: 768px)and(max-width: 991px) {
+  .oneFourth.hl {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .oneFourth.hl.even {
+    margin-right: 0;
+  }
+}
+@media(max-width: 767px) {
+  .highlightsWrapper .hl {
+    margin-top: 54px;
+  }
+}
+
