@@ -64,11 +64,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
 
 /*HomeHighlights*/
 .hl {
-  background-color: @white;
-  box-shadow: 0px 0px 1px #ddd;
   position: relative;
   .card {
-    border: 1px solid @gray;
     color: @blue;
     display: block;
     overflow: auto;
@@ -79,13 +76,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   }
   .hlIcon {
     text-align: center;
-  }
-  a.card {
-    cursor: pointer;
-  }
-  a:hover,
-  .card:hover {
-    box-shadow: 0px 0px 10px #bbb;
   }
   ul {
     text-align: left;
@@ -121,4 +111,76 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     margin-top: 54px;
   }
 }
+
+/*Staff Directory Page*/
+.staffDirWrapper {
+  .card {
+    min-height: 90px;
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  .highlightsWrapper {
+    .left;
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    a.sprite {
+      float: left;
+      margin-right: 10px;
+      margin-top: -5px;
+    }
+    a {
+      color: @blue;
+    }
+    .blueBlock {
+      top: 10px; bottom: 10px; left: 10px; right: 80%;
+    }
+    .blueBlockAfterContent {
+      padding-left: 5px;
+    }
+  }
+}
+
+/*Contracts Procedures List*/
+.contractsProceduresList {
+  a {
+    min-height: 80px;
+    color: @blue;
+  }
+  a:hover {
+    text-decoration: none;
+    color: @linkBlue;
+  }
+}
+
+/*Business Process Guidelines*/
+.guidelinesSectionWrapper {
+  .gs-content {
+    height: 0px;
+    overflow: hidden;
+  }
+  .gs-content.showThisGSContent {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

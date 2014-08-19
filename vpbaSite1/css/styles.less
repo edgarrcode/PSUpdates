@@ -88,6 +88,45 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 .borderGray {
 	border: 1px solid @gray;
 }
+.boxShadow {
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.card {
+	.boxShadow;
+	background-color: @white;
+	padding: 10px;
+	margin-bottom: 16px;
+	position: relative;
+}
+a.card {
+cursor: pointer;
+}
+.card:hover {
+box-shadow: 0px 0px 10px #bbb;
+}
+/*set the top, right, bottom and left values independently*/
+.blueBlock {
+	background-color: @blueMed;
+	position: absolute;
+	z-index: 1;
+}
+.cardsList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	.blueBlock {
+		top: 10px; right: 84%; bottom: 10px; left: 10px;
+	}
+	a {
+		display: block;
+		padding-left: 18%;
+		position: relative;
+	}
+}
+.blueBlockAfterContent {
+	position: relative;
+	z-index: 2;
+}
 /*Animations*/
 .btnAnimate {
 	display: inline-block;
@@ -102,9 +141,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 .roundedCorners {
 	border-radius: 8px;
-}
-.boxShadow {
-	box-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
 .fadeIn {
 	opacity: 0;
@@ -127,7 +163,7 @@ body{
 }
 h2 {
 	color: @blueMed;
-	font-weight: 200;
+	font-weight: 400;
 }
 .graySection {
 	background-color: @grayLightest;
@@ -142,7 +178,6 @@ h2 {
 	.letterSpacingNormal;
 	.center;
 	border-top: 1px solid @grayLight;
-
 	margin: 60px 0 30px;
 	span {
 		background-color: @white;
@@ -232,6 +267,10 @@ img {
 	color: @white;
 	background: @blue;
 	text-decoration: none;
+}
+h2:target, h3:target {
+	transition: all ease-in 450ms;
+	background-color: yellow;
 }
 .intro {
 	font-size: 20px;
@@ -366,14 +405,16 @@ td, th {
 		}
 	}
 	.aTitle {
-		font-size: 16px;
-		color: @grayDark;
 		margin-bottom: 0;
 		text-align: left;
 		span {
 			padding-left: 0;
-			top: -14px;
+			top: 0;
 		}
+	}
+	.aTitle:first-child {
+		border-top: none;
+		margin-top: 1em;
 	}
 	.highlightsWrapper .sprite {
 		float: left;
@@ -1001,16 +1042,39 @@ html[xmlns] .slides {display: block;}
 		}
 	}
 }
+.sideBarNav {
+	border-left: 2px solid @blue;
+	padding-left: 10px;
+	h3 {
+		margin-bottom: 10px;
+	}
+	ul {
+		margin-top: 0;
+		list-style: none;
+		padding-left: 0;
+		li {
+			margin-bottom: 10px;
+			a {
+				color: @grayDark;
+			}
+			ul {
+				margin-top: 10px;
+				padding-left: 10px;
+				border-left: 2px solid @orange;
+			}
+		}
+	}
+}
 /*Page Title*/
 .pageTitle {
 	.center;
-	background: @grayLightest;
+	background: @blueMed;
 	margin-top: -20px;
 	padding: 60px 0 40px;
 	position: relative;
 	z-index: 1;
 	h1 {
-		color: @blue;
+		color: @white;
 		font-size: 32px;
 		margin: 0;
 	}
@@ -1352,6 +1416,8 @@ html[xmlns] .slides {display: block;}
 .sprite.s-orgChart {background-position: center -2000px;}
 .sprite.s-PeopleSoftIcon {background-position: center -1840px;}
 .sprite.s-hoop {background-position: center -1920px;}
+.sprite.s-aboutVPBAOffice {background-position: center -640px;}
+
 @media(max-width: 767px) {
 	.heroLayout {
 		.pageTitle {
@@ -1712,111 +1778,28 @@ ul.ui-tabs-nav li.ui-state-active a:focus {
   }
 }
 
-/*CustomStyles*/
-/*ProjectTeam*/
-.leadership {
-	.center;
-	overflow: hidden;
-	h3 {
-		margin-bottom: 0;
-	}
-	p {
-		margin-top: 0;
-	}
-}
-.teamNameAndTitles {
-	padding-bottom: 20px;
-	.intro{
-		margin-top: 24px;
-	}
-	h2 {
-		margin-top: 16px;
-	}
-	h3 {
-		margin-bottom: 0;
-	}
-	p {
-		margin-top: 0;
-	}
-	.smeLeads {
-		padding: 10px 0;
-		position: relative;
-	}
-	.icons {
+/*Resources List*/
+.resourcesList {
+	padding-left: 0;
+
+	li {
+		list-style: none;
+		margin-bottom: 10px;
+		a {
 		.sprite;
-		display: block;
-		height: 60px;
-		left: -80px;
-		position: absolute;
-		top: 20px;
-		width: 60px;
-	}
-	.FMSLead {
-		background-position: center -480px;
-	}
-	.HCMLead {
-		background-position: center -560px;
-	}
-	.ITLead {
-		background-position: center -640px;
-	}
-}
-@media(max-width: 767px) {
-	.leadership {
-		h3,p {
-			font-size: 12px;
+		list-style: none;
+		padding-left: 20px;
 		}
-		images {
-			max-width: 60%;
-			margin: 0 auto;
+		a.linkIcon {
+			background-position: -42px -1115px;
 		}
-	}
-	.projectTeam {
-		.mainContent  {
-			.oneThird.teamNameAndTitles,
-			.twoThirds.teamNameAndTitles {
-				width: 90%;
-			}
-			.teamNameAndTitles h2 {
-				margin-bottom: 0;
-			}
+		a.externalLinkIcon {
+			background-position: -42px -2078px;
+		}
+		a.fileIcon {
+			background-position: -45px -1194px;
 		}
 	}
 }
 
-/*Training*/
-.heroLayout.trainingPage {
-	.pageTitle {
-		background-position: 0 -80px;
-		padding: 180px 0 30px;
-	}
-	.marginFix {
-		margin-top: 390px;
-	}
-}
-.trainingClasses {
-	background-position: center -880px;
-}
-.trainingDocuments {
-	background-position: center -160px;
-}
-@media(min-width: 992px)and(max-width: 1199px) {
-
-}
-@media(min-width: 768px)and(max-width: 991px) {
-	.heroLayout.trainingPage {
-		.marginFix {
-			margin-top: 420px;
-		}
-	}
-}
-@media(max-width: 767px) {
-	.heroLayout.trainingPage {
-		.pageTitle {
-			padding-top: 80px;
-		}
-		.marginFix {
-			margin-top: 0;
-		}
-	}
-}
+/*CustomStyles*/
