@@ -42,6 +42,9 @@ $(function() {
 	});
 });
 
+// VisiblePlugin
+(function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
+
 // Animate if visible
 $(window).scroll(function(event) {
   $(".anWV").each(function(i, el) {
@@ -53,21 +56,18 @@ $(window).scroll(function(event) {
       });
     }
   });
-
-});
-
-
-// dynatable
-$('#HOPTable').dynatable({
-    features: {
-        pushState: false,
-        search: false
-    },
-    inputs: {
-        perPagePlacement: 'after'
+  $(".anWS").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.animate({
+		opacity:1
+      });
     }
-})
-.bind('dynatable:afterProcess', function() {
-    $('tr:nth-child(2n)').addClass('even');
+  });
+
 });
+
+
+
+// TableEvenRowClass
 $('tr:nth-child(2n)').addClass('even');

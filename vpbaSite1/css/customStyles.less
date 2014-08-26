@@ -47,6 +47,9 @@ ol {
   margin: 0 auto;
   text-transform: lowercase;
 }
+.boxShadow {
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
 /*HideSolpartMenu*/
 #dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
   display: none;
@@ -161,23 +164,130 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
 }
 
 /*Business Process Guidelines*/
+.expandCollapseWrapper {
+  background-color: @blue;
+  color: @white;
+  overflow: auto;
+  padding: 10px;
+  .expandCollapseNav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    li {
+      float: left;
+      .btn {
+        background-color: transparent;
+        border: 1px solid @white;
+        cursor: pointer;
+        padding: 6px 10px;
+      }
+    }
+    li:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+/*Accordion ShowHide Classes*/
 .guidelinesSectionWrapper {
   .gs-content {
     height: 0px;
     overflow: hidden;
   }
-  .gs-content.showThisGSContent {
+}
+.guidelinesSectionWrapper.showThisGSContent {
+  .gs-title {
+    .sprite;
+    background-position: -40px -2230px;
+  }
+  .gs-content {
     height: auto;
   }
 }
+.guidelinesSectionWrapper {
+  padding: 10px;
+  .gs-title {
+    .sprite;
+    .transition;
+    background-position: -40px -2156px;
+    cursor: pointer;
+    margin: 0;
+    padding-left: 30px;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  ul {
+    margin: 8px 0 0;
+  }
+}
 
+/*Delegation Of Authority*/
+.container {
+  position: relative;
+}
 
+#delOfAuthDropdown {
+  .boxShadow;
+  background-color: @white;
+  border: 1px solid @gray;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  ul > li span {
+    display: block;
+    padding: 10px;
+  }
+}
+#delegationOfAuthorityTable{
+  th.regents, td.regents {width: 20%;}
+  th.delegate, td.delegate {width: 35%;}
+  th.date, td.date {width: 15%;}
+  th h2 {
+    display: inline;
+  }
+  td {
+    padding: 30px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  td.chapter {
+    text-align: center;
+  }
+}
+.fixedThead{
+    top:0;
+    position:fixed;
+    width:auto;
+    display:none;
+    border:none;
+  }
 
+/*OpenRecords*/
+.OpenRecordsCard {
+  background-color: @white;
+  margin: 20px auto;
+  width: 80%;
+  .theCardContent{
+    padding: 10px;
+  }
+}
 
+/*State Reports*/
+@media(min-width: 767px) {
+  .stateReports {
+    .card {
+      min-height: 226px;
+    }
+  }
+}
 
-
-
-
+/*Contact*/
+.depContactWrapper {
+  background-color: @blue;
+  padding: 2%;
+  select {
+    width: 100%;
+  }
+}
 
 
 
