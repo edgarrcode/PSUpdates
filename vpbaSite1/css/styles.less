@@ -3,6 +3,9 @@ Version: 1.0.2
 Author: Edgar Rodriguez*/
 /*Colors*/
 
+/*Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+
 /*Normalize: */
 /* ==========================================================================
    HTML5 display definitions
@@ -113,6 +116,9 @@ box-shadow: 0px 0px 10px #bbb;
 }
 .evenRow {
 	background-color: @grayLightest;
+}
+.overFlowScroll {
+	overflow: scroll;
 }
 .aDropdownWrapper {
 	position: relative;
@@ -252,7 +258,7 @@ h2 {
 	margin: 60px 0 30px;
 	span {
 		background-color: @white;
-		display: inline-block;
+		padding: 0 2%;
 		position: relative;
 		top: -20px;
 		width: 90%;
@@ -434,6 +440,11 @@ td, th {
 	}
 	.aTitle {
 		font-size: 16px;
+		margin: 30px 0 0;
+		span {
+			top: -12px;
+			width: 70%;
+		}
 	}
 	span {
 		display: inline-block;
@@ -924,12 +935,16 @@ html[xmlns] .slides {display: block;}
 @media(max-width: 767px) {
 	.highlightsWrapper .oneHalf,
 	.highlightsWrapper .oneThird,
+	.highlightsWrapper .oneFourth,
 	.resourcesPage .oneHalf {
 		border-bottom: 1px solid @grayLight;
 		float: none;
 		width: 100%;
 		margin-bottom: 30px;
 		padding-bottom: 10px;
+	}
+	.blueMedSection.highlightsWrapper .oneFourth {
+		border-bottom-color: @linkBlue;
 	}
 	.resourcesPage .oneHalf {
 		border-bottom: none;
@@ -1022,10 +1037,14 @@ html[xmlns] .slides {display: block;}
 			}
 		}
 		li:hover > div {
+			ul {
+				display: block;
+			}
+		}
+		li > div {
 			background-color: @blueHover;
 			position: absolute;
 			ul {
-				display: block;
 				padding: 0 10px;
 				position: static;
 				li {
@@ -1069,6 +1088,7 @@ html[xmlns] .slides {display: block;}
 }
 @media(min-width: 768px)and(max-width: 991px) {
 	.navigation {
+		font-size: 12px;
 		.container {
 			position: relative;
 			.navigationBar {
@@ -1077,9 +1097,9 @@ html[xmlns] .slides {display: block;}
 				right: 0;
 				overflow: visible;
 				.searchTabletToggle {
+					display: none;
 					background-color: rgba(255,255,255,.2);
 					cursor: pointer;
-					display: block;
 					float: right;
 					height: 40px;
 					width: 40px;
@@ -1089,6 +1109,18 @@ html[xmlns] .slides {display: block;}
 						display: block;
 						height: 100%;
 						width: 100%;
+					}
+				}
+			}
+			.nav {
+				li {
+					a {
+						max-width: 100px;
+						min-height: 35px;
+						padding: 8px 6px;
+					}
+					div {
+						position: absolute;
 					}
 				}
 			}
@@ -1133,9 +1165,16 @@ html[xmlns] .slides {display: block;}
 				float: none;
 				li {
 					float: none;
+					div {
+						background-color: transparent;
+						position: static;
+					}
 					ul {
+						background-color: transparent;
+						border-left: 1px solid @orange;
 						display: block;
-						float: none;	
+						float: none;
+						margin-left: 20px;
 						position: static;
 					}
 				}
@@ -1231,12 +1270,15 @@ html[xmlns] .slides {display: block;}
 }
 @media(max-width: 767px) {
 	.pageTitle {
-		background: @grayLightest;
 		margin-top: 60px;
 		padding-top: 30px;
 		h1 {
 			font-size: 24px;
 		}
+	}
+	.home .pageTitle table {
+		height: 100px;
+		min-height: 100px;
 	}
 }
 /*Breadcrumbs*/
@@ -1891,7 +1933,11 @@ ul.ui-tabs-nav li.ui-state-active a:focus {
     line-height: 40px;
   }
 }
-
+@media (max-width: 767px) {
+	.backToHomeBtn a {
+		font-size: 12px;
+	}
+}
 /*Resources List*/
 .resourcesList {
 	padding-left: 0;

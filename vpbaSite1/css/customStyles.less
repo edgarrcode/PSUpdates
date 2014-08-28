@@ -41,7 +41,7 @@ ol {
 }
 .italicSerif {
   display: block;
-  font-family: Adobe Caslon Pro times, Times, "Times New Roman", serif;
+  font-family: Adobe Caslon Pro, times, Times, "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
   margin: 0 auto;
@@ -49,6 +49,10 @@ ol {
 }
 .boxShadow {
   box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.breakColMobileMixin {
+  width: 100%;
+  margin-right: 0;
 }
 /*HideSolpartMenu*/
 #dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
@@ -70,6 +74,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   position: relative;
   .card {
     color: @blue;
+    font-size: 14px;
     display: block;
     overflow: auto;
     padding: 10px 10px 0 10px;
@@ -105,13 +110,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     margin-right: 2%;
     width: 49%;
   }
+  .oneFourth.hl.gridLast,
+  .oneFourth.hl:nth-child(3) {
+    margin-right: 0;
+  }
   .oneFourth.hl.even {
     margin-right: 0;
   }
 }
 @media(max-width: 767px) {
   .highlightsWrapper .hl {
-    margin-top: 54px;
+    margin-bottom: 0;
+    margin-top: 12px;
   }
 }
 
@@ -150,9 +160,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     }
   }
 }
-
+@media (max-width: 990px) {
+  .staffDirWrapper {
+    .card {
+      h2 {
+        font-size: 18px;
+      }      
+    }
+  }
+}
+@media (max-width: 767px){
+  .staffDirWrapper .oneThird {
+    .breakColMobileMixin;
+  }
+}
 /*Contracts Procedures List*/
 .contractsProceduresList {
+  padding: 0 2px;
   a {
     min-height: 80px;
     color: @blue;
@@ -162,7 +186,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     color: @linkBlue;
   }
 }
-
+@media (max-width: 767px){
+  .contractsProceduresList .oneThird{
+    .breakColMobileMixin;
+  }
+}
 /*Business Process Guidelines*/
 .expandCollapseWrapper {
   background-color: @blue;
@@ -187,6 +215,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     }
   }
 }
+@media(max-width: 767px) {
+  .expandCollapseWrapper .expandCollapseNav li .btn {
+    padding: 6px 6px;
+  }
+}
 /*Accordion ShowHide Classes*/
 .guidelinesSectionWrapper {
   .gs-content {
@@ -208,7 +241,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   .gs-title {
     .sprite;
     .transition;
-    background-position: -40px -2156px;
+    background-position: -40px -2160px;
     cursor: pointer;
     margin: 0;
     padding-left: 30px;
@@ -236,6 +269,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     display: block;
     padding: 10px;
   }
+  a {
+    display: block;
+  }
 }
 #delegationOfAuthorityTable{
   th.regents, td.regents {width: 20%;}
@@ -260,7 +296,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     display:none;
     border:none;
   }
-
+@media (max-width: 767px) {
+  #delOfAuthDropdown ul li span {
+    font-size: 14px;
+    margin-right: 50px;
+  }
+  #delegationOfAuthorityTable {
+    font-size: 12px;
+    td {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+  .fixedThead {
+  display: none!important;
+  }
+  .backToTop {
+    right: 20px;
+    bottom: 20px;
+  }
+}
 /*OpenRecords*/
 .OpenRecordsCard {
   background-color: @white;

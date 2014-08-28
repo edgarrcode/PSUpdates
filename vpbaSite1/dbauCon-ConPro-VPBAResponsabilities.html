@@ -170,28 +170,6 @@
             </div><!-- /container -->
         </div><!-- /footer2 -->
         <script src="js/main.js"></script>
-        <script src="js/flexslider.js"></script>
-        <script type="text/javascript" charset="utf-8">
-            $(window).load(function() {
-                $(".flexslider").flexslider({
-                    prevText: " ",
-                    nextText: " ",
-                    pauseOnHover: true
-                });
-            });
-            // Remove preload class from body
-            $(function cleanBody(){
-                var firstSlide = $('.flexslider li:first-child');
-                if ( firstSlide.is('.flex-active-slide') ){
-                    $('.flexslider').removeClass('preload');
-                } else {
-                    setTimeout(cleanBody, 500);
-                }
-            });
-            if (window.innerWidth <= 767) {
-                $('ul.slides iframe').remove();
-            }
-        </script>
         <script src="js/modernizr-2.6.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/TimeCircles.js"></script>
