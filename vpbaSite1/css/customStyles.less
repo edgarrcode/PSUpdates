@@ -192,6 +192,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   }
 }
 /*Business Process Guidelines*/
+.businessProcessGuidelinesHeading {
+  span {
+    display: inline-block;
+    width: 90%;
+  }
+}
 .expandCollapseWrapper {
   background-color: @blue;
   color: @white;
@@ -259,15 +265,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   position: relative;
 }
 
+.delegationOFAuthToolbar {
+  background-color: @blue;
+  padding: 10px;
+  .btnMed {
+    margin-top: 6px;
+  }
+}
 #delOfAuthDropdown {
   .boxShadow;
   background-color: @white;
   border: 1px solid @gray;
-  margin-bottom: 20px;
-  margin-top: 30px;
   ul > li span {
     display: block;
-    padding: 10px;
+    padding: 7px;
   }
   a {
     display: block;
@@ -330,7 +341,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
 @media(min-width: 767px) {
   .stateReports {
     .card {
-      min-height: 226px;
+      min-height: 210px;
+    }
+  }
+}
+@media(min-width: 768px)and(max-width: 990px) {
+  .stateReports {
+    .card {
+      h3 {
+        font-size: 12px;
+      }
     }
   }
 }
