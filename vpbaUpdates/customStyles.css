@@ -1,0 +1,177 @@
+/*Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+
+/*General Fixes*/
+.aTitle span {
+	display: inline;
+	padding: 0 2%;
+}
+#dnn_mainContent3 {
+	padding-bottom: 0;
+}
+
+.welcomeSlide p {
+	color: #fff;
+}
+/*PageTitle Temporary Fix*/
+body .fadeIn {
+	opacity: 1;
+}
+
+/*leftSidebarLayout*/
+.leftSidebarLayout .mainContent {
+	padding: 0 3px 80px;
+	margin-top: 40px;
+}
+
+/*Home*/
+.highlightsWrapper.blueMedSection .card {color: #232323;}
+
+.highlightsWrapper h2 {
+	font-weight: 400;
+}
+.hl .card {
+	min-height: 430px;
+}
+.home #dnn_mainContent2,
+.home #dnn_mainContent3 {
+	padding-bottom: 0;
+}
+
+
+/* --------- DNN Admin Controls ----------- */
+/*ControlPanel*/
+.ControlPanel {
+	background: #F8F8F8;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
+}
+.ControlPanel table:first-child {
+    background: none repeat scroll 0 0 rgba(47, 47, 47, 0.98);
+    color: #fff;
+}
+.ControlPanel td {
+	border: none;
+}
+.ControlPanel input[type="radio"] {
+	margin-left: 20px;
+	margin-right: 4px;
+}
+.ModuleTitle_SubMenu {
+	background-color: #f8f8f8;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* PageFunctions and CommonTasks controls */
+.ControlPanel table table tr:nth-child(2) {
+	border-bottom: 1px solid #ddd;
+}
+.ControlPanel table table tr:nth-child(2) td {
+    padding-top: 0;
+}
+.ControlPanel table table tr:nth-child(1) td, .ControlPanel table table tr:nth-child(3) td {
+	padding: 15px 10px 0;
+}
+/*Add Module Content*/
+.ControlPanel table table table {
+    background: none !important;
+    border: medium none;
+    box-shadow: none;
+}
+.ControlPanel table table table .SubHead {
+    color: #003366;
+}
+.ControlPanel table table table tr:nth-child(2) {
+    border: 0 none;
+}
+.ControlPanel table table {
+    margin: 0 auto;
+}
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+	border: 0;
+}
+
+.ModuleTitle_MenuBar {
+	cursor: pointer;
+	height: 16px;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuItem {
+	border-right: 0;
+	cursor: pointer;
+	font-style: normal;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuIcon {
+	border: 0;
+	cursor: pointer;
+	background-color: #EEEEEE;
+	text-align: center;
+	width: 15px;
+	height: 21px;
+}
+
+.ModuleTitle_SubMenu {
+	z-index: 1000;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+.ModuleTitle_MenuBreak {
+	background-color: #EEEEEE;
+	height: 1px;
+}
+
+.ModuleTitle_MenuItemSel {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+
+.ModuleTitle_MenuArrow {
+	border-left: 0;
+	font-family: webdings;
+	font-size: 10pt;
+	cursor: pointer;
+}
+
+.ModuleTitle_RootMenuArrow {
+	cursor: pointer;
+}
+/*MenuItemsBorders*/
+.ModuleTitle_MenuItemSel {
+	border-width: 1px 0 1px 1px;
+}
+.ModuleTitle_MenuIcon, .ModuleTitle_MenuIcon.ModuleTitle_MenuItemSel {
+	border-color: #ddd;
+	border-style: solid none;
+	border-width: 1px 0;
+}
+.ModuleTitle_MenuItemSel.ModuleTitle_MenuArrow {
+	border: 1px 1px 1px 0;
+}
+/*ContentPanes*/
+img[src="/Images/action.gif"] {
+	max-width: none;
+}
+
+/*Button Med*/
+.btnMed{font-size:14px;padding:4px 10px}
+
+/*Delegation of Authority*/
+.delegationOFAuthToolbar{background-color:#036;padding:10px}.delegationOFAuthToolbar .btnMed{margin-top:6px}#delOfAuthDropdown{box-shadow:0 1px 2px rgba(0,0,0,.5);background-color:#fff;border:1px solid #ddd;margin-top:0;margin-bottom:0;}#delOfAuthDropdown ul>li span{display:block;padding:7px}#delOfAuthDropdown a{display:block}#delegationOfAuthorityTable th.regents,#delegationOfAuthorityTable td.regents{width:20%}#delegationOfAuthorityTable th.delegate,#delegationOfAuthorityTable td.delegate{width:35%}#delegationOfAuthorityTable th.date,#delegationOfAuthorityTable td.date{width:15%}#delegationOfAuthorityTable th h2{display:inline}#delegationOfAuthorityTable td{padding:30px 10px;text-align:left;vertical-align:top}#delegationOfAuthorityTable td.chapter{text-align:center}.fixedThead{top:0;position:fixed;width:auto;display:none;border:none}@media (max-width:767px){#delOfAuthDropdown ul li span{font-size:14px;margin-right:50px}#delegationOfAuthorityTable{font-size:12px}#delegationOfAuthorityTable td{padding-left:3px;padding-right:3px}.fixedThead{display:none!important}.backToTop{right:20px;bottom:20px}}
+
+
+/*IE FIXES*/
+.card { /* ie7, ie9, ie10, ie11+ only */
+	box-shadow: 0 1px 6px rgba(0,0,0,.5)\9; /* ie7, ie8, ie9 and ie10 only */
+}
+/*IE7 IE8*/
+.card {
+	border/*\**/: 1px solid #ddd\9;
+}
+
