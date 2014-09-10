@@ -139,6 +139,11 @@ h5 {
 img[src="/Images/action.gif"] {
 	max-width: none;
 }
+/*Admin View Animations Reset*/
+.opacityTopReset {
+	opacity: 1;
+	top: 0;
+}
 /*header*/
 .header {
 	z-index: 2;
@@ -272,7 +277,9 @@ img[src="/Images/action.gif"] {
 .rightSidebarLayout .mandalaBackground table td {
 	color: #fff;
 }
-
+.rightSidebarLayout h6 {
+	margin-bottom: 0;
+}
 /*SearchInNavBar*/
 .googleCustomSearchWrapper {
 	float: right;
@@ -352,4 +359,16 @@ body table.gsc-search-box {
 }
 body .googleCustomSearchWrapper td {
 	padding: 3px 3px 0 3px;
+}
+
+/*Footer*/
+#footer1 .loginLogoutWrapper a {
+	background-image: none;
+}
+
+/*General*/
+@media (max-width: 991px) and (min-width: 768px) {
+	.tabletNo {
+		display: none;
+	}
 }
