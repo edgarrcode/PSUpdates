@@ -1,0 +1,382 @@
+@white: #fff;
+@blue: #036;
+@blueMed: #004890;
+@orange: #ff6600;
+@orangeHover: #e15a00;
+@grayDark: #555;
+@grayDarkest: #232323;
+@grayMed: #666;
+@gray: #ddd;
+@grayLight: #eee;
+@grayLightest: #f2f2f2;
+@linkBlue: #008cba;
+@linkBlueHover: #03556e;
+ol {
+  list-style-position: inside;
+  text-indent: 0;
+  li {
+    margin-bottom: 10px;
+  }
+}
+/*Mixins*/
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+}
+.downloadPolicyBtn {
+  background-color: #e6e6e6;
+  border: 1px solid @gray;
+  padding: 10px 0;
+}
+.transition {
+  transition: all ease-in 150ms;
+}
+.fontMed {
+  font-size: 24px;
+}
+.fontLarge {
+  font-size: 36px;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.italicSerif {
+  display: block;
+  font-family: Adobe Caslon Pro, times, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+.boxShadow {
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.breakColMobileMixin {
+  width: 100%;
+  margin-right: 0;
+}
+/*HideSolpartMenu*/
+#dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
+  display: none;
+}
+.blueGradient {
+background: #036; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0062c5 0%, #004890 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0062c5), color-stop(100%,#004890)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0062c5 0%,#004890 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', endColorstr='#004890',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*HomeHighlights*/
+.hl {
+  position: relative;
+  .card {
+    color: @blue;
+    font-size: 14px;
+    display: block;
+    overflow: auto;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    text-decoration: none;
+    min-height: 400px;
+  }
+  .hlIcon {
+    text-align: center;
+  }
+  ul {
+    text-align: left;
+    a:hover {
+      box-shadow: none;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  h5 {
+    color: @blueMed;
+  }
+  .bottomLink {
+    position: absolute;
+    left: 0; bottom: 0; right: 0;
+  }
+}
+
+@media(min-width: 768px)and(max-width: 991px) {
+  .oneFourth.hl {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .oneFourth.hl.gridLast,
+  .oneFourth.hl:nth-child(3) {
+    margin-right: 0;
+  }
+  .oneFourth.hl.even {
+    margin-right: 0;
+  }
+}
+@media(max-width: 767px) {
+  .highlightsWrapper .hl {
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+}
+
+/*Staff Directory Page*/
+.staffDirWrapper {
+  .card {
+    min-height: 90px;
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  .highlightsWrapper {
+    .left;
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    a.sprite {
+      float: left;
+      margin-right: 10px;
+      margin-top: -5px;
+    }
+    a {
+      color: @blue;
+    }
+    .blueBlock {
+      top: 10px; bottom: 10px; left: 10px; right: 80%;
+    }
+    .blueBlockAfterContent {
+      padding-left: 5px;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .staffDirWrapper {
+    .card {
+      h2 {
+        font-size: 18px;
+      }      
+    }
+  }
+}
+@media (max-width: 767px){
+  .staffDirWrapper .oneThird {
+    .breakColMobileMixin;
+  }
+}
+
+/*Business Process Guidelines*/
+.businessProcessGuidelinesHeading {
+  span {
+    display: inline-block;
+    width: 90%;
+  }
+}
+.expandCollapseWrapper {
+  background-color: @blue;
+  color: @white;
+  overflow: auto;
+  padding: 10px;
+  .expandCollapseNav {
+    float: right;
+    list-style: none;
+    margin: 0;
+    li {
+      float: left;
+      .btn {
+        background-color: transparent;
+        border: 1px solid @white;
+        cursor: pointer;
+        padding: 6px 10px;
+      }
+    }
+    li:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+@media(max-width: 767px) {
+  .expandCollapseWrapper .expandCollapseNav li .btn {
+    padding: 6px 6px;
+  }
+}
+/*Accordion ShowHide Classes*/
+.guidelinesSectionWrapper {
+  .gs-content {
+    height: 0px;
+    overflow: hidden;
+  }
+}
+.guidelinesSectionWrapper.showThisGSContent {
+  .gs-title {
+    .sprite;
+    background-position: -40px -2230px;
+  }
+  .gs-content {
+    height: auto;
+  }
+}
+.guidelinesSectionWrapper {
+  padding: 10px;
+  .gs-title {
+    .sprite;
+    .transition;
+    background-position: -40px -2160px;
+    cursor: pointer;
+    margin: 0;
+    padding-left: 30px;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  ul {
+    margin: 8px 0 0;
+  }
+}
+
+/*Delegation Of Authority*/
+.container {
+  position: relative;
+}
+
+.delegationOFAuthToolbar {
+  background-color: @blue;
+  padding: 10px;
+  .btnMed {
+    margin-top: 6px;
+  }
+}
+#delOfAuthDropdown {
+  .boxShadow;
+  background-color: @white;
+  border: 1px solid @gray;
+  ul > li span {
+    display: block;
+    padding: 7px;
+  }
+  a {
+    display: block;
+  }
+}
+#delegationOfAuthorityTable{
+  th.regents, td.regents {width: 20%;}
+  th.delegate, td.delegate {width: 35%;}
+  th.date, td.date {width: 15%;}
+  th h2 {
+    display: inline;
+  }
+  td {
+    padding: 30px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  td.chapter {
+    text-align: center;
+  }
+}
+.fixedThead{
+    top:0;
+    position:fixed;
+    width:auto;
+    display:none;
+    border:none;
+  }
+@media (max-width: 767px) {
+  #delOfAuthDropdown ul li span {
+    font-size: 14px;
+    margin-right: 50px;
+  }
+  #delegationOfAuthorityTable {
+    font-size: 12px;
+    td {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+  .fixedThead {
+  display: none!important;
+  }
+  .backToTop {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+/*OpenRecords*/
+.OpenRecordsCard {
+  background-color: @white;
+  margin: 20px auto;
+  width: 80%;
+  .theCardContent{
+    padding: 10px;
+  }
+}
+
+/*State Reports*/
+@media(min-width: 767px) {
+  .stateReports {
+    .card {
+      min-height: 210px;
+    }
+  }
+}
+@media(min-width: 768px)and(max-width: 990px) {
+  .stateReports {
+    .card {
+      h3 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*Contact*/
+.depContactWrapper {
+  background-color: @blue;
+  padding: 2%;
+  select {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* ---------------------------- 
+-------------------------------  SP&A Custom Styles
+---------------------------- */
+
+/*Contracts Procedures List*/
+.prevStrategicPlansList {
+  padding: 0 2px;
+  a {
+    .fontMed;
+    min-height: 80px;
+    color: @blue;
+  }
+  a:hover {
+    text-decoration: none;
+    color: @linkBlue;
+  }
+}
+@media (max-width: 767px){
+  .prevStrategicPlansList .oneThird{
+    .breakColMobileMixin;
+  }
+}
