@@ -56,15 +56,6 @@ $(window).scroll(function(event) {
       });
     }
   });
-  //Animate when scroll
-  $(".anWS").each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.animate({
-		opacity:1
-      });
-    }
-  });
 
 });
 

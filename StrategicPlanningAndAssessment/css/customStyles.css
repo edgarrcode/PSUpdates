@@ -17,6 +17,9 @@ ol li {
 .transition {
   transition: all ease-in 150ms;
 }
+.fontSmall {
+  font-size: 12px;
+}
 .fontMed {
   font-size: 24px;
 }
@@ -81,7 +84,7 @@ ol li {
   padding: 10px 10px 0 10px;
   position: relative;
   text-decoration: none;
-  min-height: 400px;
+  min-height: 340px;
 }
 .hl .hlIcon {
   text-align: center;
@@ -307,15 +310,6 @@ ol li {
     bottom: 20px;
   }
 }
-/*OpenRecords*/
-.OpenRecordsCard {
-  background-color: #ffffff;
-  margin: 20px auto;
-  width: 80%;
-}
-.OpenRecordsCard .theCardContent {
-  padding: 10px;
-}
 /*State Reports*/
 @media (min-width: 767px) {
   .stateReports .card {
@@ -353,6 +347,28 @@ ol li {
 }
 @media (max-width: 767px) {
   .prevStrategicPlansList .oneThird {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/*Key Terms*/
+.ktDefinitionsWrapper h3 {
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+.ktDefinitionsWrapper h3 + p {
+  margin-top: 0;
+}
+/*SecretShopper*/
+.ssResultsCardsWrapper .card {
+  text-align: center;
+}
+.ssResultsCardsWrapper .card p {
+  font-size: 12px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .ssResultsCardsWrapper .oneFourth {
     width: 100%;
     margin-right: 0;
   }

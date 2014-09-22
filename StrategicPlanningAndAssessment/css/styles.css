@@ -2,7 +2,6 @@
 /*Skin Name: VPBA Skin
 Version: 1.0.2
 Author: Edgar Rodriguez*/
-/*Colors*/
 /*Google Font*/
 /*Normalize: */
 /* ==========================================================================
@@ -558,7 +557,7 @@ img {
   color: #ffffff;
 }
 .btn {
-  background-color: #fcfcfc;
+  background-color: #eeeeee;
   border-radius: 20px;
   display: inline-block;
   padding: 8px 20px;
@@ -609,6 +608,14 @@ img {
   font-size: 14px;
   padding: 4px 10px;
 }
+.btnDisabled {
+  color: #dddddd;
+}
+.btnDisabled:hover {
+  background-color: #eeeeee;
+  color: #dddddd;
+  text-decoration: none;
+}
 h2:target,
 h3:target,
 tr:target {
@@ -616,12 +623,14 @@ tr:target {
   background-color: yellow !important;
 }
 .backToTop {
+  transition: all ease-in 150ms;
   background: #ff5600;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   cursor: pointer;
   font-size: 12px;
+  opacity: 0;
   position: fixed;
   right: 60px;
   bottom: 60px;
@@ -633,6 +642,9 @@ tr:target {
   display: block;
   margin-top: 12px;
   line-height: 1.1;
+}
+.scrolled .backToTop {
+  opacity: 1;
 }
 .intro {
   font-size: 20px;
@@ -718,6 +730,7 @@ th {
 }
 .clear {
   clear: both;
+  height: 1px;
 }
 .alert {
   border-radius: 8px;
@@ -1615,8 +1628,7 @@ html[xmlns] .slides {
   font-size: 32px;
   margin: 0;
 }
-.pageTitle + .mainContent,
-.pageTitle + .leftSidebarLayout {
+.pageTitle + .mainContent {
   padding-top: 30px;
 }
 /*home Page Title*/
@@ -1940,33 +1952,13 @@ html[xmlns] .slides {
   margin: 0 auto;
   width: 64px;
 }
-.highlightsWrapper .openRecords {
-  background-position: center -320px;
+.highlightsWrapper .missionAndVission {
+  background-position: center -158px;
 }
-.highlightsWrapper .stateReports {
-  background-position: center -400px;
+.highlightsWrapper .departmentalPlans {
+  background-position: center -238px;
 }
-.highlightsWrapper .insurance {
-  background-position: center -480px;
-}
-.highlightsWrapper .studentFieldTripInsurance {
-  background-position: center -560px;
-}
-.sprite.s-vpbaTeam {
-  background-position: center -240px;
-}
-.sprite.s-orgChart {
-  background-position: center -2000px;
-}
-.sprite.s-PeopleSoftIcon {
-  background-position: center -1840px;
-}
-.sprite.s-hoop {
-  background-position: center -1920px;
-}
-.sprite.s-aboutVPBAOffice {
-  background-position: center -640px;
-}
+
 @media (max-width: 767px) {
   .heroLayout .pageTitle {
     background: #fcfcfc;
@@ -2359,4 +2351,3 @@ ul.ui-tabs-nav li.ui-state-active a:focus {
   list-style: disc;
   margin-left: 20px;
 }
-/*CustomStyles*/
