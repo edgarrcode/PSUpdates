@@ -730,7 +730,6 @@ th {
 }
 .clear {
   clear: both;
-  height: 1px;
 }
 .alert {
   border-radius: 8px;
@@ -1952,13 +1951,24 @@ html[xmlns] .slides {
   margin: 0 auto;
   width: 64px;
 }
+.highlightsWrapper .openRecords {
+  background-position: center -320px;
+}
+.highlightsWrapper .stateReports {
+  background-position: center -400px;
+}
+.highlightsWrapper .insurance {
+  background-position: center -480px;
+}
+.highlightsWrapper .studentFieldTripInsurance {
+  background-position: center -560px;
+}
 .highlightsWrapper .missionAndVission {
   background-position: center -158px;
 }
 .highlightsWrapper .departmentalPlans {
   background-position: center -238px;
 }
-
 @media (max-width: 767px) {
   .heroLayout .pageTitle {
     background: #fcfcfc;
