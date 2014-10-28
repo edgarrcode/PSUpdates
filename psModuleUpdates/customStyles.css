@@ -457,6 +457,47 @@ body.calendarPage table[title=Calendar] {
 	margin-top: 10px;
 }
 
+/*DueDatesColors*/
+.calendarPage #centerContainer.calendarSMWrapper {
+	border-left-color: red;
+}
+.calendarPage #centerContainer.calendarSMWrapper .ItemTitle{
+	color: red;
+}
+.calendarPage .calendarSMWrapper hr {
+	display: none;
+}
+.calendarPage #centerContainer.calendarTSDWrapper {
+	border-left-color: green;
+}
+.calendarPage #centerContainer.calendarTSDWrapper .ItemTitle{
+	color: green;
+}
+.calendarPage .calendarTSDWrapper hr {
+	display: none;
+}
+.calendarPage #centerContainer.calendarSMPDWrapper {
+	border-left-color: blue;
+}
+.calendarPage #centerContainer.calendarSMPDWrapper .ItemTitle{
+	color: blue;
+}
+.calendarPage .calendarSMPDWrapper hr,
+.calendarPage .calendarSMPDWrapper .Normal {
+	display: none;
+}
+.calendarPage #centerContainer.calendarMPDWrapper {
+	border-left-color: blue;
+}
+.calendarPage #centerContainer.calendarMPDWrapper .ItemTitle{
+	color: blue;
+}
+.calendarPage .calendarMPDWrapper hr,
+.calendarPage .calendarMPDWrapper .Normal {
+	display: none;
+}
+
+
 /*Training*/
 
 /*TrainingDocs*/
