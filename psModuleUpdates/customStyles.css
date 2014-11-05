@@ -33,6 +33,37 @@ img {
 .subSection {
 	padding-left: 20px;
 }
+.card {
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 16px;
+	position: relative;
+}
+a.card {
+	color: #444;
+	display: block;
+	font-size: 14px
+}
+.card:hover {
+	box-shadow: 0 0 10px #bbb;
+	text-decoration: none;
+}
+a.card h2 {
+	font-size: 18px;
+}
+a.card h5 {
+	color: #036;
+}
+a.card .bottomLink {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.homePage a.card {
+	min-height: 300px;
+}
 /*table*/
 thead th {
     background: none repeat scroll 0 0 #DDDDDD;
@@ -1212,7 +1243,6 @@ html[xmlns] .slides {display: block;}
 }
 .pageTitle.flexslider table img {
 	max-width: 444px;
-	max-height: 203px;
 }
 /*Slider*/
 .pageTitle.flexslider.preload {
@@ -1359,7 +1389,7 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav a {
   background: url(../images/sprite.png) no-repeat #333 \9;
 }
-/*TwitterFeed*/
+/*----------TwitterFeed*/
 .customisable-border.thm-dark, .thm-dark .customisable-border, .h-entry.tweet {
   border-bottom-color: #eee !important;
 }
@@ -1368,6 +1398,26 @@ html[xmlns] .slides {display: block;}
 }
 #dnn_ctr168250_ContentPane {
 	overflow: auto;
+}
+/*hide elements*/
+.u-photo.avatar,
+.profile .full-name,
+.profile .p-nickname,
+.footer.customisable-border {
+	display: none;
+}
+/*position absolute the date*/
+.var-chromeless .permalink {
+	position: absolute;
+	right: -58px;
+}
+/*list of tweets padding override*/
+.var-chromeless .tweet {
+	padding: 10px 58 10px 0;
+}
+/*limit height*/
+#twitter-widget-0 {
+	max-height: 360px;
 }
 /*PSLiveBTNWrapper*/
 .PSLiveBTNWrapper {

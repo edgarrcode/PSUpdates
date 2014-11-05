@@ -18,6 +18,12 @@ body .fadeIn {
 	opacity: 1;
 }
 
+/*.navigation Ipad Fix*/
+body .navigation .container .nav li:hover div ul {
+	display: block;
+}
+
+
 /*leftSidebarLayout*/
 .leftSidebarLayout .mainContent {
 	padding: 0 3px 80px;
@@ -32,6 +38,12 @@ body .fadeIn {
 }
 .hl .card {
 	min-height: 430px;
+}
+@media(max-width: 767px){
+	.home .hl .card a {
+		display: block;
+		padding: 10px 0;
+	}
 }
 .home #dnn_mainContent2,
 .home #dnn_mainContent3 {
@@ -164,7 +176,22 @@ img[src="/Images/action.gif"] {
 
 /*Delegation of Authority*/
 .delegationOFAuthToolbar{background-color:#036;padding:10px}.delegationOFAuthToolbar .btnMed{margin-top:6px}#delOfAuthDropdown{box-shadow:0 1px 2px rgba(0,0,0,.5);background-color:#fff;border:1px solid #ddd;margin-top:0;margin-bottom:0;}#delOfAuthDropdown ul>li span{display:block;padding:7px}#delOfAuthDropdown a{display:block}#delegationOfAuthorityTable th.regents,#delegationOfAuthorityTable td.regents{width:20%}#delegationOfAuthorityTable th.delegate,#delegationOfAuthorityTable td.delegate{width:35%}#delegationOfAuthorityTable th.date,#delegationOfAuthorityTable td.date{width:15%}#delegationOfAuthorityTable th h2{display:inline}#delegationOfAuthorityTable td{padding:30px 10px;text-align:left;vertical-align:top}#delegationOfAuthorityTable td.chapter{text-align:center}.fixedThead{top:0;position:fixed;width:auto;display:none;border:none}@media (max-width:767px){#delOfAuthDropdown ul li span{font-size:14px;margin-right:50px}#delegationOfAuthorityTable{font-size:12px}#delegationOfAuthorityTable td{padding-left:3px;padding-right:3px}.fixedThead{display:none!important}.backToTop{right:20px;bottom:20px}}
-
+.aDropdownWrapper ul li:hover ul {
+	display: none;
+}
+.aDropdownWrapper ul li {
+	cursor: pointer;
+}
+.aDropdownWrapper ul li.delOfAutDD.activeDOADD ul {
+	display: block;
+	position: absolute;
+}
+@media(max-width: 767px) {
+	.delegationOFAuthToolbar .btnMed {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
 
 /*IE FIXES*/
 .card { /* ie7, ie9, ie10, ie11+ only */
@@ -173,5 +200,11 @@ img[src="/Images/action.gif"] {
 /*IE7 IE8*/
 .card {
 	border/*\**/: 1px solid #ddd\9;
+}
+
+@media (max-width: 767px) {
+	.mobileHorScroll {
+		overflow: scroll;
+	}
 }
 

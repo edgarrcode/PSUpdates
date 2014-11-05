@@ -195,7 +195,17 @@ img[src="/Images/action.gif"] {
 	margin: 0 auto;
 	width: 70%;
 }
-
+.flexslider h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.mandalaText h2 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+.mandalaText h5 {
+	margin-bottom: 0;
+}
 /*Main Content*/
 .mainContent {
 	padding-bottom: 20px;
@@ -212,6 +222,10 @@ img[src="/Images/action.gif"] {
 	}
 	.welcomeSlide img {
 		max-width: 80%;
+	}
+	.welcomeSlide .updateText {
+		max-width: 80%;
+		margin: 0 auto;
 	}
 	.orangeSlide h2 {
 		font-size: 14px;
