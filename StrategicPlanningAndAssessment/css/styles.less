@@ -604,7 +604,8 @@ td, th {
 			}
 		}
 		.mainContent {
-			margin-left: 30px;
+			margin-left: 10%;
+			width: 90%;
 		}
 		.highlightsWrapper .sprite,
 		.hltext {
@@ -1106,7 +1107,12 @@ html[xmlns] .slides {display: block;}
 .mobileNavToggle {
 	display: none;
 }
-@media(min-width: 768px)and(max-width: 991px) {
+@media(min-width: 990px)and(max-width: 1200px) {
+	.navigation {
+		font-size: 12px;
+	}
+}
+@media(min-width: 768px)and(max-width: 990px) {
 	.navigation {
 		font-size: 12px;
 		.container {
@@ -1136,7 +1142,7 @@ html[xmlns] .slides {display: block;}
 				li {
 					a {
 						max-width: 100px;
-						min-height: 35px;
+						min-height: 56px;
 						padding: 8px 6px;
 					}
 					div {
@@ -1166,7 +1172,7 @@ html[xmlns] .slides {display: block;}
 		cursor: pointer;
 		background-color: @blue;
 		display: block;
-		padding: 20px 0;
+		padding: 21px 0;
 	}
 	.navigation {
 		position: absolute;
@@ -1796,20 +1802,20 @@ ul.ui-tabs-nav li.ui-state-active a:focus {
 /*Horizontal Page*/
 .horizontalTabs {
 	border: 1px solid @gray;
-	ul {
+	ul.tabsNav {
 		background-color: #F1F1F1;
 		list-style: none outside none;
 		margin-top: 0;
 		overflow: auto;
 		padding: 0;
 	}
-	ul li {
+	ul.tabsNav li {
 		background-color: #F1F1F1;
 		border-right: 1px solid @gray;
 		float: left;
 		margin-right: 0;
 	}
-	ul li a {
+	ul.tabsNav li a {
 		display: inline-block;
 		padding: 10px;
 	}
@@ -1982,6 +1988,16 @@ ul.ui-tabs-nav li.ui-state-active a:focus {
 		a.fileIcon {
 			background-position: -45px -1194px;
 		}
+	}
+	h4 {
+		color: @blueMed;
+		font-size: 14px;
+		font-weight: 600;
+		margin-top: 40px;
+	}
+	ul {
+		border-left: 2px solid @blueMed;
+		padding-left: 20px;
 	}
 	.none {
 		list-style: disc;

@@ -77,6 +77,21 @@ background: -ms-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%)
 background: radial-gradient(ellipse at center,  #0062c5 0%,#004890 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', endColorstr='#004890',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+/*Header*/
+.departmentalLogin {
+  float: right;
+  font-size: 12px;
+  a {
+    padding: 10px;
+    border: 1px solid @linkBlue;
+    border-radius: 6px;
+  }
+  a:hover {
+    background-color: @linkBlue;
+    color: @white;
+    text-decoration: none;
+  }
+}
 
 /*HomeHighlights*/
 .hl {
@@ -101,7 +116,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     }
   }
   h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin: 0;
   }
@@ -350,9 +365,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
 }
 
 
-
-
-
 /* ---------------------------- 
 -------------------------------  SP&A Custom Styles
 ---------------------------- */
@@ -384,6 +396,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   }
   h3 + p {
     margin-top: 0;
+  }
+}
+/*Surveys Page*/
+.surveysPage {
+  .horizontalTabs {
+    .tab {
+      padding: 0 3%;
+      width: 94%;
+    }
+    .aTitle {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 767px) {
+.horizontalTabs ul.tabsNav {
+  li a {
+      font-size: 10px;
+      max-width: 54px;
+      height: 72px;
+    }
+    li:last-child {
+      border-right: none;
+    }
   }
 }
 /*SecretShopper*/
