@@ -1,5 +1,7 @@
 // OnLoad
 $(function() {
+	// Horizontal Tabs
+	$( ".horizontalTabs" ).tabs();
 	$( ".accordion" ).accordion({
 		collapsible: true,
 	    heightStyle: "content" 
@@ -29,17 +31,6 @@ $(function() {
 	});
 	// VerticalTabs
 	$( ".verticalTabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-	// Horizontal Tabs
-	$( ".horizontalTabs" ).tabs();
-	$(".morelessToggle1").click(function () {
-		$(".showhideText1").toggleClass("showText");
-	});
-	$(".morelessToggle2").click(function () {
-		$(".showhideText2").toggleClass("showText");
-	});
-	$(".morelessToggle3").click(function () {
-		$(".showhideText3").toggleClass("showText");
-	});
 });
 
 // VisiblePlugin

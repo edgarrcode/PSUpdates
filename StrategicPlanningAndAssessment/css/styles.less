@@ -103,6 +103,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	margin-bottom: 16px;
 	position: relative;
 }
+.lt-ie9 .card,
+.lt-ie8 .card {
+	border: 1px solid @gray;
+}
+.IE .card {
+	box-shadow: 0 0px 6px rgba(0,0,0,.5);
+
+}
 a.card {
 	display: block;
 	cursor: pointer;
@@ -257,7 +265,7 @@ h2 {
 	.letterSpacingNormal;
 	.center;
 	border-top: 1px solid @grayLight;
-	margin: 60px 0 30px;
+	margin: 60px 0 10px;
 	span {
 		background-color: @white;
 		padding: 0 2%;
@@ -703,7 +711,7 @@ html[xmlns] .slides {display: block;}
 	padding: 0;
 }
 .pageTitle .slides {
-	margin: 0 auto;
+	margin: 10px auto 0;
 }
 /*Slider*/
 .pageTitle.flexslider.preload {
@@ -1258,6 +1266,9 @@ html[xmlns] .slides {display: block;}
 	padding-top: 30px;
 }
 /*home Page Title*/
+.home .aTitle {
+	margin-bottom: 0;
+}
 .home .pageTitle {
   text-align: left;
   .headingHL, .caption {
@@ -1275,7 +1286,7 @@ html[xmlns] .slides {display: block;}
     max-height: 250px;
   }
   table {
-    height: 300px;
+    height: 240px;
     width: 100%;
     table-layout: fixed;
     td {
