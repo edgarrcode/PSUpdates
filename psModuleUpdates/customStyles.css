@@ -462,7 +462,7 @@ body.calendarPage table[title=Calendar] {
 }
 
 .calendarPage #centerContainer {
-	min-height: 120px; 
+	min-height: 60px; 
 	background-color: #f8f8f8;
 	border-bottom: 1px solid #ddd;
 	border-left: 1px solid #f60;
@@ -526,6 +526,38 @@ body.calendarPage table[title=Calendar] {
 .calendarPage .calendarMPDWrapper hr,
 .calendarPage .calendarMPDWrapper .Normal {
 	display: none;
+}
+.calendarPage #centerContainer.calendarCDIAPWrapper {
+	border-left-color: #4169E1;
+}
+.calendarPage #centerContainer.calendarCDIAPWrapper .ItemTitle{
+	color: #4169E1;
+}
+.calendarPage .calendarCDIAPWrapper hr,
+.calendarPage .calendarCDIAPWrapper .Normal {
+	display: none;
+}
+/*touches edges*/
+.calendarPage #centerContainer.calendarBODWrapper{
+	background: #333;
+	border-left: 0;
+	color: #fff;
+	height: 60px;
+	margin: 0 -10px;
+	min-height: 0;
+	position: relative;
+}
+.calendarPage #centerContainer.calendarBODWrapper .ItemTitle{
+	color: white;
+}
+.calendarPage .calendarBODWrapper hr,
+.calendarPage .calendarBODWrapper .Normal {
+	display: none;
+}
+.calendarPage .calendarBODWrapper .showMeCal {
+	bottom: -6px;
+	display: block;
+	position: absolute;
 }
 
 
