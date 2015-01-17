@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- DNN Head Tags -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="css/customStyles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="utepLogo">
+                    <img src="images/headerLogo.png" alt="UTEP Handbook of Operating Procedures" title="UTEP Handbook of Operating Procedures">
+                </div><!-- /logo -->
+                <div class="psUTShareLogosWrapper mobileNo">
+                </div><!-- /psUTShareLogosWrapper -->
+            </div><!-- container -->
+        </div><!-- /header -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <!-- Navigation is imported from the nav.html file -->
+                    <ul class="nav">
+                    </ul><!-- /nav -->
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
+
+        <div class="pageTitle fadeIn">
+            <div class="containerNarrow">
+                <h1 class="slideInBT">Sun Metro</h1>
+            </div><!-- /container -->
+        </div><!-- /pageTitle -->
+
+        <div class="mainContent">
+            <div class="container center">
+                <div class="oneThird">
+                    <a href="http://www.sunmetro.net/" class="card" target="_blank">
+                        <img src="images/sunMetro.gif" alt="Contracts" class="hlIcon">
+                        <h2>SunMetro</h2>
+                        <p>Review routes, fares and plan your trip around the city.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Visit Sun Metro Website</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird -->
+                <div class="oneThird">
+                    <a href="http://www.sunmetro.net/lift_about-lift.html" class="card" target="_blank">
+                        <img src="images/sunMetroTheLift.gif" alt="Contracts" class="hlIcon">
+                        <h2>The LIFT</h2>
+                        <p>Sun Metro's paratransit service for ADA paratransit-eligible clients.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Learn more about  The LIFT</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird -->
+                <div class="oneThird gridLast">
+                    <a href="http://www.sunmetro.net/route70.asp" class="card" target="_blank">
+                        <img src="images/sunMetroR70.gif" alt="Contracts" class="hlIcon">
+                        <h2>Route 70</h2>
+                        <p>Express route with designated stops from the Eastside Terminal to the Glory Road Transfer Center along I-10, Oregon and Mesa.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Learn more about R70</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird gridLast -->
+
+                <div class="oneSixth">
+                    <p>&nbsp;</p>
+                </div><!-- /oneSixth -->
+                <div class="oneThird">
+                    <a href="http://www.sunmetro.net/route75.asp" class="card" target="_blank">
+                        <img src="images/sunMetroR75.gif" alt="Contracts" class="hlIcon">
+                        <h2>Route 75</h2>
+                        <p>Limited-express route providing service from Rojas to Texas Tech Medical Center and University Medical Center.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Learn more about R75</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird -->
+                <div class="oneThird gridLast">
+                    <a href="http://www.sunmetro.net/brio.html" class="card" target="_blank">
+                        <img src="images/sunMetroBrio.gif" alt="Contracts" class="hlIcon">
+                        <h2>Brio</h2>
+                        <p>El Paso premier form of transportation known as the Rapid Transit System (RTS).</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Learn more Brio</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird gridLast -->
+
+          </div><!-- /container -->
+  
+
+
+
+
+                <div class="backToTop scrollTopCirlce"><span>Back to Top</span></div>
+        </div><!-- /MainContent -->
+
+        <div id="footer1" class="mobileNo"></div><!-- /footer1 -->
+        <div id="footer2"></div><!-- /footer2 -->
+
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- Load Includes -->
+        <script>$(".nav").load('includes/nav.html');</script>
+        <script>$("#footer1").load('includes/footer1.html');</script>
+        <script>$("#footer2").load('includes/footer2.html');</script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+           jQuery(".backToTop").click(function() {
+              jQuery('html, body').animate({
+              scrollTop: 0
+           }, 500);
+         });
+        });
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if (scroll >= 300) {
+                $("body").addClass("scrolled");
+            } else {
+                $("body").removeClass("scrolled");
+            }
+        });
+        </script>
+    </body>
+</html>

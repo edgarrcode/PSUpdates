@@ -1,0 +1,388 @@
+/*IE FIX*/
+/*IE7-8 FIX*/
+.flex-direction-nav a {
+  background: url(../images/sprite.png) no-repeat #333 \9;
+}
+#HOPTable {
+	border-color: #ddd\9;
+}
+#HOPTable th {
+	*color : #fff;
+
+}
+body .gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding-top: 0;
+}
+/*Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+
+h5 {
+	font-size: 1em;
+}
+
+/* --------- DNN Admin Controls ----------- */
+/*ControlPanel*/
+.ControlPanel {
+	background: #F8F8F8;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
+}
+.ControlPanel table:first-child {
+    background: none repeat scroll 0 0 rgba(47, 47, 47, 0.98);
+    color: #fff;
+}
+.ControlPanel td {
+	border: none;
+}
+.ControlPanel input[type="radio"] {
+	margin-left: 20px;
+	margin-right: 4px;
+}
+.ModuleTitle_SubMenu {
+	background-color: #f8f8f8;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* PageFunctions and CommonTasks controls */
+.ControlPanel table table tr:nth-child(2) {
+	border-bottom: 1px solid #ddd;
+}
+.ControlPanel table table tr:nth-child(2) td {
+    padding-top: 0;
+}
+.ControlPanel table table tr:nth-child(1) td, .ControlPanel table table tr:nth-child(3) td {
+	padding: 15px 10px 0;
+}
+/*Add Module Content*/
+.ControlPanel table table table {
+    background: none !important;
+    border: medium none;
+    box-shadow: none;
+}
+.ControlPanel table table table .SubHead {
+    color: #003366;
+}
+.ControlPanel table table table tr:nth-child(2) {
+    border: 0 none;
+}
+.ControlPanel table table {
+    margin: 0 auto;
+}
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+	border: 0;
+}
+
+.ModuleTitle_MenuBar {
+	cursor: pointer;
+	height: 16px;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuItem {
+	border-right: 0;
+	cursor: pointer;
+	font-style: normal;
+	background-color: Transparent;
+}
+
+.ModuleTitle_MenuIcon {
+	border: 0;
+	cursor: pointer;
+	background-color: #EEEEEE;
+	text-align: center;
+	width: 15px;
+	height: 21px;
+}
+
+.ModuleTitle_SubMenu {
+	z-index: 1000;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+
+.ModuleTitle_MenuBreak {
+	background-color: #EEEEEE;
+	height: 1px;
+}
+
+.ModuleTitle_MenuItemSel {
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+
+.ModuleTitle_MenuArrow {
+	border-left: 0;
+	font-family: webdings;
+	font-size: 10pt;
+	cursor: pointer;
+}
+
+.ModuleTitle_RootMenuArrow {
+	cursor: pointer;
+}
+/*MenuItemsBorders*/
+.ModuleTitle_MenuItemSel {
+	border-width: 1px 0 1px 1px;
+}
+.ModuleTitle_MenuIcon, .ModuleTitle_MenuIcon.ModuleTitle_MenuItemSel {
+	border-color: #ddd;
+	border-style: solid none;
+	border-width: 1px 0;
+}
+.ModuleTitle_MenuItemSel.ModuleTitle_MenuArrow {
+	border: 1px 1px 1px 0;
+}
+/*ContentPanes*/
+img[src="/Images/action.gif"] {
+	max-width: none;
+}
+/*Admin View Animations Reset*/
+.opacityTopReset {
+	opacity: 1;
+	top: 0;
+}
+/*header*/
+.header {
+	z-index: 2;
+}
+/*Navigation*/
+.navigation .nav li a {
+	padding: 0 14px;
+	line-height: 36px;
+}
+.navigation .nav ul li a {
+	padding: 8px 14px;
+	line-height: 1;
+}
+/*pageTitle*/
+.pageTitle .caption {
+	font-size: 16px;
+	text-transform: uppercase;
+	border-bottom: 1px solid;
+	padding-bottom: 4px;
+}
+.pageTitle h1 {
+	font-size: 28px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-top: 12px;
+	line-height: 1.2;
+}
+.pageTitle table {
+	color: #fff;
+}
+/*Slides*/
+/*And*/
+/*Home Intro*/
+.intro h2::before,
+.intro h2::after {
+	content: ' ';
+	width: 20%;
+	display: block;
+	border-top: 2px solid;
+}
+.intro h2::before {
+	margin: 20px auto;
+}
+.intro h2::after {
+	margin: 30px auto;
+}
+
+.intro h2 {
+	margin: 0 auto;
+	width: 70%;
+}
+.flexslider h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.mandalaText h2 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+.mandalaText h5 {
+	margin-bottom: 0;
+}
+/*Main Content*/
+.mainContent {
+	padding-bottom: 20px;
+}
+
+@media(max-width:767px) {
+	.intro h2 {
+		font-size: 18px;
+		margin: 0 auto;
+		width: 80%
+	}
+	.mandalaBackground table {
+		height: 320px;
+	}
+	.welcomeSlide img {
+		max-width: 80%;
+	}
+	.welcomeSlide .updateText {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.orangeSlide h2 {
+		font-size: 14px;
+	}
+	.orangeSlide .transBlackBg {
+		font-size: 12px;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+}
+/* ----- Sections*/
+.section7 .pageTitle {
+	background-position: center 0;
+}
+/*Google Search*/
+.gs-title {
+	text-align: left;
+}
+/*table*/
+.tableTitle {
+	width: 73%;
+}
+.tableChapter {
+	width: 11%;
+}
+#HOPTable {
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+@media(max-width:767px){
+	.section1 .pageTitle .mandalaBackground table, .section2 .pageTitle .mandalaBackground table, .section3 .pageTitle .mandalaBackground table, .section4 .pageTitle .mandalaBackground table, .section5 .pageTitle .mandalaBackground table, .section6 .pageTitle .mandalaBackground table, .section7 .pageTitle .mandalaBackground table, .section8 .pageTitle .mandalaBackground table {
+		height: 100px;
+	}
+}
+@media(max-width:991px){
+	.tableTitle {
+		width: 66%;
+	}
+	.tableChapter {
+		width: 14%;
+	}
+}
+@media(max-width:767px){
+	#HOPTable {
+		font-size: 13px;
+	}
+	#HOPTable th,
+	#HOPTable td {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.tableTitle {
+		width: 44%;
+	}
+	.tableChapter {
+		width: 29%;
+	}
+	.tableUpdate {
+		width: 33%
+	}
+}
+
+/* ----- SinglePage*/
+.rightSidebarLayout .mandalaBackground table td {
+	color: #fff;
+}
+.rightSidebarLayout h6 {
+	margin-bottom: 0;
+}
+/*SearchInNavBar*/
+.googleCustomSearchWrapper {
+	float: right;
+	padding-top: 0;
+	width: 40%;
+}
+.googleSearchLabel {
+	color: #fff;
+	float: left;
+	text-align: right;
+	width: 31%;
+}
+.googleSearchLabel p {
+	line-height: 36px;
+	margin: 0;
+}
+.googleCustomSearch {
+	float: right;
+	height: 36px;
+	overflow: hidden;
+	width: 69%;
+}
+@media(max-width:991px){
+	.googleCustomSearchWrapper {
+		width: 51%;
+	}
+}
+@media(max-width:767px){
+	#dnn_ctr168600_ContentPane > .Normal {
+		display: block;
+	}
+	.googleCustomSearchWrapper {
+		border-top: 1px solid #03556e;
+		float: none;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.googleSearchLabel {
+		float: none;
+		text-align: left;
+		padding-left: 13px;
+		width: auto;
+	}
+	.googleCustomSearch {
+		float: none;
+		padding-left: 13px;
+		width: auto;
+	}
+}
+/*SearchInNavBar Overrides*/
+body .gsc-input-box {
+	height: 24px;
+}
+body input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+	border: none;
+	height: 14px;
+	margin-top: 0;
+}
+body .gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding-bottom: 0;
+	padding-right: 0;
+}
+body #___gcse_0 {
+	box-shadow: none;
+	margin-bottom: 0;
+}
+body .gsc-control-cse {
+	padding: 0;
+	border: none;
+}
+body form.gsc-search-box {
+	margin-bottom: 0;
+}
+body table.gsc-search-box {
+	height: 36px;
+	margin-bottom: 0;
+}
+body .googleCustomSearchWrapper td {
+	padding: 3px 3px 0 3px;
+}
+
+/*Footer*/
+#footer1 .loginLogoutWrapper a {
+	background-image: none;
+}
+
+/*General*/
+@media (max-width: 991px) and (min-width: 768px) {
+	.tabletNo {
+		display: none;
+	}
+}

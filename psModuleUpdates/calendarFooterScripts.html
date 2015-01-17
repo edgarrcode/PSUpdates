@@ -1,0 +1,21 @@
+<script>
+jQuery( "body" ).addClass( "calendarPage trainingCalendarPage" );
+jQuery("#_Portals__default_").attr( "href", "#" );
+jQuery(".utepLogo img").wrap("<a href='http://utep.edu' target='_blank'></a>");
+jQuery(".hideThisBtn").click(function() {
+  jQuery(".hideThis").slideToggle("slow");
+});
+jQuery('.trainingCalendarPage table .ItemTitle').each(function() {
+  jQuery(this).prev().nextUntil('.ItemTitle ~ span:nth-of-type(4n)').wrapAll('<div id="centerContainer"></div>');
+});
+//addClassToWrapper
+jQuery('#centerContainer .calendarSM').parent().parent().addClass('calendarSMWrapper');
+jQuery('#centerContainer .calendarTSD').parent().parent().addClass('calendarTSDWrapper');
+jQuery('#centerContainer .calendarSMPD').parent().parent().addClass('calendarSMPDWrapper');
+jQuery('#centerContainer .calendarMPD').parent().parent().addClass('calendarMPDWrapper');
+jQuery('#centerContainer .calendarBOD').parent().parent().addClass('calendarBODWrapper');
+jQuery('#centerContainer .calendarCDIAP').parent().parent().addClass('calendarCDIAPWrapper');
+jQuery('#centerContainer .calendarBeginAccRec').parent().parent().addClass('calendarBeginAccRecWrapper');
+//showCal
+jQuery('#centerContainer.calendarBODWrapper span:nth-child(5)').addClass('showMeCal');
+</script>

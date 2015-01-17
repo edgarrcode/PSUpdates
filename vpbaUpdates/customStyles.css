@@ -2,6 +2,19 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
 
 /*General Fixes*/
+.oneFifth {
+	float: left;
+	margin-right: 2%;
+	width: 18.4%;
+}
+.gridLast {
+	margin-right: 0;
+}
+@media (max-width:767px){
+	.breakColMobile{width:100%;margin-right:0}
+	.breakColMobile .oneFifth{width:100%;float:none;margin-right:0}
+	.home .highlightsWrapper .breakColMobile .oneFifth{border-bottom: 1px solid #ddd;padding:20px 0;}
+}
 .aTitle span {
 	display: inline;
 	padding: 0 2%;
@@ -49,7 +62,9 @@ body .navigation .container .nav li:hover div ul {
 .home #dnn_mainContent3 {
 	padding-bottom: 0;
 }
-
+.highlightsWrapper .spa {
+	background-position: center -880px;
+}
 
 /* --------- DNN Admin Controls ----------- */
 /*ControlPanel*/

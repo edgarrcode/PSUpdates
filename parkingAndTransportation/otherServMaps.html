@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- DNN Head Tags -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="css/customStyles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="utepLogo">
+                    <img src="images/headerLogo.png" alt="UTEP Handbook of Operating Procedures" title="UTEP Handbook of Operating Procedures">
+                </div><!-- /logo -->
+                <div class="psUTShareLogosWrapper mobileNo">
+                </div><!-- /psUTShareLogosWrapper -->
+            </div><!-- container -->
+        </div><!-- /header -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <!-- Navigation is imported from the nav.html file -->
+                    <ul class="nav">
+                    </ul><!-- /nav -->
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
+
+        <div class="pageTitle fadeIn">
+            <div class="containerNarrow">
+                <h1 class="slideInBT">Maps</h1>
+            </div><!-- /container -->
+        </div><!-- /pageTitle -->
+
+        <div class="mainContent">
+            <div class="container center">
+                <div class="oneThird">
+                    <a href="http://maps.utep.edu/" class="card" target="_blank">
+                        <img src="images/mapsUTEP.gif" alt="Contracts" class="hlIcon">
+                        <h2>Maps.UTEP.edu</h2>
+                        <p>The Campus Map has a list of buildings, parking lots, shuttle routes and areas currently affected by construction.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Visit maps.utep.edu</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird -->
+                <div class="oneThird">
+                    <a href="http://onthemove.utep.edu/" class="card" target="_blank">
+                        <img src="images/mapsOnTheMove.gif" alt="Contracts" class="hlIcon">
+                        <h2>On The Move Maps</h2>
+                        <p>Maps and routes to navigate through UTEP Campus transformation. Find your event venue, or plan your visit to UTEP.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Visit onthemove.utep.edu</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird -->
+                <div class="oneThird gridLast">
+                    <a href="http://utep.doublemap.com/map/" class="card" target="_blank">
+                        <img src="images/mapsMinerMetroGPSTracker.gif" alt="Contracts" class="hlIcon">
+                        <h2>Miner Metro GPS Tracker</h2>
+                        <p>Interactive application to track the exact location of the Miner Metro shuttles from your phone or computer.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Visit Miner Metro GPS tracker</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird gridLast -->
+
+                <div class="oneSixth">
+                    <p>&nbsp;</p>
+                </div><!-- /oneSixth -->
+                <div class="oneThird">
+                    <a href="http://maps.at.utep.edu/" class="card" target="_blank">
+                        <img src="images/mapsAT.gif" alt="Contracts" class="hlIcon">
+                        <h2>Maps.AT.UTEP.edu</h2>
+                        <p>Unofficial interactive map by UTEP Academic Technologies. Download this app to your Android or iOS device, and find your destination.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Visit maps.at.utep.edu</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird -->
+                <div class="oneThird gridLast">
+                    <a href="http://onthemove.utep.edu/maps/pedestrianroutes.pdf" class="card" target="_blank">
+                        <img src="images/mapsWalkingTrails.gif" alt="Contracts" class="hlIcon">
+                        <h2>Walking Trails</h2>
+                        <p>Enjoy the health benefits of walking. UTEP Wellness Program created this map that allows you locate the UTEP walking trails.</p>
+                        <div class="bottomLink">
+                            <hr>
+                            <h5>Visit UTEP Walking Trails</h5>
+                        </div><!-- /bottomLink -->
+                    </a>
+                </div><!-- /oneThird gridLast -->
+
+          </div><!-- /container -->
+  
+
+
+
+
+                <div class="backToTop scrollTopCirlce"><span>Back to Top</span></div>
+        </div><!-- /MainContent -->
+
+        <div id="footer1" class="mobileNo"></div><!-- /footer1 -->
+        <div id="footer2"></div><!-- /footer2 -->
+
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- Load Includes -->
+        <script>$(".nav").load('includes/nav.html');</script>
+        <script>$("#footer1").load('includes/footer1.html');</script>
+        <script>$("#footer2").load('includes/footer2.html');</script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+           jQuery(".backToTop").click(function() {
+              jQuery('html, body').animate({
+              scrollTop: 0
+           }, 500);
+         });
+        });
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if (scroll >= 300) {
+                $("body").addClass("scrolled");
+            } else {
+                $("body").removeClass("scrolled");
+            }
+        });
+        </script>
+    </body>
+</html>

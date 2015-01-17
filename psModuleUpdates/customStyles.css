@@ -537,6 +537,16 @@ body.calendarPage table[title=Calendar] {
 .calendarPage .calendarCDIAPWrapper .Normal {
 	display: none;
 }
+.calendarPage #centerContainer.calendarBeginAccRecWrapper {
+	border-left-color: #F220F9;
+}
+.calendarPage #centerContainer.calendarBeginAccRecWrapper .ItemTitle{
+	color: #F220F9;
+}
+.calendarPage .calendarBeginAccRecWrapper hr,
+.calendarPage .calendarBeginAccRecWrapper .Normal {
+	display: none;
+}
 /*touches edges*/
 .calendarPage #centerContainer.calendarBODWrapper{
 	background: #333;
@@ -775,6 +785,10 @@ ul.ui-tabs-nav li.ui-state-active a:focus {
 }
 .resourcesFormsWrapper .resourcesList {
 	margin: 0 0 40px;
+}
+.resourcesFormsWrapper .resourcesList a.regularLink {
+	background-image: none;
+	padding-left: 0;
 }
 .resourcesFormsWrapper .subSection {
 	padding: 0 30px 0 0;

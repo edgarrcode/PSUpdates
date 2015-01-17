@@ -254,6 +254,13 @@ img[src="/Images/action.gif"] {
 #HOPTable {
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
+#HOPTable ul.outline {
+	list-style: none;
+	padding-left: 6px;
+	margin: 3px 0 0 0;
+	line-height: 1.75;
+	font-size: 14px;
+}
 @media(max-width:767px){
 	.section1 .pageTitle .mandalaBackground table, .section2 .pageTitle .mandalaBackground table, .section3 .pageTitle .mandalaBackground table, .section4 .pageTitle .mandalaBackground table, .section5 .pageTitle .mandalaBackground table, .section6 .pageTitle .mandalaBackground table, .section7 .pageTitle .mandalaBackground table, .section8 .pageTitle .mandalaBackground table {
 		height: 100px;
