@@ -345,6 +345,7 @@ table {
 }
 .card:hover {
   box-shadow: 0px 0px 10px #bbb;
+  text-decoration: none;
 }
 .card h3:first-child {
   margin-top: .5em;
@@ -353,6 +354,7 @@ table {
 /*a card Styles*/
 a.card {
   color: #003366;
+  cursor: pointer;
   font-size: 14px;
   display: block;
   overflow: auto;
@@ -727,6 +729,7 @@ tr:target {
   text-align: center;
   width: 48px;
   height: 48px;
+  z-index: 1;
 }
 .backToTop span {
   display: block;
@@ -1491,6 +1494,21 @@ html[xmlns] .slides {
   .header .utepLogo {
     float: none;
   }
+}
+.appLogin {
+  float: right;
+  font-size: 12px;
+}
+.appLogin a {
+  color: #003366;
+  padding: 10px;
+  border: 1px solid #003366;
+  border-radius: 6px;
+}
+.appLogin a:hover {
+  background-color: #003366;
+  color: #ffffff;
+  text-decoration: none;
 }
 /*navigation*/
 .navigation {
