@@ -72,8 +72,19 @@ $(window).scroll(function(event) {
 // TableEvenRowClass
 $('tr:nth-child(2n)').addClass('even');
 
-
-// Remove Footer Link
-$('.vpbaLinksCol:nth-child(4) ul li:nth-child(3)').remove();
-//Temporary email link
-$('.sendWebsiteFeedback p a').attr('href','mailto:eerodriguez@utep.edu?subject=VPBA Site Feedback');
+/*backToTop*/
+$(document).ready(function(){
+   $(".backToTop").click(function() {
+      $('html, body').animate({
+      scrollTop: 0
+   }, 500);
+ });
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 300) {
+        $("body").addClass("scrolled");
+    } else {
+        $("body").removeClass("scrolled");
+    }
+});

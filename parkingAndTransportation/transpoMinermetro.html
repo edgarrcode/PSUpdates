@@ -24,7 +24,7 @@
                     <img src="images/UTEPParkingAndTransportationServices.png" alt="UTEP Parking And Transportation Services" title="UTEP Parking And Transportation Services">
                 </div><!-- /logo -->
                 <div class="oneThird gridLast right mobileNo">
-                    <p class="appLogin"><a href="http://finsvcs.utep.edu/StrategicPlanningAssessment/Login.aspx" target="_blank">My Parking Account</a></p>
+                    <p class="appLogin"><a href="https://parking.utep.edu/permits/" target="_blank">My Parking Account</a></p>
                 </div><!-- /oneThird gridLast -->
             </div><!-- container -->
         </div><!-- /header -->
@@ -80,15 +80,18 @@
         <div class="mainContent">
             <div class="container">
                 <div class="secondaryNavigationWrapper">
-                    <div class="oneThird">
-                        <a href="http://utep.doublemap.com/map/">GPS Tracker</a>
-                    </div><!-- /oneThird -->
-                    <div class="oneThird">
+                    <div class="oneFourth">
+                        <a href="http://utep.doublemap.com/map/" class="border">GPS Tracker</a>
+                    </div><!-- /oneFourth -->
+                    <div class="oneFourth">
                         <a href="#routes" class="border">Routes</a>
-                    </div><!-- /oneThird -->
-                    <div class="oneThird gridLast">
+                    </div><!-- /oneFourth -->
+                    <div class="oneFourth">
+                        <a href="http://admin.utep.edu/Portals/1321/PDFs/Emergency%20Service%20Plan.pdf" class="border">Emergency Service Plan</a>
+                    </div><!-- /oneFourth -->
+                    <div class="oneFourth gridLast">
                         <a href="http://admin.utep.edu/Portals/1321/PDFs/011912%20Shuttle%20Routes%20-1%2018%202012.pdf">ADA Shuttle Times</a>
-                    </div><!-- /oneThird gridLast -->
+                    </div><!-- /oneFourth gridLast -->
                 </div>
                 <div class="clear"></div>
                 <div class="oneHalf">
@@ -111,8 +114,8 @@
                 <div class="card permitSection minerMetroRoutesW">
                     <h2>Route 1: East - Blue (Schedule for Fall and Spring)</h2>
                     <div class="twoThirds theMap">
-                        <a href="https://www.google.com/maps/d/edit?mid=zG-LbJVhdaVE.koT3oM1aAtDY" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
-                        <div><img src="images/MinerMetroR1.gif"></div>
+                        <a href="http://utep.doublemap.com/" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="http://utep.doublemap.com/" target="_blank"><img src="images/MinerMetroR1.gif"></a></div>
                     </div><!-- /twoThirds -->
                     <div class="oneThird gridLast">
                         <p><strong>Monday - Thursday Schedule</strong><br>6:30 am - 9:05 pm*</p>
@@ -133,8 +136,8 @@
                 <div class="card permitSection minerMetroRoutesW">
                     <h2>Route 2: Campus Loop - Green (Schedule for Fall and Spring)</h2>
                     <div class="twoThirds theMap">
-                        <a href="https://www.google.com/maps/d/edit?mid=zG-LbJVhdaVE.koT3oM1aAtDY" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
-                        <div><img src="images/MinerMetro2.gif"></div>
+                        <a href="http://utep.doublemap.com/" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="http://utep.doublemap.com/" target="_blank"><img src="images/MinerMetro2.gif"></a></div>
                     </div><!-- /twoThirds -->
                     <div class="oneThird gridLast">
                         <p>This route provides service to the perimeter of the main campus.</p>
@@ -156,8 +159,8 @@
                 <div class="card permitSection minerMetroRoutesW">
                     <h2>Route 3: West - Orange</h2>
                     <div class="twoThirds theMap">
-                        <a href="https://www.google.com/maps/d/edit?mid=zG-LbJVhdaVE.koT3oM1aAtDY" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
-                        <div><img src="images/MinerMetro3.gif"></div>
+                        <a href="http://utep.doublemap.com/" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="http://utep.doublemap.com/" target="_blank"><img src="images/MinerMetro3.gif"></a></div>
                     </div><!-- /twoThirds -->
                     <div class="oneThird gridLast">
                     <p>This route provides direct service to the West side of campus dropping off at lot P-5.</p>
@@ -179,8 +182,8 @@
                 <div class="card permitSection minerMetroRoutesW">
                     <h2>Route 4: College of Health Sciences/School of Nursing</h2>
                     <div class="twoThirds theMap">
-                        <a href="https://www.google.com/maps/d/edit?mid=zG-LbJVhdaVE.koT3oM1aAtDY" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
-                        <div><img src="images/MinerMetro4.gif"></div>
+                        <a href="http://utep.doublemap.com/" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="http://utep.doublemap.com/" target="_blank"><img src="images/MinerMetro4.gif"></a></div>
                     </div><!-- /twoThirds -->
                     <div class="oneThird gridLast">
                         <p>This route provides service between main campus at Rim and Hawthorne to the College of Health Sciences.</p>
@@ -216,31 +219,13 @@
         <!-- Load Includes -->
         <script>$(".nav").load('includes/nav.html');</script>
         <script>$("#footer1").load('includes/footer1.html');</script>
-        <script>$("#footer2").load('includes/footer2.html');</script>
-        <script type="text/javascript">
-        jQuery(document).ready(function(){
-           jQuery(".backToTop").click(function() {
-              jQuery('html, body').animate({
-              scrollTop: 0
-           }, 500);
-         });
-        });
-        $(window).scroll(function() {    
-            var scroll = $(window).scrollTop();
-            if (scroll >= 300) {
-                $("body").addClass("scrolled");
-            } else {
-                $("body").removeClass("scrolled");
-            }
-        });
-        </script>
-        <script>
+        <script>$("#footer2").load('includes/footer2.html');</script>        <script>
             
 
 
 setTimeout( function(){
     $('#minerMetroDevice').animate ({bottom:-30},500);
-},750 );
+},300 );
 
 
         </script>

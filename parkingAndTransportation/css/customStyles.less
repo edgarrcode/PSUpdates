@@ -80,6 +80,18 @@ background: -ms-radial-gradient(center, ellipse cover,  #0062c5 0%,#004890 100%)
 background: radial-gradient(ellipse at center,  #0062c5 0%,#004890 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', endColorstr='#004890',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+/*Home*/
+a.smallCard.ptsAccount {
+  min-height: 336px;
+  p {
+    margin: 1em 0;
+  }
+}
+.alert.social {
+  h3 {
+    margin-top: 0;
+  }
+}
 /*Staff Directory Page*/
 .staffDirWrapper {
   .card {
@@ -155,6 +167,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
       bottom: 10px;
       width: auto;
     }
+    a {
+      display: block;
+    }
   }
   hr,p {
     margin: 10px 0;
@@ -226,6 +241,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     position: absolute;
     left: 50%; top: 50%;
     margin-left: -23px;
+  }
+}
+@media(max-width: 767px){
+  .adaPlates {
+    min-height: 240px;
+  }
+  .ADAReqWrapper .circlePlus {
+    top: 55%;
   }
 }
 .tailgateSection {

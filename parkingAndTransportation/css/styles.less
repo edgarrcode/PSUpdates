@@ -109,6 +109,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	img.block {
 		display: block;
 	}
+	a {
+		cursor: pointer;
+	}
 }
 
 .card:hover {
@@ -141,7 +144,10 @@ a.card {
 	}
 }
 a.card.smallCard {
-	min-height: 150px;
+	min-height: 120px;
+	p {
+		margin: 0;
+	}
 }
 .hlIcon {
 	.center;
@@ -344,7 +350,7 @@ h2 {
 	border-top: 1px solid @grayLight;
 	margin: 60px 0 30px;
 	span {
-		background-color: @white;
+		background-color: @grayLightest;
 		padding: 0 2%;
 		position: relative;
 		top: -20px;
@@ -1367,7 +1373,6 @@ html[xmlns] .slides {display: block;}
 		padding: 10px;
 	}
 	a.border {
-		border-left: 1px solid @blueMed;
 		border-right: 1px solid @blueMed;
 	}
 }
