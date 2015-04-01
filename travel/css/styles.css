@@ -1879,7 +1879,12 @@ html[xmlns] .slides {
 /*Main content*/
 .mainContent {
   padding-bottom: 80px;
-  overflow: hidden;
+  /*overflow: auto;*/
+}
+.mainContent:after {
+  content: " ";
+  clear: both;
+  display: block;
 }
 @media (max-width: 767px) {
   .mainContent {
