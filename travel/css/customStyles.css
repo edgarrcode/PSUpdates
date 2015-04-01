@@ -1,0 +1,563 @@
+ol {
+  list-style-position: inside;
+  text-indent: 0;
+}
+ol li {
+  margin-bottom: 10px;
+}
+/*Mixins*/
+.sprite {
+  background: url(../images/sprite.png) no-repeat;
+}
+.downloadPolicyBtn {
+  background-color: #e6e6e6;
+  border: 1px solid #dddddd;
+  padding: 10px 0;
+}
+.transition {
+  transition: all ease-in 150ms;
+}
+.fontSmall {
+  font-size: 12px;
+}
+.fontMed {
+  font-size: 24px;
+}
+.fontLarge {
+  font-size: 36px;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
+}
+.italicSerif {
+  display: block;
+  font-family: Adobe Caslon Pro, times, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+.boxShadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.breakColMobileMixin {
+  width: 100%;
+  margin-right: 0;
+}
+/*HideSolpartMenu*/
+#dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
+  display: none;
+}
+.blueGradient {
+  background: #036;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0062c5), color-stop(100%, #004890));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #0062c5 0%, #004890 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #0062c5 0%, #004890 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0062c5', endColorstr='#004890', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+/* Anthony travel | Corporate Travel Planner */
+a.anthonyTravel .blueBlock {
+  background-color: #eeeeee;
+}
+a.corporateTravelPlanner .blueBlock {
+  background-color: #002d42;
+}
+.hl a.anthonyTravel,
+.hl a.corporateTravelPlanner {
+  min-height: 300px;
+}
+/*UT System Contracted*/
+.airlines a.card {
+  min-height: 0;
+}
+/*Home*/
+a.smallCard.ptsAccount {
+  min-height: 336px;
+}
+a.smallCard.ptsAccount p {
+  margin: 1em 0;
+}
+.alert.social h3 {
+  margin-top: 0;
+}
+/*Staff Directory Page*/
+.staffDirWrapper .card {
+  min-height: 90px;
+}
+.staffDirWrapper .card h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.staffDirWrapper .card p {
+  font-size: 14px;
+  margin: 0;
+}
+.staffDirWrapper .highlightsWrapper {
+  text-align: left;
+}
+.staffDirWrapper .highlightsWrapper h3 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.staffDirWrapper .highlightsWrapper a.sprite {
+  float: left;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+.staffDirWrapper .highlightsWrapper a {
+  color: #003366;
+}
+.staffDirWrapper .highlightsWrapper .blueBlock {
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 80%;
+}
+.staffDirWrapper .highlightsWrapper .blueBlockAfterContent {
+  padding-left: 5px;
+}
+@media (max-width: 990px) {
+  .staffDirWrapper .card h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .staffDirWrapper .oneThird {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/*Announcements*/
+.announcement h2 {
+  margin: 0;
+}
+.announcement .date {
+  font-style: italic;
+  margin-top: 0;
+}
+/*PermitSection*/
+.permitSection {
+  overflow: auto;
+}
+.permitSection h2 {
+  margin: 0 0 5px;
+}
+.permitSection .theMap {
+  position: relative;
+}
+.permitSection .theMap .openMapIcon {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: auto;
+}
+.permitSection .theMap a {
+  display: block;
+}
+.permitSection hr,
+.permitSection p {
+  margin: 10px 0;
+}
+.permitSection img {
+  width: 100%;
+}
+/*permitPrice*/
+.permitPrice {
+  background-color: #003366;
+  color: #ffffff;
+  display: block;
+  padding: 6px 10px;
+  line-height: 1.2;
+  min-height: 68px;
+}
+.permitPrice .price {
+  display: block;
+  font-size: 36px;
+  font-weight: 200;
+}
+.permitPrice:hover {
+  background-color: #004890;
+  text-decoration: none;
+  color: #ffffff;
+}
+/*permitPriceSmall*/
+.permitPriceSmall {
+  clear: both;
+  color: #003366;
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.permitPriceSmall .price {
+  text-align: center;
+  background-color: #003366;
+  color: #ffffff;
+  font-size: 18px;
+  float: left;
+  margin-right: 10px;
+  min-width: 90px;
+  padding: 14px 0;
+}
+.permitPriceSmall .buyInMyPA {
+  font-weight: bold;
+  clear: left;
+  text-transform: uppercase;
+}
+/*MinerMetro Routes*/
+.minerMetroRoutesW strong {
+  color: #003366;
+}
+.minerMetroRoutesW .timeIntervals {
+  margin-top: 0;
+  padding-left: 20px;
+}
+/*ADA Page*/
+.ADAReqWrapper {
+  overflow: auto;
+}
+.ADAReqWrapper .circlePlus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -23px;
+}
+@media (max-width: 767px) {
+  .adaPlates {
+    min-height: 240px;
+  }
+  .ADAReqWrapper .circlePlus {
+    top: 55%;
+  }
+}
+.tailgateSection {
+  background-image: url(../images/tailgateBg.gif);
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/*MinerMetro*/
+.minerMetro.home .pageTitle table {
+  height: 320px;
+}
+.minerMetro.home .pageTitle td.left {
+  text-align: left;
+}
+.minerMetro.home .pageTitle h1,
+.minerMetro.home .pageTitle h2 {
+  margin: 0;
+}
+.minerMetro.home .pageTitle p {
+  margin: 10px 0;
+}
+.minerMetro.home .pageTitle h1 {
+  font-weight: 200;
+}
+.minerMetro.home .pageTitle .sliderImgAbsolute {
+  left: 0;
+  bottom: -330px;
+}
+/*Roundabout*/
+.welcomeSlide.roundabout .videoCol {
+  vertical-align: bottom;
+  padding-bottom: 10px;
+}
+.welcomeSlide.roundabout iframe {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 992px) {
+  .welcomeSlide.roundabout iframe {
+    width: 489px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .welcomeSlide.roundabout td.videoCol {
+    vertical-align: middle;
+  }
+  .welcomeSlide.roundabout td.videoCol iframe {
+    height: 180px;
+    width: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .welcomeSlide.roundabout td.videoCol {
+    vertical-align: middle;
+  }
+  .welcomeSlide.roundabout td.videoCol iframe {
+    height: 113px;
+    width: 200px;
+  }
+}
+/*contact page*/
+.contact h3 {
+  margin-bottom: 0;
+}
+.contact h3 + p {
+  margin-top: 0;
+}
+/*HomeHighlights*/
+.hl {
+  position: relative;
+}
+.hl .card {
+  color: #003366;
+  font-size: 14px;
+  display: block;
+  overflow: auto;
+  padding: 10px 10px 0 10px;
+  position: relative;
+  text-decoration: none;
+  min-height: 360px;
+}
+.hl .hlIcon {
+  text-align: center;
+}
+.hl ul {
+  text-align: left;
+}
+.hl ul a:hover {
+  box-shadow: none;
+}
+.hl h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.hl h5 {
+  color: #004890;
+}
+.hl .bottomLink {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .oneFourth.hl {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .oneFourth.hl.gridLast,
+  .oneFourth.hl:nth-child(3) {
+    margin-right: 0;
+  }
+  .oneFourth.hl.even {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .highlightsWrapper .hl {
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+}
+/*Business Process Guidelines*/
+.businessProcessGuidelinesHeading span {
+  display: inline-block;
+  width: 90%;
+}
+.expandCollapseWrapper {
+  background-color: #003366;
+  color: #ffffff;
+  overflow: auto;
+  padding: 10px;
+}
+.expandCollapseWrapper h2 {
+  color: #ffffff;
+}
+.expandCollapseWrapper .expandCollapseNav {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+.expandCollapseWrapper .expandCollapseNav li {
+  float: left;
+}
+.expandCollapseWrapper .expandCollapseNav li .btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+.expandCollapseWrapper .expandCollapseNav li:first-child {
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .expandCollapseWrapper .expandCollapseNav li .btn {
+    padding: 6px 6px;
+  }
+}
+/*Accordion ShowHide Classes*/
+.guidelinesSectionWrapper.showThisGSContent {
+  border-left: 2px solid #004890;
+}
+.guidelinesSectionWrapper.showThisGSContent .gs-title-trigger .gs-title {
+  background: url(../images/sprite.png) no-repeat;
+  background-position: -40px -2232px;
+}
+.guidelinesSectionWrapper.showThisGSContent .gs-content {
+  height: auto;
+}
+.guidelinesSectionWrapper.evenRow {
+  border-left-color: #fcfcfc;
+}
+.guidelinesSectionWrapper.showThisGSContent.evenRow {
+  border-left-color: #e15a00;
+}
+.guidelinesSectionWrapper {
+  border-left: 2px solid #ffffff;
+}
+.guidelinesSectionWrapper .gs-title-trigger {
+  cursor: pointer;
+  padding: 10px;
+}
+.guidelinesSectionWrapper .gs-title-trigger .gs-title {
+  background: url(../images/sprite.png) no-repeat;
+  transition: all ease-in 150ms;
+  background-position: -40px -2161px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+.guidelinesSectionWrapper h3:first-child {
+  font-size: 1.17em;
+}
+.guidelinesSectionWrapper .gs-content {
+  border-left: 2px solid #dddddd;
+  height: 0px;
+  overflow: hidden;
+  padding: 0 30px;
+  margin-left: 30px;
+}
+.guidelinesSectionWrapper:hover {
+  background-color: #eeeeee;
+  border-left-color: #004890;
+}
+.guidelinesSectionWrapper.evenRow:hover {
+  border-left-color: #e15a00;
+}
+/*Delegation Of Authority*/
+.container {
+  position: relative;
+}
+.delegationOFAuthToolbar {
+  background-color: #003366;
+  padding: 10px;
+}
+.delegationOFAuthToolbar .btnMed {
+  margin-top: 6px;
+}
+#delOfAuthDropdown {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+#delOfAuthDropdown ul > li span {
+  display: block;
+  padding: 7px;
+}
+#delOfAuthDropdown a {
+  display: block;
+}
+#delegationOfAuthorityTable th.regents,
+#delegationOfAuthorityTable td.regents {
+  width: 20%;
+}
+#delegationOfAuthorityTable th.delegate,
+#delegationOfAuthorityTable td.delegate {
+  width: 35%;
+}
+#delegationOfAuthorityTable th.date,
+#delegationOfAuthorityTable td.date {
+  width: 15%;
+}
+#delegationOfAuthorityTable th h2 {
+  display: inline;
+}
+#delegationOfAuthorityTable td {
+  padding: 30px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+#delegationOfAuthorityTable td.chapter {
+  text-align: center;
+}
+.fixedThead {
+  top: 0;
+  position: fixed;
+  width: auto;
+  display: none;
+  border: none;
+}
+@media (max-width: 767px) {
+  #delOfAuthDropdown ul li span {
+    font-size: 14px;
+    margin-right: 50px;
+  }
+  #delegationOfAuthorityTable {
+    font-size: 12px;
+  }
+  #delegationOfAuthorityTable td {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .fixedThead {
+    display: none!important;
+  }
+  .backToTop {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+/*OpenRecords*/
+.OpenRecordsCard {
+  background-color: #ffffff;
+  margin: 20px auto;
+  width: 80%;
+}
+.OpenRecordsCard .theCardContent {
+  padding: 10px;
+}
+/*State Reports*/
+@media (min-width: 767px) {
+  .stateReports .card {
+    min-height: 210px;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .stateReports .card h3 {
+    font-size: 12px;
+  }
+}
+/*Contact*/
+.depContactWrapper {
+  background-color: #003366;
+  padding: 2%;
+}
+.depContactWrapper select {
+  width: 100%;
+}

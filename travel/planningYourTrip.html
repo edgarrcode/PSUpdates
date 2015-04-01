@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- DNN Head Tags -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="css/customStyles.css">
+    </head>
+    <body>
+        <a href="#mainContentArea" class="skipToMainContentLink">Skip to main content</a> 
+        <div class="header">
+            <div class="container">
+                <div class="twoThirds breakColMobile">
+                    <img src="images/UTEPPayrollOffice.png" alt="UTEP Payroll Office" title="UTEP Payroll Office">
+                </div><!-- /logo -->
+                <div class="oneThird gridLast right mobileNo">
+                </div><!-- /oneThird gridLast -->
+            </div><!-- container -->
+        </div><!-- /header -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <ul class="nav">
+                        <!-- Navigation is imported from the nav.html file -->
+                    </ul><!-- /nav -->
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
+
+        <div class="pageTitle fadeIn">
+            <div class="containerNarrow">
+                <h1 class="slideInBT">Planning Your Trip</h1>
+            </div><!-- /container -->
+        </div><!-- /pageTitle -->
+
+        <div id="mainContentArea" tabindex="0">Main Content</div>
+        <div class="mainContent">
+            <div class="container leftSidebarLayout">
+                <div class="sideBar">
+                    <div class="sidebearMobileToggle"></div>
+                    <div class="mobileScroll">
+                        <div class="sidebarContent">
+                            <div class="sideBarNav">
+                                <!-- SideBarNav will be imported from the sideBarNav.html file -->
+                            </div><!-- /sideBarNav -->
+                        </div><!-- /sidebarContent -->
+                    </div><!-- /mobileScroll -->
+                </div><!-- /sideBar -->
+                <div class="rightContnent ContentPane">
+                    <h2 class="aTitle"><span id="TravelAuthorizations">Travel Authorizations</span></h2>
+                    <p>Contact your department's travel planner, who is usually the administrative assistant, to submit a request for travel authorization.  The following information is required:</p>
+                    <ol>
+                        <li>Department Head Approval</li>
+                        <li>Name of Traveler</li>
+                        <li>Destination</li>
+                        <li>Dates of Travel</li>
+                        <li>Purpose of Travel</li>
+                        <li>Estimated Costs and Account Information</li>
+                    </ol>
+                    <p><b>Please Note:</b> Appropriate arrangements for disposition of duties must be made in advance of travel if classes are to be missed, a qualified member of the instructional staff shall be identified to be approved by the department chair as a substitute instructor.</p>
+
+                    <h2 class="aTitle"><span id="TravelAdvances">Travel Advances</span></h2> 
+                    <p>A travel advance may be requested by contacting your department travel planner. Requests must be submitted to the Accounts Payable Department no earlier than 3 days no later than 10 days prior to travel. The state of Texas allows a travel advance for up to 90% of the per diem for meals and lodging. State approved meal and lodging per diems for your travel can be accessed using the <span style="color:red">"Per Diem-Max Allowance" screen in *DEFINE (i.e., GG1 command)</span>.</p>
+
+                    <p>All travel advance requests must have an "Approved" travel authorization (i.e., VE5) and a signed "Authorization to Deduct Travel Advance from Payroll Checks" form. Unused travel funds must be turned into the University as soon as possible, and deposited at the Student Business Services Department to clear the advance. Please deposit the travel advance into account number 12-0206-0091, object code 5371.</p>
+                    <p><a href="http://admin.utep.edu/LinkClick.aspx?link=Travel%2fAuthorizationToDeductOutstandingTravelAdvancefromPayrollChecks.pdf&tabid=3072&mid=6835" target="_blank" class="btn primaryBtn">Download "Authorization to Deduct Travel Advance from Payroll Checks" form</a></p>
+
+                    <h2 class="aTitle"><span id="SeminarConferenceFees">Seminar/Conference Fees</span></h2> 
+                    <p>The following options are available for paying your registration for seminars or conferences:</p>
+                    <ul>
+                        <li>Registration is paid using the Pro-Card. </li>
+                        <li>Registration is pre-paid by the University.</li>
+                        <li>Submit your registration form to the department travel planner (i.e., administrative assistant) for pre-payment</li>
+                        <li>Registration paid by employee and reimbursed by the University:</li>
+                        <li>Submit your paid registration receipt to the department travel planner for reimbursement upon completion of travel.</li>
+                    </ul>
+
+                </div><!-- /ContentPane -->
+            </div><!-- /container -->
+        </div><!-- /MainContent -->
+        
+        <div class="backToTop scrollTopCirlce"><span>Back to Top</span></div>
+        <div id="footer1" class="mobileNo"></div><!-- /footer1 -->
+        <div id="footer2"></div><!-- /footer2 -->
+
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- Load Includes -->
+        <script>$(".sideBarNav").load('includes/sideBarNavPlanning.html');</script>
+        <script>$(".nav").load('includes/nav.html');</script>
+        <script>$("#footer1").load('includes/footer1.html');</script>
+        <script>$("#footer2").load('includes/footer2.html');</script>
+    </body>
+</html>
