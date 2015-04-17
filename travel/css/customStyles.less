@@ -66,6 +66,9 @@ ol {
   width: 100%;
   margin-right: 0;
 }
+.noPadding {
+  padding: 0;
+}
 /*HideSolpartMenu*/
 #dnn_dnnSOLPARTMENU_ctldnnSOLPARTMENU {
   display: none;
@@ -102,16 +105,11 @@ a.corporateTravelPlanner {
 }
 
 /*Home*/
-a.smallCard.ptsAccount {
-  min-height: 336px;
-  p {
-    margin: 1em 0;
-  }
+.home .welcomeSlide table {
+  color: @white;
 }
-.alert.social {
-  h3 {
-    margin-top: 0;
-  }
+.home .blueMedSection .card{
+  min-height: 400px;
 }
 /*Staff Directory Page*/
 .staffDirWrapper {
@@ -162,7 +160,12 @@ a.smallCard.ptsAccount {
     .breakColMobileMixin;
   }
 }
-
+/*resources*/
+@media (min-width: 768px){
+  .resources .card {
+    min-height: 320px;
+  }
+}
 /*Announcements*/
 .announcement {
   h2 {
@@ -171,172 +174,6 @@ a.smallCard.ptsAccount {
   .date {
     .italic;
     margin-top: 0;
-  }
-}
-/*PermitSection*/
-.permitSection {
-  overflow: auto;
-  h2 {
-    margin: 0 0 5px;
-  }
-  .theMap {
-    position: relative;
-    .openMapIcon {
-      .boxShadow;
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      width: auto;
-    }
-    a {
-      display: block;
-    }
-  }
-  hr,p {
-    margin: 10px 0;
-  }
-  img {
-    width: 100%;
-  }
-}
-
-/*permitPrice*/
-.permitPrice {
-  background-color: @blue;
-  color: @white;
-  display: block;
-  padding: 6px 10px;
-  line-height: 1.2;
-  min-height: 68px;
-  .price {
-    display: block;
-    font-size: 36px;
-    font-weight: 200;
-  }
-}
-.permitPrice:hover {
-  background-color: @blueMed;
-  text-decoration: none;
-  color: @white;
-}
-/*permitPriceSmall*/
-.permitPriceSmall {
-  clear: both;
-  color: @blue;
-  display: block;
-  font-size: 14px;
-  line-height: 1;
-  margin-bottom: 10px;
-  overflow: auto;
-  .price {
-    .center;
-    background-color: @blue;
-    color: @white;
-    font-size: 18px;
-    float: left;
-    margin-right: 10px;
-    min-width: 90px;
-    padding: 14px 0;
-  }
-  .buyInMyPA {
-    font-weight: bold;
-    clear: left;
-    text-transform: uppercase;
-  }
-}
-/*MinerMetro Routes*/
-.minerMetroRoutesW {
-  strong {
-    color:@blue; 
-  }
-  .timeIntervals {
-    margin-top: 0;
-    padding-left: 20px;
-  }
-}
-
-/*ADA Page*/
-.ADAReqWrapper {
-  overflow: auto;
-  .circlePlus {
-    position: absolute;
-    left: 50%; top: 50%;
-    margin-left: -23px;
-  }
-}
-@media(max-width: 767px){
-  .adaPlates {
-    min-height: 240px;
-  }
-  .ADAReqWrapper .circlePlus {
-    top: 55%;
-  }
-}
-.tailgateSection {
-  background-image: url(../images/tailgateBg.gif);
-  background-size: 100% auto;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-/*MinerMetro*/
-.minerMetro.home .pageTitle {
-  table {
-    height: 320px;
-  }
-  td.left {
-    .left;
-  }
-  h1,h2 {
-    margin: 0;
-  }
-  p{
-    margin: 10px 0;
-  }
-  h1 {
-    font-weight: 200;
-  }
-  .sliderImgAbsolute {
-    left: 0; bottom: -330px;
-  }
-}
-
-/*Roundabout*/
-.welcomeSlide.roundabout {
-  .videoCol {
-    vertical-align: bottom;
-    padding-bottom: 10px;
-  }
-  iframe {
-    .boxShadow;
-  }
-}
-@media(min-width: 992px) {
-  .welcomeSlide.roundabout iframe {
-    width: 489px;
-  }
-}
-@media(min-width: 768px)and(max-width: 991px) {
-  .welcomeSlide.roundabout {
-      td.videoCol {
-        vertical-align: middle;
-        iframe {
-          height: 180px;
-          width: 320px;
-      }
-    }
-  }
-}
-@media(max-width: 767px) {
-  .welcomeSlide.roundabout {
-      td.videoCol {
-        vertical-align: middle;
-        iframe {
-          height: 113px;
-          width: 200px;
-      }
-    }
   }
 }
 /*contact page*/
@@ -382,12 +219,10 @@ a.smallCard.ptsAccount {
   h5 {
     color: @blueMed;
   }
-  .bottomLink {
-    position: absolute;
-    left: 0; bottom: 0; right: 0;
-  }
 }
-
+#dnn_mainContent2 {
+  padding-bottom: 0;
+}
 @media(min-width: 768px)and(max-width: 991px) {
   .oneFourth.hl {
     margin-right: 2%;
@@ -601,6 +436,149 @@ a.smallCard.ptsAccount {
   padding: 2%;
   select {
     width: 100%;
+  }
+}
+
+
+/* --------- DNN Admin Controls ----------- */
+/*ControlPanel*/
+.ControlPanel {
+  background: #F8F8F8;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.ControlPanel table:first-child {
+    background: none repeat scroll 0 0 rgba(47, 47, 47, 0.98);
+    color: #fff;
+}
+.ControlPanel td {
+  border: none;
+}
+.ControlPanel input[type="radio"] {
+  margin-left: 20px;
+  margin-right: 4px;
+}
+.ModuleTitle_SubMenu {
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* PageFunctions and CommonTasks controls */
+.ControlPanel table table tr:nth-child(2) {
+  border-bottom: 1px solid #ddd;
+}
+.ControlPanel table table tr:nth-child(2) td {
+    padding-top: 0;
+}
+.ControlPanel table table tr:nth-child(1) td, .ControlPanel table table tr:nth-child(3) td {
+  padding: 15px 10px 0;
+}
+/*Add Module Content*/
+.ControlPanel table table table {
+    background: none !important;
+    border: medium none;
+    box-shadow: none;
+}
+.ControlPanel table table table .SubHead {
+    color: #003366;
+}
+.ControlPanel table table table tr:nth-child(2) {
+    border: 0 none;
+}
+.ControlPanel table table {
+    margin: 0 auto;
+}
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+  border: 0;
+}
+
+.ModuleTitle_MenuBar {
+  cursor: pointer;
+  height: 16px;
+  background-color: Transparent;
+}
+
+.ModuleTitle_MenuItem {
+  border-right: 0;
+  cursor: pointer;
+  font-style: normal;
+  background-color: Transparent;
+}
+
+.ModuleTitle_MenuIcon {
+  border: 0;
+  cursor: pointer;
+  background-color: #EEEEEE;
+  text-align: center;
+  width: 15px;
+  height: 21px;
+}
+
+.ModuleTitle_SubMenu {
+  z-index: 1000;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.ModuleTitle_MenuBreak {
+  background-color: #EEEEEE;
+  height: 1px;
+}
+
+.ModuleTitle_MenuItemSel {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.ModuleTitle_MenuArrow {
+  border-left: 0;
+  font-family: webdings;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+.ModuleTitle_RootMenuArrow {
+  cursor: pointer;
+}
+/*MenuItemsBorders*/
+.ModuleTitle_MenuItemSel {
+  border-width: 1px 0 1px 1px;
+}
+.ModuleTitle_MenuIcon, .ModuleTitle_MenuIcon.ModuleTitle_MenuItemSel {
+  border-color: #ddd;
+  border-style: solid none;
+  border-width: 1px 0;
+}
+.ModuleTitle_MenuItemSel.ModuleTitle_MenuArrow {
+  border: 1px 1px 1px 0;
+}
+/*ContentPanes*/
+img[src="/Images/action.gif"] {
+  max-width: none;
+}
+
+/*Button Med*/
+.btnMed{font-size:14px;padding:4px 10px}
+
+/*Delegation of Authority*/
+.delegationOFAuthToolbar{background-color:#036;padding:10px}.delegationOFAuthToolbar .btnMed{margin-top:6px}#delOfAuthDropdown{box-shadow:0 1px 2px rgba(0,0,0,.5);background-color:#fff;border:1px solid #ddd;margin-top:0;margin-bottom:0;}#delOfAuthDropdown ul>li span{display:block;padding:7px}#delOfAuthDropdown a{display:block}#delegationOfAuthorityTable th.regents,#delegationOfAuthorityTable td.regents{width:20%}#delegationOfAuthorityTable th.delegate,#delegationOfAuthorityTable td.delegate{width:35%}#delegationOfAuthorityTable th.date,#delegationOfAuthorityTable td.date{width:15%}#delegationOfAuthorityTable th h2{display:inline}#delegationOfAuthorityTable td{padding:30px 10px;text-align:left;vertical-align:top}#delegationOfAuthorityTable td.chapter{text-align:center}.fixedThead{top:0;position:fixed;width:auto;display:none;border:none}@media (max-width:767px){#delOfAuthDropdown ul li span{font-size:14px;margin-right:50px}#delegationOfAuthorityTable{font-size:12px}#delegationOfAuthorityTable td{padding-left:3px;padding-right:3px}.fixedThead{display:none!important}.backToTop{right:20px;bottom:20px}}
+.aDropdownWrapper ul li:hover ul {
+  display: none;
+}
+.aDropdownWrapper ul li {
+  cursor: pointer;
+}
+.aDropdownWrapper ul li.delOfAutDD.activeDOADD ul {
+  display: block;
+  position: absolute;
+}
+@media(max-width: 767px) {
+  .delegationOFAuthToolbar .btnMed {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 
