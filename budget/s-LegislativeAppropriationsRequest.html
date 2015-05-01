@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -33,8 +33,8 @@
             <div class="container">
                 <div class="mobileNavToggle">Menu</div>
                 <div class="navigationBar">
-                    <!-- Navigation is imported from the nav.html file -->
                     <ul class="nav">
+                        <!-- Navigation is imported from the nav.html file -->
                     </ul><!-- /nav -->
                     <div class="searchTabletToggle">
                         <span class="icon"></span>
@@ -45,40 +45,42 @@
 
         <div class="pageTitle fadeIn">
             <div class="containerNarrow">
-                <h1 class="slideInBT">Resources</h1>
+                <h1 class="slideInBT">Legislative Appropriations Request (LAR)</h1>
             </div><!-- /container -->
         </div><!-- /pageTitle -->
 
         <div id="mainContentArea" tabindex="0">Main Content</div>
         <div class="mainContent">
-            <div class="container">
-                <div class="oneHalf breakColMobile">
-                    <div class="card">
-                        <h3>Budget Useful Links</h3>
-                        <hr>
-                        <ul class="resourcesList">
-                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=73836#tabs-8" target="_blank" class="linkIcon">Budget Overview and Departmental Budget Table Presentation</a></li>
-                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=68280" target="_blank" class="linkIcon">PeopleSofr Calendar </a></li>
-                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=72902" target="_blank" class="linkIcon">Budget and HR IAP forms</a></li>
-                        </ul>
-                    </div><!-- /card -->
-                </div><!-- /oneHalf -->
+            <div class="container leftSidebarLayout">
+                <div class="sideBar">
+                    <div class="sidebearMobileToggle"></div>
+                    <div class="mobileScroll">
+                        <div class="sidebarContent">
+                            <div class="sideBarNav">
+                                <!-- SideBarNav will be imported from the sideBarNav.html file -->
+                            </div><!-- /sideBarNav -->
+                        </div><!-- /sidebarContent -->
+                    </div><!-- /mobileScroll -->
+                </div><!-- /sideBar -->
+                <div class="rightContnent ContentPane">
+                    <p>Prepare the biennial Legislative Appropriations Request and all supporting documents requests for the legislative session. The LAR summarizes the University’s funding requests to the State of Texas.</p>
+                    <div class="oneHalf gridLast">
+                        <div class="card">
+                            <h3>Legislative Appropriations Request</h3>
+                            <hr>
+                            <ul class="resourcesList">
+                                <li><a href="http://www.utsystem.edu/cont/Reports_Publications/LARs/ELPLAR1014.pdf" class="fileIcon">FY 2016-2017</a></li>
+                                <li><a href="http://admin.utep.edu/Portals/1460/stateReports/LAR-FY2014-2015.pdf" class="fileIcon">FY 2014-2015</a></li>
+                                <li><a href="http://admin.utep.edu/Portals/1460/stateReports/LAR-FY2012-2013.pdf" class="fileIcon">FY 2012-2013</a></li>
+                                <li><a href="http://admin.utep.edu/LinkClick.aspx?link=Legislative.Appropriations.Request-FY.2010-2011.pdf&amp;tabid=49976&amp;mid=119854" class="fileIcon">FY 2010-2011</a></li>
+                            </ul>
+                        </div><!-- /card -->
+                    </div><!-- /oneHalf -->
+                </div><!-- /ContentPane -->
 
-                <div class="oneHalf gridLast breakColMobile">
-                    <div class="card">
-                        <h3>Other</h3>
-                        <hr>
-                        <ul class="resourcesList">
-                            <li><a href="http://www.utsystem.edu/cont/policies.htm" target="_blank" class="fileIcon">Policies & Rules</a></li>
-                            <li><a href="http://admin.utep.edu/Default.aspx?tabid=49976" target="_blank" class="linkIcon">UTEP State Reports</a></li>
-                            <li>&nbsp;</li>
-                        </ul>
-                    </div><!-- /card -->
-                </div><!-- /oneHalf gridLast -->
-                <div class="clear"></div>
+
             </div><!-- /container -->
-        </div><!-- /mainContent -->
-
+        </div><!-- /MainContent -->
         
         <div class="backToTop scrollTopCirlce"><span>Back to Top</span></div>
         <div id="footer1" class="mobileNo"></div><!-- /footer1 -->
@@ -88,6 +90,7 @@
         <script src="js/main.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
         <!-- Load Includes -->
+        <script>$(".sideBarNav").load('includes/sideBarNav.html');</script>
         <script>$(".nav").load('includes/nav.html');</script>
         <script>$("#footer1").load('includes/footer1.html');</script>
         <script>$("#footer2").load('includes/footer2.html');</script>

@@ -134,7 +134,7 @@ a.card {
 	padding: 10px 10px 0 10px;
 	position: relative;
 	text-decoration: none;
-	min-height: 300px;
+	min-height: 320px;
 	.blueBlock {
 		background-color: @blueMed;
 		height: 100px;
@@ -143,6 +143,11 @@ a.card {
 	.imgOverBlueBlock {
 		position: relative;
 		z-index: 1;
+	}
+}
+@media(min-width: 768px)and(max-width: 1199px) {
+	a.card {
+		min-height: 380px;
 	}
 }
 a.card.smallCard {
