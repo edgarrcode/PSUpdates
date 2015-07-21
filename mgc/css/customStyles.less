@@ -91,22 +91,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
 }
 
 /*Home*/
-a.smallCard.ptsAccount {
-  min-height: 336px;
-  p {
-    margin: 1em 0;
+.hl1 {
+  .card {
+    min-height: 370px;
+    padding-bottom: 0;
   }
 }
-.alert.social {
-  h3 {
-    margin-top: 0;
+@media (max-width: 990px) {
+  .hl1 {
+    .card {
+      min-height: 450px;    }
   }
 }
-.home .welcomeSlide table {
-  color: @white;
-}
-.blueMedSection .card {
-  min-height: 340px;
+@media (max-width: 767px) {
+  .hl1 {
+    .card {
+      min-height: 380px;    }
+  }
 }
 #dnn_mainContent2 {
   padding-bottom: 0;
