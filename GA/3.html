@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embed API Demo</title>
+</head>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<body>
+
+<!-- Step 1: Create the containing elements. -->
+<div class="container">
+  <div id="view-selector-container" style="display:none;"></div>
+  <div id="embed-api-auth-container"></div>
+  <h2>Audience Overview</h2>
+  <div id="chart-container"></div>
+  <div id="chart-2-container"></div>
+  <h2>Browsers Used</h2>
+  <div id="chart-3-container"></div>
+  <div id="chart-4-container"></div>
+  <h2>Device Category (Desktop Vs. Mobile)</h2>
+  <div id="chart-5-container"></div>
+  <div id="chart-6-container"></div>
+  <h2>Network Domain and Location</h2>
+  <div id="chart-7-container"></div>
+  <h2>Acquisition Overview</h2>
+  <div id="chart-8-container"></div>
+  <div id="chart-9-container"></div>
+  <h2>Search Engine Keywords</h2>
+  <div id="chart-10-container"></div>
+  <h2>Top Pages</h2>
+  <div id="chart-11-container"></div>
+</div><!-- /container -->
+<!-- Step 2: Load the library. -->
+
+<script>
+(function(w,d,s,g,js,fjs){
+  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
+  js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
+  js.src='https://apis.google.com/js/platform.js';
+  fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
+}(window,document,'script'));
+</script>
+
+<script>
+
+gapi.analytics.ready(function() {
+
+  /**
+   * Authorize the user immediately if the user has already granted access.
+   * If no access has been created, render an authorize button inside the
+   * element with the ID "embed-api-auth-container".
+   */
+  gapi.analytics.auth.authorize({
+    container: 'embed-api-auth-container',
+    clientid: '723665702051-idqmdl192pa68cmlak0ucj7uf96dfdmk.apps.googleusercontent.com',
+  });
+
+
+  /**
+   * Create a new ViewSelector instance to be rendered inside of an
+   * element with the id "view-selector-container".
+   */
+  var viewSelector1 = new gapi.analytics.ViewSelector({
+    container: 'view-selector-container'
+  });
+
+  // Render the view selector to the page.
+  viewSelector1.execute();
+
+
+  /**
+   * Create a new DataChart instance with the given query parameters
+   * and Google chart options. It will be rendered inside an element
+   * with the id "chart-container".
+   */
+   /* ------------ Audience Overview*/
+  var dataChart1 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:date',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-container',
+      type: 'LINE',
+      options: {
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart2 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions,ga:users,ga:pageviews,ga:pageviewsPerSession,ga:avgSessionDuration,ga:bounceRate,ga:percentNewSessions',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-2-container',
+      type: 'TABLE',
+      options: {
+        width: '100%'
+      }
+    }
+  });
+
+  /* ------------ Browsers Used */
+  var dataChart3 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:browser',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-3-container',
+      type: 'PIE',
+      options: {
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart4 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:browser',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-4-container',
+      type: 'TABLE',
+      options: {
+        sort: 'enable',
+        sortColumn: 1,
+        sortAscending: false,
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart5 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:deviceCategory',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-5-container',
+      type: 'PIE',
+      options: {
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart6 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:deviceCategory',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-6-container',
+      type: 'TABLE',
+      options: {
+        sort: 'enable',
+        sortColumn: 1,
+        sortAscending: false,
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart7 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:networkLocation',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-7-container',
+      type: 'TABLE',
+      options: {
+        sort: 'enable',
+        sortColumn: 1,
+        sortAscending: false,
+        page: 'enable',
+        pageSize: 15,
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart8 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:channelGrouping',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-8-container',
+      type: 'PIE',
+      options: {
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart9 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:channelGrouping',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-9-container',
+      type: 'TABLE',
+      options: {
+        sort: 'enable',
+        sortColumn: 1,
+        sortAscending: false,
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart10 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:keyword',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-10-container',
+      type: 'TABLE',
+      options: {
+        sort: 'enable',
+        sortColumn: 1,
+        sortAscending: false,
+        page: 'enable',
+        pageSize: 15,
+        width: '100%'
+      }
+    }
+  });
+
+  var dataChart11 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:sessions',
+      dimensions: 'ga:pagetitle',
+      'start-date': '2015-01-01',
+      'end-date': '2015-01-31',
+    },
+    chart: {
+      container: 'chart-11-container',
+      type: 'TABLE',
+      options: {
+        sort: 'enable',
+        sortColumn: 1,
+        sortAscending: false,
+        showRowNumber: true,
+        page: 'enable',
+        pageSize: 15,
+        width: '100%'
+      }
+    }
+  });
+
+  /**
+   * Render the dataChart on the page whenever a new view is selected.
+   */
+   /*Edgar: I updated the ids value with the GA site ID to show that site data. You can use 'ids' instead and you will be able to use the view dropdown, which might be displayed none above  */
+  viewSelector1.on('change', function(ids) {
+    dataChart1.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart2.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart3.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart4.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart5.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart6.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart7.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart8.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart9.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart10.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart11.set({query: {ids: 'ga:90716510'}}).execute();
+  });
+
+});
+</script>
+
+
+</body>
+</html>
