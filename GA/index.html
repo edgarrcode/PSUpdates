@@ -1,76 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Embed API Demo</title>
+  <title>Analytics Reports: VPBA Office Website</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
 <body>
+        <div class="header">
+            <div class="container">
+                <div class="utepLogo">
+                    <img src="images/UTEPVPBAOffice.png" alt="UTEP Vice President for Business Affairs" title="UTEP Vice President for Business Affairs">
+                </div><!-- /logo -->
+                <div class="psUTShareLogosWrapper mobileNo">
+                </div><!-- /psUTShareLogosWrapper -->
+            </div><!-- container -->
+        </div><!-- /header -->
+        <div class="navigation">
+            <div class="container">
+                <div class="mobileNavToggle">Menu</div>
+                <div class="navigationBar">
+                    <!-- Navigation is imported from the nav.html file -->
+                    <ul class="nav">
+                    </ul><!-- /nav -->
+                    <div class="searchTabletToggle">
+                        <span class="icon"></span>
+                    </div><!-- /searchTabletToggle -->
+                </div><!-- /navigationBar -->
+            </div><!-- /container -->
+        </div><!-- /navigation -->
 
 <!-- Step 1: Create the containing elements. -->
+<div class="pageTitle">
+  <h1>VPBA Websites Analytics Reports</h1>
+</div><!-- /pageTitle -->
+<div class="container">
+  <div id="view-selector-container" style="display:none;"></div>
+  <div class="right"><p id="embed-api-auth-container"></p></div>
+  <div class="card">
+    <h2>June 2015</h2>
+    <ul>
+      <li><a href="201506VPBAOffice.html">VPBA Office <span class="indexSummary">(Summary: 935 unique users / 1,077 sessions / 1,851 page views)</span></a></li>
+      <li><a href="201506ABS.html">Accounting and Business Services <span class="indexSummary">(Summary: 843 unique users / 1,140 sessions / 2,251 page views)</span></a></li>
+      <li><a href="201506HOP.html">HOP <span class="indexSummary">(Summary: 602 unique users / 829 sessions / 3,220 page views)</span></a></li>
+      <li><a href="201506PTS.html">Parking and Transportation Services <span class="indexSummary">(Summary: 6,622 unique users / 10,010 sessions / 21,165 page views)</span></a></li>
+      <li><a href="201506Payroll.html">Payroll Office <span class="indexSummary">(Summary: 647 unique users / 866 sessions / 2,542 page views)</span></a></li>
+      <li><a href="201506PeopleSoft.html">PeopleSoft <span class="indexSummary">(Summary: 4,222 unique users / 15,807 sessions / 32,122 page views)</span></a></li>
+      <li><a href="201506SPA.html">Strategic Planning and Assessment <span class="indexSummary">(Summary: 23 unique users / 34 sessions / 106 page views)</span></a></li>
+      <li><a href="201506Travel.html">Travel Office <span class="indexSummary">(Summary: 274 unique users / 405 sessions / 1,344 page views)</span></a></li>
+    </ul>
+    <hr>
+    <b>VPBA Websites Summary:</b> 14,168 unique users / 30,168 sessions / 64,601 page views
+  </div><!-- /card -->
 
-<section id="auth-button"></section>
-<section id="view-selector"></section>
-<section id="timeline"></section>
+  <div class="card">
+    <h2>May 2015</h2>
+    <ul>
+      <li><a href="201505VPBAOffice.html">VPBA Office <span class="indexSummary">(Summary: 951 unique users / 1,118 sessions / 1,962 page views)</span></a></li>
+      <li><a href="201505ABS.html">Accounting and Business Services <span class="indexSummary">(Summary: 705 unique users / 905 sessions / 2,092 page views)</span></a></li>
+      <li><a href="201505HOP.html">HOP <span class="indexSummary">(Summary: 539 unique users / 690 sessions / 2,176 page views)</span></a></li>
+      <li><a href="201505PeopleSoft.html">PeopleSoft <span class="indexSummary">(Summary: 3,811 unique users / 13,103 sessions / 26,244 page views)</span></a></li>
+      <li><a href="201505PTS.html">Parking And Transportation Services <span class="indexSummary">(Summary: 7,764 unique users / 12,014 sessions / 26,667 page views)</span></a></li>
+      <li><a href="201505SPA.html">Strategic Planning and Assessment <span class="indexSummary">(Summary: 24 unique users / 41 sessions / 59 page views)</span></a></li>
+    </ul>
+    <hr>
+    <b>VPBA Websites Summary:</b> 13,794 unique users / 27,871 sessions / 59,200 page views
+  </div><!-- /card -->
 
-<!-- Step 2: Load the library. -->
+  <div class="card">
+    <h2>April 2015</h2>
+    <ul>
+      <li><a href="201504VPBAOffice.html">VPBA Office <span class="indexSummary">(Summary: 915 unique users / 1,096 sessions / 2,214 page views)</span></a></li>
+      <li><a href="201504ABS.html">Accounting and Business Services <span class="indexSummary">(Summary: 533 unique users / 748 sessions / 1,750 page views)</span></a></li>
+      <li><a href="201504HOP.html">HOP <span class="indexSummary">(Summary: 612 unique users / 783 sessions / 2,821 page views)</span></a></li>
+      <li><a href="201504PeopleSoft.html">PeopleSoft <span class="indexSummary">(Summary: 3,457 unique users / 13,080 sessions / 25,801 page views)</span></a></li>
+      <li><a href="201504PTS.html">Parking And Transportation Services <span class="indexSummary">(Summary: 4,008 unique users / 5,728 sessions / 13,732 page views)</span></a></li>
+      <li><a href="201504SPA.html">Strategic Planning and Assessment <span class="indexSummary">(Summary: 19 unique users / 41 sessions / 95 page views)</span></a></li>
+    </ul>
+    <hr>
+    <b>VPBA Websites Summary:</b> 9,544 unique users / 21,476 sessions / 46,413 page views
+  </div><!-- /card -->
 
-<script>
-(function(w,d,s,g,js,fjs){
-  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
-  js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
-  js.src='https://apis.google.com/js/platform.js';
-  fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
-}(window,document,'script'));
-</script>
+  <div class="card">
+    <h2>March 2015</h2>
+    <ul>
+      <li><a href="201503VPBAOffice.html">VPBA Office <span class="indexSummary">(Summary: 921 unique users / 1,125 sessions / 1,959 page views)</span></a></li>
+      <li><a href="201503ABS.html">Accounting and Business Services <span class="indexSummary">(Summary: 202 unique users / 329 sessions / 828 page views)</span></a></li>
+      <li><a href="201503HOP.html">HOP <span class="indexSummary">(Summary: 573 unique users / 790 sessions / 3,000 page views)</span></a></li>
+      <li><a href="201503PeopleSoft.html">PeopleSoft <span class="indexSummary">(Summary: 4,037 unique users / 13,600 sessions / 27,336 page views)</span></a></li>
+      <li><a href="201503PTS.html">Parking And Transportation Services <span class="indexSummary">(Summary: 2,716 unique users / 4,314 sessions / 9,854 page views)</span></a></li>
+      <li><a href="201503SPA.html">Strategic Planning and Assessment <span class="indexSummary">(Summary: 68 unique users / 104 sessions / 193 page views)</span></a></li>
+    </ul>
+    <hr>
+    <b>VPBA Websites Summary:</b> 8,517 unique users / 20,262 sessions / 43,170 page views
+  </div><!-- /card -->
 
-<script>
-gapi.analytics.ready(function() {
+  <div class="card">
+    <h2>February 2015</h2>
+    <ul>
+      <li><a href="201502VPBAOffice.html">VPBA Office <span class="indexSummary">(Summary: 838 unique users / 1,079 sessions / 1,870 page views)</span></a></li>
+      <li><a href="201502HOP.html">HOP <span class="indexSummary">(Summary: 480 unique users / 631 sessions / 2,464 page views)</span></a></li>
+      <li><a href="201502PeopleSoft.html">PeopleSoft <span class="indexSummary">(Summary: 3,398 unique users / 12,479 sessions / 24,179 page views)</span></a></li>
+      <li><a href="201502PTS.html">Parking And Transportation Services <span class="indexSummary">(Summary: 3,701 unique users / 5,249 sessions / 12,742 page views)</span></a></li>
+      <li><a href="201502SPA.html">Strategic Planning and Assessment <span class="indexSummary">(Summary: 28 unique users / 34 sessions / 98 page views)</span></a></li>
+    </ul>
+    <hr>
+    <b>VPBA Websites Summary:</b> 8,445 unique users / 19,472 sessions / 41,353 page views
+  </div><!-- /card -->
+  <div class="card">
+    <h2>January 2015</h2>
+    <ul>
+      <li><a href="201501VPBAOffice.html">VPBA Office</a></li>
+      <li><a href="201501HOP.html">HOP</a></li>
+      <li><a href="201501EmailSignatures.html">Email Signatures</a></li>
+      <li><a href="201501PeopleSoft.html">PeopleSoft</a></li>
+      <li><a href="201501SPA.html">Strategic Planning and Assessment</a></li>
+    </ul>
+  </div><!-- /card -->
+</div><!-- /container -->
 
-  // Step 3: Authorize the user.
 
-  var CLIENT_ID = '723665702051-idqmdl192pa68cmlak0ucj7uf96dfdmk.apps.googleusercontent.com';
 
-  gapi.analytics.auth.authorize({
-    container: 'auth-button',
-    clientid: CLIENT_ID,
-  });
+<!-- Footers -->
+<div class="backToTop scrollTopCirlce"><span>Back to Top</span></div>
+<div id="footer1" class="mobileNo"></div><!-- /footer1 -->
+<div id="footer2"></div><!-- /footer2 -->
 
-  // Step 4: Create the view selector.
 
-  var viewSelector = new gapi.analytics.ViewSelector({
-    container: 'view-selector'
-  });
 
-  // Step 5: Create the timeline chart.
 
-  var timeline = new gapi.analytics.googleCharts.DataChart({
-    reportType: 'ga',
-    query: {
-      'dimensions': 'ga:date',
-      'metrics': 'ga:sessions',
-      'start-date': '30daysAgo',
-      'end-date': 'yesterday',
-    },
-    chart: {
-      type: 'LINE',
-      container: 'timeline'
-    }
-  });
+<!-- Load Includes -->
+<script>$(".nav").load('includes/nav.html');</script>
+<script>$("#footer1").load('includes/footer1.html');</script>
+<script>$("#footer2").load('includes/footer2.html');</script>
 
-  // Step 6: Hook up the components to work together.
 
-  gapi.analytics.auth.on('success', function(response) {
-    viewSelector.execute();
-  });
-
-  viewSelector.on('change', function(ids) {
-    var newIds = {
-      query: {
-        ids: ids
-      }
-    }
-    timeline.set(newIds).execute();
-  });
-});
-</script>
 </body>
 </html>

@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Analytics Reports: VPBA Office Website</title>
-</head>
+<title>Analytics Reports: VPBA Office Website</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<!--Load the AJAX API-->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
 
 <body>
         <div class="header">
-            <div class="container">
+            <div class="containerFixed">
                 <div class="utepLogo">
                     <img src="images/UTEPVPBAOffice.png" alt="UTEP Vice President for Business Affairs" title="UTEP Vice President for Business Affairs">
                 </div><!-- /logo -->
-                <div class="psUTShareLogosWrapper mobileNo">
+                <div class="psUTShareLogosWrapper">
+                  <div class="right"><p id="embed-api-auth-container"></p></div>
                 </div><!-- /psUTShareLogosWrapper -->
             </div><!-- container -->
         </div><!-- /header -->
         <div class="navigation">
-            <div class="container">
+            <div class="containerFixed">
                 <div class="mobileNavToggle">Menu</div>
                 <div class="navigationBar">
                     <!-- Navigation is imported from the nav.html file -->
@@ -33,43 +36,57 @@
 
 <!-- Step 1: Create the containing elements. -->
 <div class="pageTitle">
-  <h1>Analytics Reports: VPBA Office Website<br><span class="caption">December 2014</span></h1>
+  <h1>VPBA Office Website<br><span class="caption">January 2015 Analytics Report</span></h1>
 </div><!-- /pageTitle -->
-<div class="container">
+<div class="containerFixed">
   <div id="view-selector-container" style="display:none;"></div>
-  <div class="right"><p id="embed-api-auth-container"></p></div>
-  <div class="card">
+  <div class="card" style="height:650px;margin-top:30px;">
     <h2>Audience Overview</h2>
     <div id="chart-container"></div>
     <div id="chart-2-container"></div>
+    <hr>
+    <div class="alert">
+      <p>The VPBA website had <b>903 unique users</b> during the month of January (<b>72.54%</b> of these users are new).<br>These users generated <b>1,129 sessions</b>, resulting in <b>1,966 page views</b>.</p>
+    </div>
   </div><!-- /card -->
   <hr class="clear">
   
   <div class="card">
     <h2>Browsers Used</h2>
     <div class="oneThird">
-      <div id="chart-3-container"></div>
+      <div id="chart_div1"></div>
     </div><!-- /oneThird -->
     <div class="twoThirds gridLast">
       <div id="chart-4-container"></div>
     </div><!-- /twoThirds gridLast -->
+    <div class="clear"></div>
+    <div>
+      <hr>
+      <p><b>Chrome</b> was the most used browser by users.</p>
+    </div>    
   </div><!-- /card -->
   <hr class="clear">
 
   <div class="card">
     <h2>Device Category (Desktop Vs. Mobile)</h2>
     <div class="oneThird">
-      <div id="chart-5-container"></div>
+      <div id="chart_div2"></div>
     </div><!-- /oneThird -->
     <div class="twoThirds gridLast">
       <div id="chart-6-container"></div>
     </div><!-- /twoThirds gridLast -->
-
+    <div>
+      <hr>
+      <p><b>16.7%</b> of the traffic is using a tablet or a mobile device (not a desktop computer). <b>16.7%</b> is a high number for mobile.</p>
+    </div>
   </div><!-- /card -->
   <hr class="clear">
 
   <div class="card">
-    <h2>Network Domain and Location</h2>
+    <h2>Networks Used</h2>
+    <div>
+      <p>#1 represents that <b>454 (40.21%)</b> of the sessions are by users in campus.</p>
+    </div>
     <div id="chart-7-container"></div>
   </div><!-- /card -->
   <hr class="clear">
@@ -77,16 +94,25 @@
   <div class="card">
     <h2>Acquisition Overview</h2>
     <div class="oneThird">
-      <div id="chart-8-container"></div>
+      <div id="chart_div3"></div>
     </div><!-- /oneThird -->
     <div class="twoThirds gridLast">
       <div id="chart-9-container"></div>
     </div><!-- /twoThirds gridLast -->
+    <hr>
+    <p>
+      <b>Direct traffic:</b> Users visited your site directly  when opening the browser window ( they don't come not from any other website).<br>
+      <b>Organic Search:</b> The traffic that comes from search engines.<br>
+      <b>Referral:</b> Traffic that comes from other websites.
+    </p>
   </div><!-- /card -->
   <hr class="clear">
 
   <div class="card">
     <h2>Search Engine Keywords</h2>
+    <div>
+      <p>This list contains the exact search terms keyed in by users. Therefore, some of the list items are not spelled correctly.</p>
+    </div>
     <div id="chart-10-container"></div>
   </div><!-- /card -->
   <hr class="clear">
@@ -168,7 +194,7 @@ gapi.analytics.ready(function() {
 
   var dataChart2 = new gapi.analytics.googleCharts.DataChart({
     query: {
-      metrics: 'ga:sessions,ga:users,ga:pageviews,ga:pageviewsPerSession,ga:avgSessionDuration,ga:bounceRate,ga:percentNewSessions',
+      metrics: 'ga:users,ga:sessions,ga:pageviews,ga:pageviewsPerSession,ga:percentNewSessions,ga:avgSessionDuration,ga:bounceRate',
       'start-date': '2015-01-01',
       'end-date': '2015-01-31',
     },
@@ -182,22 +208,6 @@ gapi.analytics.ready(function() {
   });
 
   /* ------------ Browsers Used */
-  var dataChart3 = new gapi.analytics.googleCharts.DataChart({
-    query: {
-      metrics: 'ga:sessions',
-      dimensions: 'ga:browser',
-      'start-date': '2015-01-01',
-      'end-date': '2015-01-31',
-    },
-    chart: {
-      container: 'chart-3-container',
-      type: 'PIE',
-      options: {
-        width: '100%'
-      }
-    }
-  });
-
   var dataChart4 = new gapi.analytics.googleCharts.DataChart({
     query: {
       metrics: 'ga:sessions',
@@ -213,22 +223,6 @@ gapi.analytics.ready(function() {
         sortColumn: 1,
         sortAscending: false,
         showRowNumber: true,
-        width: '100%'
-      }
-    }
-  });
-
-  var dataChart5 = new gapi.analytics.googleCharts.DataChart({
-    query: {
-      metrics: 'ga:sessions',
-      dimensions: 'ga:deviceCategory',
-      'start-date': '2015-01-01',
-      'end-date': '2015-01-31',
-    },
-    chart: {
-      container: 'chart-5-container',
-      type: 'PIE',
-      options: {
         width: '100%'
       }
     }
@@ -271,22 +265,6 @@ gapi.analytics.ready(function() {
         showRowNumber: true,
         page: 'enable',
         pageSize: 15,
-        width: '100%'
-      }
-    }
-  });
-
-  var dataChart8 = new gapi.analytics.googleCharts.DataChart({
-    query: {
-      metrics: 'ga:sessions',
-      dimensions: 'ga:channelGrouping',
-      'start-date': '2015-01-01',
-      'end-date': '2015-01-31',
-    },
-    chart: {
-      container: 'chart-8-container',
-      type: 'PIE',
-      options: {
         width: '100%'
       }
     }
@@ -336,8 +314,8 @@ gapi.analytics.ready(function() {
 
   var dataChart11 = new gapi.analytics.googleCharts.DataChart({
     query: {
-      metrics: 'ga:sessions',
-      dimensions: 'ga:pagetitle',
+      metrics: 'ga:pageviews',
+      dimensions: 'ga:pageTitle',
       'start-date': '2015-01-01',
       'end-date': '2015-01-31',
     },
@@ -361,20 +339,93 @@ gapi.analytics.ready(function() {
    */
    /*Edgar: I updated the ids value with the GA site ID to show that site data. You can use 'ids' instead and you will be able to use the view dropdown, which might be displayed none above  */
   viewSelector1.on('change', function(ids) {
+    dataChart4.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart6.set({query: {ids: 'ga:90716510'}}).execute();
+    dataChart9.set({query: {ids: 'ga:90716510'}}).execute();
     dataChart1.set({query: {ids: 'ga:90716510'}}).execute();
     dataChart2.set({query: {ids: 'ga:90716510'}}).execute();
-    dataChart3.set({query: {ids: 'ga:90716510'}}).execute();
-    dataChart4.set({query: {ids: 'ga:90716510'}}).execute();
-    dataChart5.set({query: {ids: 'ga:90716510'}}).execute();
-    dataChart6.set({query: {ids: 'ga:90716510'}}).execute();
     dataChart7.set({query: {ids: 'ga:90716510'}}).execute();
-    dataChart8.set({query: {ids: 'ga:90716510'}}).execute();
-    dataChart9.set({query: {ids: 'ga:90716510'}}).execute();
     dataChart10.set({query: {ids: 'ga:90716510'}}).execute();
     dataChart11.set({query: {ids: 'ga:90716510'}}).execute();
   });
 
 });
+</script>
+
+<!-- PIES -->
+<script type="text/javascript">
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+    // Create the data table.
+    var data1 = new google.visualization.DataTable();
+    data1.addColumn('string', 'browsers');
+    data1.addColumn('number', 'sessions');
+    data1.addRows([
+      ['Chrome', 464],
+      ['Internet Explorer', 337],
+      ['Safari', 157],
+      ['Firefox', 144],
+      ['Android Browser', 15],
+      ['(not set)', 6],
+      ['Opera Mini', 2],
+      ['Safari (in-app)', 2],
+      ['Amazon Silk', 1],
+      ['MRCHROME', 1]
+    ]);
+
+    // Set chart options
+    var options1 = {'width':425,
+                   'height':425};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart1 = new google.visualization.PieChart(document.getElementById('chart_div1'));
+    chart1.draw(data1, options1);
+
+    // Create the data table.
+    var data2 = new google.visualization.DataTable();
+    data2.addColumn('string', 'browsers');
+    data2.addColumn('number', 'sessions');
+    data2.addRows([
+      ['desktop', 941],
+      ['mobile', 150],
+      ['tablet', 38]
+    ]);
+
+    // Set chart options
+    var options2 = {'width':425,
+                   'height':425};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart2 = new google.visualization.PieChart(document.getElementById('chart_div2'));
+    chart2.draw(data2, options2);
+
+    // Create the data table.
+    var data3 = new google.visualization.DataTable();
+    data3.addColumn('string', 'browsers');
+    data3.addColumn('number', 'sessions');
+    data3.addRows([
+      ['Organic Search', 575],
+      ['Direct', 516],
+      ['Social', 22],
+      ['Referral', 16]
+    ]);
+
+    // Set chart options
+    var options3 = {'width':425,
+                   'height':425};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart3 = new google.visualization.PieChart(document.getElementById('chart_div3'));
+    chart3.draw(data3, options3);
+  }
 </script>
 
 <!-- Load Includes -->
