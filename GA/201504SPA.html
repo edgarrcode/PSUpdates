@@ -40,8 +40,6 @@
 </div><!-- /pageTitle -->
 <div class="containerFixed">
   <div id="view-selector-container" style="display:none;"></div>
-  <div id="view-selector-2-container" style="display:none;"></div>
-  <div id="view-selector-3-container" style="display:none;"></div>
   <div class="card" style="height:650px;margin-top:30px;">
     <h2>Audience Overview</h2>
     <div id="chart-container"></div>
@@ -56,7 +54,7 @@
   <div class="card">
     <h2>Browsers Used</h2>
     <div class="oneThird">
-      <div id="chart-3-container"></div>
+      <div id="chart_div1"></div>
     </div><!-- /oneThird -->
     <div class="twoThirds gridLast">
       <div id="chart-4-container"></div>
@@ -72,7 +70,7 @@
   <div class="card">
     <h2>Device Category (Desktop Vs. Mobile)</h2>
     <div class="oneThird">
-      <div id="chart-5-container"></div>
+      <div id="chart_div2"></div>
     </div><!-- /oneThird -->
     <div class="twoThirds gridLast">
       <div id="chart-6-container"></div>
@@ -96,7 +94,7 @@
   <div class="card">
     <h2>Acquisition Overview</h2>
     <div class="oneThird">
-      <div id="chart-8-container"></div>
+      <div id="chart_div3"></div>
     </div><!-- /oneThird -->
     <div class="twoThirds gridLast">
       <div id="chart-9-container"></div>
@@ -167,17 +165,10 @@ gapi.analytics.ready(function() {
   var viewSelector1 = new gapi.analytics.ViewSelector({
     container: 'view-selector-container'
   });
-  var viewSelector2 = new gapi.analytics.ViewSelector({
-    container: 'view-selector-2-container'
-  });
-  var viewSelector3 = new gapi.analytics.ViewSelector({
-    container: 'view-selector-3-container'
-  });
 
   // Render the view selector to the page.
   viewSelector1.execute();
-  viewSelector2.execute();
-  viewSelector3.execute();
+
 
   /**
    * Create a new DataChart instance with the given query parameters
@@ -396,34 +387,90 @@ gapi.analytics.ready(function() {
    */
    /*Edgar: I updated the ids value with the GA site ID to show that site data. You can use 'ids' instead and you will be able to use the view dropdown, which might be displayed none above  */
   viewSelector1.on('change', function(ids) {
+    dataChart4.set({query: {ids: 'ga:94298004'}}).execute();
+    dataChart6.set({query: {ids: 'ga:94298004'}}).execute();
+    dataChart9.set({query: {ids: 'ga:94298004'}}).execute();
     dataChart1.set({query: {ids: 'ga:94298004'}}).execute();
     dataChart2.set({query: {ids: 'ga:94298004'}}).execute();
-    dataChart3.set({query: {ids: 'ga:94298004'}}).execute();
-    dataChart4.set({query: {ids: 'ga:94298004'}}).execute();
-  });
-  viewSelector2.on('change', function(ids) {
-    setTimeout( function(){ 
-    dataChart5.set({query: {ids: 'ga:94298004'}}).execute();
-    dataChart6.set({query: {ids: 'ga:94298004'}}).execute();
     dataChart7.set({query: {ids: 'ga:94298004'}}).execute();
-      }  , 500 );
+    dataChart10.set({query: {ids: 'ga:94298004'}}).execute();
+    dataChart11.set({query: {ids: 'ga:94298004'}}).execute();
   });
-  viewSelector3.on('change', function(ids) {
-    setTimeout( function(){ 
-      dataChart8.set({query: {ids: 'ga:94298004'}}).execute();
-      dataChart9.set({query: {ids: 'ga:94298004'}}).execute();
-      dataChart10.set({query: {ids: 'ga:94298004'}}).execute();
-      dataChart11.set({query: {ids: 'ga:94298004'}}).execute();
-      }  , 1000 );
-  });
-
 
 });
 </script>
+<!-- PIES -->
+<script type="text/javascript">
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
 
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+    // Create the data table.
+    var data1 = new google.visualization.DataTable();
+    data1.addColumn('string', 'browsers');
+    data1.addColumn('number', 'sessions');
+    data1.addRows([
+      ['Chrome', 28],
+      ['Internet Explorer', 8],
+      ['Firefox', 2],
+      ['Safari', 2],
+      ['Android Browser', 1]
+    ]);
+
+    // Set chart options
+    var options1 = {'width':425,
+                   'height':425};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart1 = new google.visualization.PieChart(document.getElementById('chart_div1'));
+    chart1.draw(data1, options1);
+
+    // Create the data table.
+    var data2 = new google.visualization.DataTable();
+    data2.addColumn('string', 'browsers');
+    data2.addColumn('number', 'sessions');
+    data2.addRows([
+      ['desktop', 39],
+      ['mobile', 2]
+    ]);
+
+    // Set chart options
+    var options2 = {'width':425,
+                   'height':425};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart2 = new google.visualization.PieChart(document.getElementById('chart_div2'));
+    chart2.draw(data2, options2);
+
+    // Create the data table.
+    var data3 = new google.visualization.DataTable();
+    data3.addColumn('string', 'browsers');
+    data3.addColumn('number', 'sessions');
+    data3.addRows([
+      ['Organic Search', 38],
+      ['Direct', 3]
+    ]);
+
+    // Set chart options
+    var options3 = {'width':425,
+                   'height':425};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart3 = new google.visualization.PieChart(document.getElementById('chart_div3'));
+    chart3.draw(data3, options3);
+  }
+</script>
 <!-- Load Includes -->
 <script>$(".nav").load('includes/nav.html');</script>
 <script>$("#footer1").load('includes/footer1.html');</script>
 <script>$("#footer2").load('includes/footer2.html');</script>
+
+
 </body>
 </html>
