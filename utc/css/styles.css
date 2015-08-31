@@ -1857,6 +1857,26 @@ html[xmlns] .slides {
     min-height: 100px;
   }
 }
+/*HomeNews*/
+.homeNews {
+  font-size: 14px;
+}
+.homeNews .overFlowScroll {
+  background-color: #fcfcfc;
+  border: 1px solid #dddddd;
+  max-height: 228px;
+  overflow-x: visible;
+  padding: 3px;
+}
+.homeNews ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+.homeNews ul li {
+  border-bottom: 1px solid #dddddd;
+  list-style: none;
+  padding: 3px 0;
+}
 /*Breadcrumbs*/
 .breadcrumbsSection {
   background-color: #fcfcfc;
