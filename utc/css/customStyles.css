@@ -97,17 +97,17 @@ ol li {
 }
 /*Home*/
 .hl1 .card {
-  min-height: 370px;
+  min-height: 280px;
   padding-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .hl1 .card {
+    min-height: 250px;
+  }
 }
 @media (max-width: 990px) {
   .hl1 .card {
-    min-height: 450px;
-  }
-}
-@media (max-width: 767px) {
-  .hl1 .card {
-    min-height: 380px;
+    min-height: 220px;
   }
 }
 #dnn_mainContent2 {
@@ -247,83 +247,6 @@ ol li {
   margin-top: 0;
   padding-left: 20px;
 }
-/*ADA Page*/
-.ADAReqWrapper {
-  overflow: auto;
-}
-.ADAReqWrapper .circlePlus {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -23px;
-}
-@media (max-width: 767px) {
-  .adaPlates {
-    min-height: 240px;
-  }
-  .ADAReqWrapper .circlePlus {
-    top: 55%;
-  }
-}
-.tailgateSection {
-  background-image: url(../images/tailgateBg.gif);
-  background-size: 100% auto;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-/*MinerMetro*/
-.minerMetro.home .pageTitle table {
-  height: 320px;
-}
-.minerMetro.home .pageTitle td.left {
-  text-align: left;
-}
-.minerMetro.home .pageTitle h1,
-.minerMetro.home .pageTitle h2 {
-  margin: 0;
-}
-.minerMetro.home .pageTitle p {
-  margin: 10px 0;
-}
-.minerMetro.home .pageTitle h1 {
-  font-weight: 200;
-}
-.minerMetro.home .pageTitle .sliderImgAbsolute {
-  left: 0;
-  bottom: -330px;
-}
-/*Roundabout*/
-.welcomeSlide.roundabout .videoCol {
-  vertical-align: bottom;
-  padding-bottom: 10px;
-}
-.welcomeSlide.roundabout iframe {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-@media (min-width: 992px) {
-  .welcomeSlide.roundabout iframe {
-    width: 489px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .welcomeSlide.roundabout td.videoCol {
-    vertical-align: middle;
-  }
-  .welcomeSlide.roundabout td.videoCol iframe {
-    height: 180px;
-    width: 320px;
-  }
-}
-@media (max-width: 767px) {
-  .welcomeSlide.roundabout td.videoCol {
-    vertical-align: middle;
-  }
-  .welcomeSlide.roundabout td.videoCol iframe {
-    height: 113px;
-    width: 200px;
-  }
-}
 /*contact page*/
 .contact h3 {
   margin-bottom: 0;
@@ -387,192 +310,9 @@ ol li {
     margin-top: 12px;
   }
 }
-/*Business Process Guidelines*/
-.businessProcessGuidelinesHeading span {
-  display: inline-block;
-  width: 90%;
-}
-.expandCollapseWrapper {
-  background-color: #003366;
-  color: #ffffff;
-  overflow: auto;
-  padding: 10px;
-}
-.expandCollapseWrapper h2 {
-  color: #ffffff;
-}
-.expandCollapseWrapper .expandCollapseNav {
-  float: right;
-  list-style: none;
-  margin: 0;
-}
-.expandCollapseWrapper .expandCollapseNav li {
-  float: left;
-}
-.expandCollapseWrapper .expandCollapseNav li .btn {
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  cursor: pointer;
-  padding: 6px 10px;
-}
-.expandCollapseWrapper .expandCollapseNav li:first-child {
-  margin-right: 10px;
-}
-@media (max-width: 767px) {
-  .expandCollapseWrapper .expandCollapseNav li .btn {
-    padding: 6px 6px;
-  }
-}
-/*Accordion ShowHide Classes*/
-.guidelinesSectionWrapper.showThisGSContent {
-  border-left: 2px solid #004890;
-}
-.guidelinesSectionWrapper.showThisGSContent .gs-title-trigger .gs-title {
-  background: url(../images/sprite.png) no-repeat;
-  background-position: -40px -2232px;
-}
-.guidelinesSectionWrapper.showThisGSContent .gs-content {
-  height: auto;
-}
-.guidelinesSectionWrapper.evenRow {
-  border-left-color: #fcfcfc;
-}
-.guidelinesSectionWrapper.showThisGSContent.evenRow {
-  border-left-color: #e15a00;
-}
-.guidelinesSectionWrapper {
-  border-left: 2px solid #ffffff;
-}
-.guidelinesSectionWrapper .gs-title-trigger {
-  cursor: pointer;
-  padding: 10px;
-}
-.guidelinesSectionWrapper .gs-title-trigger .gs-title {
-  background: url(../images/sprite.png) no-repeat;
-  transition: all ease-in 150ms;
-  background-position: -40px -2161px;
-  cursor: pointer;
-  font-size: 14px;
-  margin: 0;
-  padding: 0 0 0 30px;
-}
-.guidelinesSectionWrapper h3:first-child {
-  font-size: 1.17em;
-}
-.guidelinesSectionWrapper .gs-content {
-  border-left: 2px solid #dddddd;
-  height: 0px;
-  overflow: hidden;
-  padding: 0 30px;
-  margin-left: 30px;
-}
-.guidelinesSectionWrapper:hover {
-  background-color: #eeeeee;
-  border-left-color: #004890;
-}
-.guidelinesSectionWrapper.evenRow:hover {
-  border-left-color: #e15a00;
-}
-/*Delegation Of Authority*/
-.container {
-  position: relative;
-}
-.delegationOFAuthToolbar {
-  background-color: #003366;
-  padding: 10px;
-}
-.delegationOFAuthToolbar .btnMed {
-  margin-top: 6px;
-}
-#delOfAuthDropdown {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-}
-#delOfAuthDropdown ul > li span {
-  display: block;
-  padding: 7px;
-}
-#delOfAuthDropdown a {
-  display: block;
-}
-#delegationOfAuthorityTable th.regents,
-#delegationOfAuthorityTable td.regents {
-  width: 20%;
-}
-#delegationOfAuthorityTable th.delegate,
-#delegationOfAuthorityTable td.delegate {
-  width: 35%;
-}
-#delegationOfAuthorityTable th.date,
-#delegationOfAuthorityTable td.date {
-  width: 15%;
-}
-#delegationOfAuthorityTable th h2 {
-  display: inline;
-}
-#delegationOfAuthorityTable td {
-  padding: 30px 10px;
-  text-align: left;
-  vertical-align: top;
-}
-#delegationOfAuthorityTable td.chapter {
-  text-align: center;
-}
-.fixedThead {
-  top: 0;
-  position: fixed;
-  width: auto;
-  display: none;
-  border: none;
-}
-@media (max-width: 767px) {
-  #delOfAuthDropdown ul li span {
-    font-size: 14px;
-    margin-right: 50px;
-  }
-  #delegationOfAuthorityTable {
-    font-size: 12px;
-  }
-  #delegationOfAuthorityTable td {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-  .fixedThead {
-    display: none!important;
-  }
-  .backToTop {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-/*OpenRecords*/
-.OpenRecordsCard {
-  background-color: #ffffff;
-  margin: 20px auto;
-  width: 80%;
-}
-.OpenRecordsCard .theCardContent {
-  padding: 10px;
-}
-/*State Reports*/
-@media (min-width: 767px) {
-  .stateReports .card {
-    min-height: 210px;
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .stateReports .card h3 {
-    font-size: 12px;
-  }
-}
 /*Contact*/
-.depContactWrapper {
-  background-color: #003366;
-  padding: 2%;
-}
-.depContactWrapper select {
-  width: 100%;
+.contact .card .h3 {
+  font-size: 18px;
 }
 /* --------- DNN Admin Controls ----------- */
 /*ControlPanel*/

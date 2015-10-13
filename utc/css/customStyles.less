@@ -103,20 +103,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
 /*Home*/
 .hl1 {
   .card {
-    min-height: 370px;
+    min-height: 280px;
     padding-bottom: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .hl1 {
+    .card {
+      min-height: 250px;    }
   }
 }
 @media (max-width: 990px) {
   .hl1 {
     .card {
-      min-height: 450px;    }
-  }
-}
-@media (max-width: 767px) {
-  .hl1 {
-    .card {
-      min-height: 380px;    }
+      min-height: 220px;    }
   }
 }
 #dnn_mainContent2 {
@@ -264,90 +264,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   }
 }
 
-/*ADA Page*/
-.ADAReqWrapper {
-  overflow: auto;
-  .circlePlus {
-    position: absolute;
-    left: 50%; top: 50%;
-    margin-left: -23px;
-  }
-}
-@media(max-width: 767px){
-  .adaPlates {
-    min-height: 240px;
-  }
-  .ADAReqWrapper .circlePlus {
-    top: 55%;
-  }
-}
-.tailgateSection {
-  background-image: url(../images/tailgateBg.gif);
-  background-size: 100% auto;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 
-/*MinerMetro*/
-.minerMetro.home .pageTitle {
-  table {
-    height: 320px;
-  }
-  td.left {
-    .left;
-  }
-  h1,h2 {
-    margin: 0;
-  }
-  p{
-    margin: 10px 0;
-  }
-  h1 {
-    font-weight: 200;
-  }
-  .sliderImgAbsolute {
-    left: 0; bottom: -330px;
-  }
-}
 
-/*Roundabout*/
-.welcomeSlide.roundabout {
-  .videoCol {
-    vertical-align: bottom;
-    padding-bottom: 10px;
-  }
-  iframe {
-    .boxShadow;
-  }
-}
-@media(min-width: 992px) {
-  .welcomeSlide.roundabout iframe {
-    width: 489px;
-  }
-}
-@media(min-width: 768px)and(max-width: 991px) {
-  .welcomeSlide.roundabout {
-      td.videoCol {
-        vertical-align: middle;
-        iframe {
-          height: 180px;
-          width: 320px;
-      }
-    }
-  }
-}
-@media(max-width: 767px) {
-  .welcomeSlide.roundabout {
-      td.videoCol {
-        vertical-align: middle;
-        iframe {
-          height: 113px;
-          width: 200px;
-      }
-    }
-  }
-}
 /*contact page*/
 .contact {
   h3 {
@@ -417,200 +335,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
   }
 }
 
-
-/*Business Process Guidelines*/
-.businessProcessGuidelinesHeading {
-  span {
-    display: inline-block;
-    width: 90%;
-  }
-}
-.expandCollapseWrapper {
-  background-color: @blue;
-  color: @white;
-  overflow: auto;
-  padding: 10px;
-  h2 {
-    color: @white;
-  }
-  .expandCollapseNav {
-    float: right;
-    list-style: none;
-    margin: 0;
-    li {
-      float: left;
-      .btn {
-        background-color: transparent;
-        border: 1px solid @white;
-        cursor: pointer;
-        padding: 6px 10px;
-      }
-    }
-    li:first-child {
-      margin-right: 10px;
-    }
-  }
-}
-@media(max-width: 767px) {
-  .expandCollapseWrapper .expandCollapseNav li .btn {
-    padding: 6px 6px;
-  }
-}
-/*Accordion ShowHide Classes*/
-.guidelinesSectionWrapper.showThisGSContent {
-  border-left: 2px solid @blueMed;
-  .gs-title-trigger {
-    .gs-title {
-      .sprite;
-      background-position: -40px -2232px;
-    }
-  }
-  .gs-content {
-    height: auto;
-  }
-}
-.guidelinesSectionWrapper.evenRow {
-  border-left-color: @grayLightest;
-}
-.guidelinesSectionWrapper.showThisGSContent.evenRow {
-  border-left-color: @orangeHover;
-}
-.guidelinesSectionWrapper {
-  border-left: 2px solid @white;
-  .gs-title-trigger {
-    cursor: pointer;
-    padding: 10px;
-    .gs-title {
-      .sprite;
-      .transition;
-      background-position: -40px -2161px;
-      cursor: pointer;
-      font-size: 14px;
-      margin: 0;
-      padding: 0 0 0 30px;
-    }
-  }
-  h3:first-child {
-    font-size: 1.17em;
-  }
-  .gs-content {
-    border-left: 2px solid @gray;
-    height: 0px;
-    overflow: hidden;
-    padding: 0 30px;
-    margin-left: 30px;
-  }
-}
-.guidelinesSectionWrapper:hover {
-  background-color:@grayLight;
-  border-left-color:@blueMed;
-}
-.guidelinesSectionWrapper.evenRow:hover {
-  border-left-color:@orangeHover;
-}
-
-/*Delegation Of Authority*/
-.container {
-  position: relative;
-}
-
-.delegationOFAuthToolbar {
-  background-color: @blue;
-  padding: 10px;
-  .btnMed {
-    margin-top: 6px;
-  }
-}
-#delOfAuthDropdown {
-  .boxShadow;
-  background-color: @white;
-  border: 1px solid @gray;
-  ul > li span {
-    display: block;
-    padding: 7px;
-  }
-  a {
-    display: block;
-  }
-}
-#delegationOfAuthorityTable{
-  th.regents, td.regents {width: 20%;}
-  th.delegate, td.delegate {width: 35%;}
-  th.date, td.date {width: 15%;}
-  th h2 {
-    display: inline;
-  }
-  td {
-    padding: 30px 10px;
-    text-align: left;
-    vertical-align: top;
-  }
-  td.chapter {
-    text-align: center;
-  }
-}
-.fixedThead{
-    top:0;
-    position:fixed;
-    width:auto;
-    display:none;
-    border:none;
-  }
-@media (max-width: 767px) {
-  #delOfAuthDropdown ul li span {
-    font-size: 14px;
-    margin-right: 50px;
-  }
-  #delegationOfAuthorityTable {
-    font-size: 12px;
-    td {
-      padding-left: 3px;
-      padding-right: 3px;
-    }
-  }
-  .fixedThead {
-  display: none!important;
-  }
-  .backToTop {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-/*OpenRecords*/
-.OpenRecordsCard {
-  background-color: @white;
-  margin: 20px auto;
-  width: 80%;
-  .theCardContent{
-    padding: 10px;
-  }
-}
-
-/*State Reports*/
-@media(min-width: 767px) {
-  .stateReports {
-    .card {
-      min-height: 210px;
-    }
-  }
-}
-@media(min-width: 768px)and(max-width: 990px) {
-  .stateReports {
-    .card {
-      h3 {
-        font-size: 12px;
-      }
-    }
-  }
-}
-
 /*Contact*/
-.depContactWrapper {
-  background-color: @blue;
-  padding: 2%;
-  select {
-    width: 100%;
-  }
+.contact .card .h3 {
+  font-size: 18px;
 }
 
 /* --------- DNN Admin Controls ----------- */

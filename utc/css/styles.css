@@ -2151,16 +2151,22 @@ html[xmlns] .slides {
   margin: 0 auto;
   width: 64px;
 }
-.highlightsWrapper .openRecords {
+.highlightsWrapper .aboutUs {
+  background-position: center -239px;
+}
+.highlightsWrapper .venues {
   background-position: center -320px;
 }
-.highlightsWrapper .stateReports {
+.highlightsWrapper .parking {
   background-position: center -400px;
 }
-.highlightsWrapper .insurance {
+.highlightsWrapper .paymentMethod {
   background-position: center -480px;
 }
-.highlightsWrapper .studentFieldTripInsurance {
+.highlightsWrapper .sportsLottery {
+  background-position: center -640px;
+}
+.highlightsWrapper .resources {
   background-position: center -560px;
 }
 .sprite.s-vpbaTeam {
