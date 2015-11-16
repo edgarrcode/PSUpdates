@@ -87,79 +87,79 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/budgetOrgChart.png": {
-		"fileType": 32768,
+	"\/images\/Don-Haskins-Center.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 40164,
-		"inputAbbreviatedPath": "\/images\/budgetOrgChart.png",
-		"outputAbbreviatedPath": "\/images\/budgetOrgChart.png",
+		"initialSize": 162363,
+		"inputAbbreviatedPath": "\/images\/Don-Haskins-Center.jpg",
+		"outputAbbreviatedPath": "\/images\/Don-Haskins-Center.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-aboutUs.png": {
-		"fileType": 32768,
+	"\/images\/Fox-Fine-Arts-Recital-Hall.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5936,
-		"inputAbbreviatedPath": "\/images\/hl-aboutUs.png",
-		"outputAbbreviatedPath": "\/images\/hl-aboutUs.png",
+		"initialSize": 54939,
+		"inputAbbreviatedPath": "\/images\/Fox-Fine-Arts-Recital-Hall.jpg",
+		"outputAbbreviatedPath": "\/images\/Fox-Fine-Arts-Recital-Hall.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-affiliateMGC.png": {
-		"fileType": 32768,
+	"\/images\/Helen-of-Troy.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 24702,
-		"inputAbbreviatedPath": "\/images\/hl-affiliateMGC.png",
-		"outputAbbreviatedPath": "\/images\/hl-affiliateMGC.png",
+		"initialSize": 114653,
+		"inputAbbreviatedPath": "\/images\/Helen-of-Troy.jpg",
+		"outputAbbreviatedPath": "\/images\/Helen-of-Troy.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-contactUs.png": {
+	"\/images\/hl-arts-and-theater.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3460,
-		"inputAbbreviatedPath": "\/images\/hl-contactUs.png",
-		"outputAbbreviatedPath": "\/images\/hl-contactUs.png",
+		"initialSize": 192584,
+		"inputAbbreviatedPath": "\/images\/hl-arts-and-theater.png",
+		"outputAbbreviatedPath": "\/images\/hl-arts-and-theater.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-FAQs.png": {
+	"\/images\/hl-family.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2469,
-		"inputAbbreviatedPath": "\/images\/hl-FAQs.png",
-		"outputAbbreviatedPath": "\/images\/hl-FAQs.png",
+		"initialSize": 42841,
+		"inputAbbreviatedPath": "\/images\/hl-family.png",
+		"outputAbbreviatedPath": "\/images\/hl-family.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-goldcard.png": {
-		"fileType": 32768,
+	"\/images\/hl-music.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27618,
-		"inputAbbreviatedPath": "\/images\/hl-goldcard.png",
-		"outputAbbreviatedPath": "\/images\/hl-goldcard.png",
+		"initialSize": 17503,
+		"inputAbbreviatedPath": "\/images\/hl-music.jpg",
+		"outputAbbreviatedPath": "\/images\/hl-music.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-howToGetMyMGC.png": {
+	"\/images\/hl-music.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 25961,
-		"inputAbbreviatedPath": "\/images\/hl-howToGetMyMGC.png",
-		"outputAbbreviatedPath": "\/images\/hl-howToGetMyMGC.png",
+		"initialSize": 25897,
+		"inputAbbreviatedPath": "\/images\/hl-music.png",
+		"outputAbbreviatedPath": "\/images\/hl-music.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -175,24 +175,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-reportLostStolen.png": {
+	"\/images\/hl-sports.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 28669,
-		"inputAbbreviatedPath": "\/images\/hl-reportLostStolen.png",
-		"outputAbbreviatedPath": "\/images\/hl-reportLostStolen.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/hl-resources.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1890,
-		"inputAbbreviatedPath": "\/images\/hl-resources.png",
-		"outputAbbreviatedPath": "\/images\/hl-resources.png",
+		"initialSize": 25898,
+		"inputAbbreviatedPath": "\/images\/hl-sports.png",
+		"outputAbbreviatedPath": "\/images\/hl-sports.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -201,20 +190,53 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20311,
+		"initialSize": 9008,
 		"inputAbbreviatedPath": "\/images\/hl-sportsLotery.png",
 		"outputAbbreviatedPath": "\/images\/hl-sportsLotery.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hl-whatIsMyMGC.png": {
+	"\/images\/hl-Ticket-Center-at-Union-Annex.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17503,
+		"inputAbbreviatedPath": "\/images\/hl-Ticket-Center-at-Union-Annex.jpg",
+		"outputAbbreviatedPath": "\/images\/hl-Ticket-Center-at-Union-Annex.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hl-University-Ticket-Center.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30163,
+		"inputAbbreviatedPath": "\/images\/hl-University-Ticket-Center.jpg",
+		"outputAbbreviatedPath": "\/images\/hl-University-Ticket-Center.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hl-UTEPTickets.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 28707,
-		"inputAbbreviatedPath": "\/images\/hl-whatIsMyMGC.png",
-		"outputAbbreviatedPath": "\/images\/hl-whatIsMyMGC.png",
+		"initialSize": 8638,
+		"inputAbbreviatedPath": "\/images\/hl-UTEPTickets.png",
+		"outputAbbreviatedPath": "\/images\/hl-UTEPTickets.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hl-UTEPVenues.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7844,
+		"inputAbbreviatedPath": "\/images\/hl-UTEPVenues.png",
+		"outputAbbreviatedPath": "\/images\/hl-UTEPVenues.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -230,6 +252,105 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/iconAmEx.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20068,
+		"inputAbbreviatedPath": "\/images\/iconAmEx.png",
+		"outputAbbreviatedPath": "\/images\/iconAmEx.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/iconCash.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4209,
+		"inputAbbreviatedPath": "\/images\/iconCash.png",
+		"outputAbbreviatedPath": "\/images\/iconCash.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/iconDinersClub.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21832,
+		"inputAbbreviatedPath": "\/images\/iconDinersClub.png",
+		"outputAbbreviatedPath": "\/images\/iconDinersClub.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/iconDiscover.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10017,
+		"inputAbbreviatedPath": "\/images\/iconDiscover.png",
+		"outputAbbreviatedPath": "\/images\/iconDiscover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/iconMasterCard.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17231,
+		"inputAbbreviatedPath": "\/images\/iconMasterCard.png",
+		"outputAbbreviatedPath": "\/images\/iconMasterCard.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/iconOpenMap.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1739,
+		"inputAbbreviatedPath": "\/images\/iconOpenMap.jpg",
+		"outputAbbreviatedPath": "\/images\/iconOpenMap.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/iconVisa.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19320,
+		"inputAbbreviatedPath": "\/images\/iconVisa.png",
+		"outputAbbreviatedPath": "\/images\/iconVisa.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Kidd-Field.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134338,
+		"inputAbbreviatedPath": "\/images\/Kidd-Field.jpg",
+		"outputAbbreviatedPath": "\/images\/Kidd-Field.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Magoffin-Auditorium.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60519,
+		"inputAbbreviatedPath": "\/images\/Magoffin-Auditorium.jpg",
+		"outputAbbreviatedPath": "\/images\/Magoffin-Auditorium.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/mandalaBackground.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -241,6 +362,160 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/map-miner-store.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24348,
+		"inputAbbreviatedPath": "\/images\/map-miner-store.jpg",
+		"outputAbbreviatedPath": "\/images\/map-miner-store.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/map-Univeristy-Ticket-Center-Zoomed-Out.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145684,
+		"inputAbbreviatedPath": "\/images\/map-Univeristy-Ticket-Center-Zoomed-Out.jpg",
+		"outputAbbreviatedPath": "\/images\/map-Univeristy-Ticket-Center-Zoomed-Out.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/map-Univeristy-Ticket-Center.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18985,
+		"inputAbbreviatedPath": "\/images\/map-Univeristy-Ticket-Center.jpg",
+		"outputAbbreviatedPath": "\/images\/map-Univeristy-Ticket-Center.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapGloryRoad-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25561,
+		"inputAbbreviatedPath": "\/images\/mapGloryRoad-1.jpg",
+		"outputAbbreviatedPath": "\/images\/mapGloryRoad-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapGloryRoad.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25561,
+		"inputAbbreviatedPath": "\/images\/mapGloryRoad.jpg",
+		"outputAbbreviatedPath": "\/images\/mapGloryRoad.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSectionGloryRoad1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64592,
+		"inputAbbreviatedPath": "\/images\/mapSectionGloryRoad1.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSectionGloryRoad1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSectionGloryRoad2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59415,
+		"inputAbbreviatedPath": "\/images\/mapSectionGloryRoad2.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSectionGloryRoad2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSectionSchusterPG1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71078,
+		"inputAbbreviatedPath": "\/images\/mapSectionSchusterPG1.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSectionSchusterPG1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSectionSchusterPG2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46866,
+		"inputAbbreviatedPath": "\/images\/mapSectionSchusterPG2.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSectionSchusterPG2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSectionSunBowlPG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63482,
+		"inputAbbreviatedPath": "\/images\/mapSectionSunBowlPG.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSectionSunBowlPG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSectionSunBowlPG1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47897,
+		"inputAbbreviatedPath": "\/images\/mapSectionSunBowlPG1.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSectionSunBowlPG1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapShusterPG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29004,
+		"inputAbbreviatedPath": "\/images\/mapShusterPG.jpg",
+		"outputAbbreviatedPath": "\/images\/mapShusterPG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mapSunBouwlPG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26092,
+		"inputAbbreviatedPath": "\/images\/mapSunBouwlPG.jpg",
+		"outputAbbreviatedPath": "\/images\/mapSunBouwlPG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Memorial-Gym.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74979,
+		"inputAbbreviatedPath": "\/images\/Memorial-Gym.jpg",
+		"outputAbbreviatedPath": "\/images\/Memorial-Gym.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/mgcStudents.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -248,50 +523,6 @@
 		"initialSize": 168918,
 		"inputAbbreviatedPath": "\/images\/mgcStudents.jpg",
 		"outputAbbreviatedPath": "\/images\/mgcStudents.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Mike-Loya-Academic-Services-Building.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 348135,
-		"inputAbbreviatedPath": "\/images\/Mike-Loya-Academic-Services-Building.jpg",
-		"outputAbbreviatedPath": "\/images\/Mike-Loya-Academic-Services-Building.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/minerBucks.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 82666,
-		"inputAbbreviatedPath": "\/images\/minerBucks.jpg",
-		"outputAbbreviatedPath": "\/images\/minerBucks.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/minerMeals.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 210615,
-		"inputAbbreviatedPath": "\/images\/minerMeals.jpg",
-		"outputAbbreviatedPath": "\/images\/minerMeals.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/PS-Department-Budget-Table-USA.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 156165,
-		"inputAbbreviatedPath": "\/images\/PS-Department-Budget-Table-USA.png",
-		"outputAbbreviatedPath": "\/images\/PS-Department-Budget-Table-USA.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -318,6 +549,83 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Sun-Bowl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107888,
+		"inputAbbreviatedPath": "\/images\/Sun-Bowl.jpg",
+		"outputAbbreviatedPath": "\/images\/Sun-Bowl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Ticket-Center-at-Union-Annex.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85345,
+		"inputAbbreviatedPath": "\/images\/Ticket-Center-at-Union-Annex.jpg",
+		"outputAbbreviatedPath": "\/images\/Ticket-Center-at-Union-Annex.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Union-Cinema.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40047,
+		"inputAbbreviatedPath": "\/images\/Union-Cinema.jpg",
+		"outputAbbreviatedPath": "\/images\/Union-Cinema.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/University-Ticket-Center-Parking.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 204066,
+		"inputAbbreviatedPath": "\/images\/University-Ticket-Center-Parking.jpg",
+		"outputAbbreviatedPath": "\/images\/University-Ticket-Center-Parking.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/University-Ticket-Center.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 188689,
+		"inputAbbreviatedPath": "\/images\/University-Ticket-Center.jpg",
+		"outputAbbreviatedPath": "\/images\/University-Ticket-Center.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/utcLogoContact.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75392,
+		"inputAbbreviatedPath": "\/images\/utcLogoContact.png",
+		"outputAbbreviatedPath": "\/images\/utcLogoContact.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/UTEP-Dinner-Theatre.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64017,
+		"inputAbbreviatedPath": "\/images\/UTEP-Dinner-Theatre.jpg",
+		"outputAbbreviatedPath": "\/images\/UTEP-Dinner-Theatre.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/utepLogoFooter.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -329,24 +637,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/whatIsMyMGC1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 424570,
-		"inputAbbreviatedPath": "\/images\/whatIsMyMGC1.png",
-		"outputAbbreviatedPath": "\/images\/whatIsMyMGC1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/whatIsMyMGC3.jpg": {
+	"\/images\/wiseFamilytheater.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 105043,
-		"inputAbbreviatedPath": "\/images\/whatIsMyMGC3.jpg",
-		"outputAbbreviatedPath": "\/images\/whatIsMyMGC3.jpg",
+		"initialSize": 44177,
+		"inputAbbreviatedPath": "\/images\/wiseFamilytheater.jpg",
+		"outputAbbreviatedPath": "\/images\/wiseFamilytheater.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -404,6 +701,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/js\/flexslider.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/flexslider.js",
+		"outputAbbreviatedPath": "\/js\/min\/flexslider-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/main.js": {
 		"fileType": 64,
@@ -548,6 +856,33 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/Parking-Garages.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Parking-Garages.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Payment-Methods.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Payment-Methods.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resources.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sportsLottery.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -574,6 +909,15 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/venues.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/venues.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -584,7 +928,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "utc",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "compass_orange"
 	},
 "projectSettings": {

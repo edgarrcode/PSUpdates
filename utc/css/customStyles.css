@@ -100,6 +100,10 @@ ol li {
   min-height: 280px;
   padding-bottom: 0;
 }
+.hl2 .card {
+  min-height: 430px;
+  padding-bottom: 0;
+}
 @media (max-width: 1199px) {
   .hl1 .card {
     min-height: 250px;
@@ -194,6 +198,35 @@ ol li {
 }
 .permitSection img {
   width: 100%;
+}
+/*PermitsFlexsliderGallery*/
+.permitSection .flexslider {
+  font-size: 14px;
+}
+.permitSection .flexslider img {
+  display: block;
+}
+.permitSection .flexslider .mapGalleryCaption {
+  background-color: rgba(0, 51, 106, 0.8);
+  color: #ffffff;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.permitSection .flexslider .flex-control-nav {
+  right: 0;
+  bottom: 3px;
+  color: #003366;
+  width: 40%;
+  z-index: 2;
+}
+.permitSection .flexslider .flex-control-nav li a {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.permitSection .flexslider .flex-control-nav li a.flex-active {
+  background-color: #ffffff;
 }
 /*permitPrice*/
 .permitPrice {

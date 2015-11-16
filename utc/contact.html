@@ -68,11 +68,23 @@
 
                 <h2 class="aTitle"><span>Locations</span></h2>
 
-                <div class="card">
-                    <h3 id="universityTicketCenter">University Ticket Center</h3>
+                <div class="card permitSection">
+                    <h2 id="universityTicketCenter">University Ticket Center</h2>
                     <hr>
-                    <div class="oneThird breakColMobile"><div class="placeholder">[picture1]</div></div><!-- /oneThird -->
-                    <div class="oneThird breakColMobile"><div class="placeholder">[picture2]</div></div><!-- /oneThird -->
+                    <div class="oneThird theMap">
+                        <a href="https://www.google.com/maps/place/Union+Bldg+East,+El+Paso,+TX+79902/@31.7720401,-106.5029937,17.59z/data=!4m2!3m1!1s0x86e7585bc791653f:0x6ea37b84dbdc3238" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="https://www.google.com/maps/place/Union+Bldg+East,+El+Paso,+TX+79902/@31.7720401,-106.5029937,17.59z/data=!4m2!3m1!1s0x86e7585bc791653f:0x6ea37b84dbdc3238" target="_blank"><img src="images/map-Univeristy-Ticket-Center.jpg" title="University Ticket Center" alt="University Ticket Center"></a></div>
+                    </div>
+                    <div class="oneThird breakColMobile">
+                        <div class="flexslider">
+<ul class="slides">
+    <li><img src="images/University-Ticket-Center.jpg" alt="University Ticket Center" title="University Ticket Center"><div class="mapGalleryCaption">University Ticket Center</div></li>
+    <li><img src="images/University-Ticket-Center-Parking.jpg" alt="University Ticket Center" title="University Ticket Center"><div class="mapGalleryCaption">Free Visitor Parking</div></li>
+    <li><img src="images/map-Univeristy-Ticket-Center-Zoomed-Out.jpg" alt="University Ticket Center" title="University Ticket Center"><div class="mapGalleryCaption">University Ticket Center</div></li>
+</ul>
+                        </div><!-- /flexslider -->
+
+                    </div><!-- /oneThird -->
                     <div class="oneThird gridLast breakColMobile">
                         <h3 class="h3">Address</h3>
                         <p>2901 N Mesa<br>
@@ -86,11 +98,14 @@
                     <div class="clear"></div>
                 </div><!-- /card -->
 
-                <div class="card">
-                    <h3 id="minerStore">Miner Store</h3>
+                <div class="card permitSection">
+                    <h2 id="minerStore">Miner Store</h2>
                     <hr>
-                    <div class="oneThird breakColMobile"><div class="placeholder">[picture1]</div></div><!-- /oneThird -->
-                    <div class="oneThird breakColMobile"><div class="placeholder">[picture2]</div></div><!-- /oneThird -->
+                    <div class="oneThird theMap">
+                        <a href="https://www.google.com/maps/place/1452+N+Zaragoza+Rd,+El+Paso,+TX+79936/@31.7354068,-106.2951573,17z/data=!3m1!4b1!4m2!3m1!1s0x86e7439b66b55f99:0x8bace6cbe3d60b31" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="https://www.google.com/maps/place/1452+N+Zaragoza+Rd,+El+Paso,+TX+79936/@31.7354068,-106.2951573,17z/data=!3m1!4b1!4m2!3m1!1s0x86e7439b66b55f99:0x8bace6cbe3d60b31" target="_blank"><img src="images/map-miner-store.jpg" title="University Ticket Center" alt="University Ticket Center"></a></div>
+                    </div>
+                        <div class="oneThird breakColMobile"><img src="images/locationImageComingSoon.png" class="imgOverBlueBlock" alt="Miner Store" title="Miner Store"></div><!-- /oneThird -->
                     <div class="oneThird gridLast breakColMobile">
                         <h3 class="h3">Address</h3>
                         <p>1452 North Zaragoza<br>
@@ -104,10 +119,16 @@
                     <div class="clear"></div>
                 </div><!-- /card -->
 
-                <div class="card">
-                    <h3 id="ticketCenterAtUnionAnnex">Ticket Center at Union Annex</h3>
+                <div class="card permitSection">
+                    <h2 id="ticketCenterAtUnionAnnex">Ticket Center at Union Annex</h2>
                     <hr>
-                    <div class="twoThirds breakColMobile"><div class="placeholder">[picture1]</div></div><!-- /oneThird -->
+                    <div class="oneThird theMap">
+                        <a href="https://www.google.com/maps/place/Union+Bldg+East,+El+Paso,+TX+79902/@31.7720401,-106.5029937,17.59z/data=!4m2!3m1!1s0x86e7585bc791653f:0x6ea37b84dbdc3238" target="_blank"><img src="images/iconOpenMap.jpg" class="openMapIcon"></a>
+                        <div><a href="https://www.google.com/maps/place/Union+Bldg+East,+El+Paso,+TX+79902/@31.7720401,-106.5029937,17.59z/data=!4m2!3m1!1s0x86e7585bc791653f:0x6ea37b84dbdc3238" target="_blank"><img src="images/mapUnionBldgEast.gif" title="Union Cinema" alt="Union Cinema"></a></div>
+                    </div>
+                    <div class="oneThird breakColMobile">
+                        <img src="images/Ticket-Center-at-Union-Annex.jpg" alt="University Ticket Center" title="University Ticket Center">
+                    </div><!-- /oneThird -->
                     <div class="oneThird gridLast breakColMobile">
                         <h3 class="h3">Address</h3>
                         <p>411 Union Building East (1st floor)</p>
@@ -127,9 +148,29 @@
         <!-- Scripts -->
         <script src="js/main.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/flexslider.js"></script>
         <!-- Load Includes -->
         <script>$(".nav").load('includes/nav.html');</script>
         <script>$("#footer1").load('includes/footer1.html');</script>
         <script>$("#footer2").load('includes/footer2.html');</script>
+        <!-- flexsliderHook -->
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                prevText: " ",
+                nextText: " ",
+                pauseOnHover: true
+            });
+        });
+        // Remove preload class from body
+        $(function cleanBody(){
+            var firstSlide = $('.flexslider li:first-child');
+            if ( firstSlide.is('.flex-active-slide') ){
+                $('.flexslider').removeClass('preload');
+            } else {
+                setTimeout(cleanBody, 500);
+            }
+        });
+        </script>
     </body>
 </html>

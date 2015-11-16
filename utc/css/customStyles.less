@@ -107,6 +107,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     padding-bottom: 0;
   }
 }
+.hl2 {
+  .card {
+    min-height: 430px;
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 1199px) {
   .hl1 {
     .card {
@@ -208,7 +214,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062c5', end
     width: 100%;
   }
 }
-
+/*PermitsFlexsliderGallery*/
+.permitSection {
+  .flexslider {
+    font-size: 14px;
+    img {
+      display: block;
+    }
+    .mapGalleryCaption {
+      background-color: rgba(0,51,106,.8);
+      color: @white;
+      padding: 8px;
+      position: absolute; right:0; bottom: 0; left:0; 
+    }
+    .flex-control-nav {
+      right: 0; bottom: 3px;
+      color: @blue;
+      width: 40%;
+      z-index: 2;
+      li a {
+        background-color: rgba(255,255,255,.25);
+      }
+      li a.flex-active {
+        background-color: rgba(255,255,255,1);
+      }
+    }
+  }
+}
 /*permitPrice*/
 .permitPrice {
   background-color: @blue;
